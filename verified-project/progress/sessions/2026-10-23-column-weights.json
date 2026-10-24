@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-23",
+  "request": "Continue until at least five additional statements are formalized.",
+  "baseline_count": 41,
+  "new_count": 22,
+  "total_count": 63,
+  "new_theorems": [
+    "SixVertex.column_bottom_unique",
+    "SixVertex.columns_nodup",
+    "SixVertex.periodicColumns_sound",
+    "SixVertex.periodicColumns_complete",
+    "SixVertex.periodicColumns_nodup",
+    "SixVertex.periodicColumns_vertices_nodup",
+    "SixVertex.transferExponents_eq_periodicColumns",
+    "SixVertex.transferExponents_empty_of_sector_ne",
+    "SixVertex.transferExponents_degree_le",
+    "SixVertex.exponentSum_nonneg",
+    "SixVertex.exponentSum_pos_iff",
+    "SixVertex.exponentSum_pos_of_zero_mem",
+    "SixVertex.rationalTransfer_eq_sum_columns",
+    "SixVertex.rationalTransfer_nonneg",
+    "SixVertex.rationalTransfer_pos_iff",
+    "SixVertex.rationalTransfer_zero_of_sector_ne",
+    "SixVertex.rationalTransfer_balanced_positive",
+    "SixVertex.exponentSum_divide",
+    "SixVertex.columnProbability_zero_of_not_mem",
+    "SixVertex.columnProbability_positive",
+    "SixVertex.columnProbability_nonneg",
+    "SixVertex.columnProbability_sum_one"
+  ],
+  "primary_results": [
+    "SixVertex.columns_nodup",
+    "SixVertex.periodicColumns_vertices_nodup",
+    "SixVertex.transferExponents_degree_le",
+    "SixVertex.rationalTransfer_pos_iff",
+    "SixVertex.rationalTransfer_zero_of_sector_ne",
+    "SixVertex.rationalTransfer_balanced_positive",
+    "SixVertex.columnProbability_positive",
+    "SixVertex.columnProbability_sum_one"
+  ],
+  "scope": "Finite column enumeration and exact positive-rational column law. No named analytic paper statement or GFF theorem is claimed.",
+  "checks": "Full library build, every declared theorem axiom-audited, all 19 OAI source hashes unchanged."
+}

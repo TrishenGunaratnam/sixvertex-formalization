@@ -1,0 +1,137 @@
+⚠ [2120/2151] Replayed SixVertex.RowAlgebra
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.LinearAlgebra.Matrix.ConjTranspose` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.LinearAlgebra.Matrix.Kronecker` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.FinCases` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.Ext` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2324/2448] Replayed SixVertex.BetheScalars
+warning: SixVertex/BetheScalars.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BetheScalars.lean: imports `Mathlib.Tactic.NoncommRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2443/2600] Replayed SixVertex.BetheRows
+warning: SixVertex/BetheRows.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BetheRows.lean: imports `Mathlib.Topology.Instances.Matrix` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2449/2600] Replayed SixVertex.FiniteBetheKernels
+warning: SixVertex/FiniteBetheKernels.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteBetheKernels.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2451/2600] Replayed SixVertex.BetheCountingPhase
+warning: SixVertex/BetheCountingPhase.lean:40:73: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_re, Complex.add_re, Complex.sub_re, Complex.one_re, Complex.one_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.add_im, Complex.mul_im, Complex.sub_im, mul_zero, mul_one,
+    add_zero, sub_zero, zero_sub, Real.cos_two_mul', Real.sin_two_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/BetheCountingPhase.lean:45:73: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_im, Complex.add_re, Complex.sub_re, Complex.one_re, Complex.one_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.add_im, Complex.sub_im, Complex.mul_re, mul_zero, mul_one,
+    add_zero, sub_zero, zero_sub, Real.cos_two_mul', Real.sin_two_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2578/2600] Replayed SixVertex.BetheProducts
+warning: SixVertex/BetheProducts.lean: imports `Mathlib.Data.Finset.NoncommProd` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2581/2600] Replayed SixVertex.RowCommutation
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.LinearAlgebra.Matrix.NonsingularInverse` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Topology.Instances.Matrix` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2587/2609] Replayed SixVertex.FiniteGaudin
+warning: SixVertex/FiniteGaudin.lean: imports `Mathlib.Analysis.Calculus.ImplicitContDiff` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteGaudin.lean: imports `Mathlib.LinearAlgebra.Matrix.PosDef` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteGaudin.lean:79:52: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:80:6: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:80:37: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:82:15: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, ContinuousLinearMap.proj_apply, gaudinCLM,
+    LinearMap.coe_toContinuousLinearMap', Matrix.toLin'_apply, Matrix.mulVec, dotProduct, gaudinMatrix, Matrix.of_apply,
+    countingSlope, ContinuousLinearMap.sub_apply, ContinuousLinearMap.sum_apply, ContinuousLinearMap.smul_apply,
+    smul_eq_mul, add_mul, ite_mul, zero_mul, Finset.sum_add_distrib, Finset.sum_sub_distrib, mul_sub, Finset.sum_ite_eq,
+    Finset.sum_ite_eq', Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/FiniteGaudin.lean:82:50: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, ContinuousLinearMap.proj_apply, gaudinCLM,
+    LinearMap.coe_toContinuousLinearMap', Matrix.toLin'_apply, Matrix.mulVec, dotProduct, gaudinMatrix, Matrix.of_apply,
+    countingSlope, ContinuousLinearMap.sub_apply, ContinuousLinearMap.sum_apply, ContinuousLinearMap.smul_apply,
+    smul_eq_mul, add_mul, ite_mul, zero_mul, Finset.sum_add_distrib, Finset.sum_sub_distrib, mul_sub, Finset.sum_mul,
+    Finset.sum_ite_eq, Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/FiniteGaudin.lean:83:15: This simp argument is unused:
+  ← Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← Finset.sum_mul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2596/2609] Replayed SixVertex.BetheOnShell
+warning: SixVertex/BetheOnShell.lean:41:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:47: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/BetheOnShell.lean:41:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/BetheOnShell.lean:41:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2597/2609] Replayed SixVertex.BetheParity
+warning: SixVertex/BetheParity.lean:57:37: This simp argument is unused:
+  plusSpins
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [evenSign, oddSign]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/BetheParity.lean:115:42: This simp argument is unused:
+  Matrix.diagonal_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quantumGauge, quantumParity, Matrix.mul_diagonal, Matrix.diagonal_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2602/2609] Replayed SixVertex.BetheRootBranch
+warning: SixVertex/BetheRootBranch.lean: imports `Mathlib.Analysis.Calculus.Deriv.Prod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2605/2609] Replayed SixVertex.RootMonotonicity
+warning: SixVertex/RootMonotonicity.lean: imports `Mathlib.Analysis.Calculus.Deriv.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+✔ [2609/2609] Built SixVertex.FreeBetheEigenvalueDerivative (11s)
+Build completed successfully (2609 jobs).

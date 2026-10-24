@@ -1,0 +1,1226 @@
+⚠ [2120/2192] Replayed SixVertex.RowAlgebra
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Complex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.LinearAlgebra.Matrix.ConjTranspose` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.LinearAlgebra.Matrix.Kronecker` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.FinCases` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.Ring` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.FieldSimp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.NormNum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.Ext` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowAlgebra.lean: imports `Mathlib.Tactic.LinearCombination` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2325/2488] Replayed SixVertex.BetheScalars
+warning: SixVertex/BetheScalars.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BetheScalars.lean: imports `Mathlib.Tactic.NoncommRing` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2443/2488] Replayed SixVertex.BetheRows
+warning: SixVertex/BetheRows.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BetheRows.lean: imports `Mathlib.Topology.Instances.Matrix` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2449/2488] Replayed SixVertex.FiniteBetheKernels
+warning: SixVertex/FiniteBetheKernels.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.ArctanDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteBetheKernels.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2451/2488] Replayed SixVertex.BetheCountingPhase
+warning: SixVertex/BetheCountingPhase.lean:40:73: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_re, Complex.add_re, Complex.sub_re, Complex.one_re, Complex.one_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.add_im, Complex.mul_im, Complex.sub_im, mul_zero, mul_one,
+    add_zero, sub_zero, zero_sub, Real.cos_two_mul', Real.sin_two_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/BetheCountingPhase.lean:45:73: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_im, Complex.add_re, Complex.sub_re, Complex.one_re, Complex.one_im, Complex.ofReal_re,
+    Complex.ofReal_im, Complex.I_re, Complex.I_im, Complex.add_im, Complex.sub_im, Complex.mul_re, mul_zero, mul_one,
+    add_zero, sub_zero, zero_sub, Real.cos_two_mul', Real.sin_two_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2582/2618] Replayed SixVertex.FiniteGaudin
+warning: SixVertex/FiniteGaudin.lean: imports `Mathlib.Analysis.Calculus.ImplicitContDiff` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteGaudin.lean: imports `Mathlib.LinearAlgebra.Matrix.PosDef` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteGaudin.lean:79:52: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:80:6: `ContinuousLinearMap.sum_apply` has been deprecated: Use `sum_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sum_apply` to `sum_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵m̵_̵a̵p̵p̵l̵y̵s̲u̲m̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:80:37: `ContinuousLinearMap.smul_apply` has been deprecated: Use `smul_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.smul_apply` to `smul_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵m̵u̵l̵_̵a̵p̵p̵l̵y̵s̲m̲u̲l̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/FiniteGaudin.lean:82:15: This simp argument is unused:
+  Finset.sum_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, ContinuousLinearMap.proj_apply, gaudinCLM,
+    LinearMap.coe_toContinuousLinearMap', Matrix.toLin'_apply, Matrix.mulVec, dotProduct, gaudinMatrix, Matrix.of_apply,
+    countingSlope, ContinuousLinearMap.sub_apply, ContinuousLinearMap.sum_apply, ContinuousLinearMap.smul_apply,
+    smul_eq_mul, add_mul, ite_mul, zero_mul, Finset.sum_add_distrib, Finset.sum_sub_distrib, mul_sub, Finset.sum_ite_eq,
+    Finset.sum_ite_eq', Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/FiniteGaudin.lean:82:50: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ContinuousLinearMap.comp_apply, ContinuousLinearMap.proj_apply, gaudinCLM,
+    LinearMap.coe_toContinuousLinearMap', Matrix.toLin'_apply, Matrix.mulVec, dotProduct, gaudinMatrix, Matrix.of_apply,
+    countingSlope, ContinuousLinearMap.sub_apply, ContinuousLinearMap.sum_apply, ContinuousLinearMap.smul_apply,
+    smul_eq_mul, add_mul, ite_mul, zero_mul, Finset.sum_add_distrib, Finset.sum_sub_distrib, mul_sub, Finset.sum_mul,
+    Finset.sum_ite_eq, Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/FiniteGaudin.lean:83:15: This simp argument is unused:
+  ← Finset.mul_sum
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [← Finset.sum_mul]
+
+Note: Simp arguments with `←` have the additional effect of removing the other direction from the simp set, even if the simp argument itself is unused. If the hint above does not work, try replacing `←` with `-` to only get that effect and silence this warning.
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2584/2618] Replayed SixVertex.BetheProducts
+warning: SixVertex/BetheProducts.lean: imports `Mathlib.Data.Finset.NoncommProd` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2593/2618] Replayed SixVertex.BetheOnShell
+warning: SixVertex/BetheOnShell.lean:41:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:47: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/BetheOnShell.lean:41:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/BetheOnShell.lean:41:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/BetheOnShell.lean:41:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2595/2618] Replayed SixVertex.RowCommutation
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Analysis.Analytic.Uniqueness` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.LinearAlgebra.Matrix.NonsingularInverse` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RowCommutation.lean: imports `Mathlib.Topology.Instances.Matrix` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2596/2618] Replayed SixVertex.BetheParity
+warning: SixVertex/BetheParity.lean:57:37: This simp argument is unused:
+  plusSpins
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [evenSign, oddSign]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/BetheParity.lean:115:42: This simp argument is unused:
+  Matrix.diagonal_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [quantumGauge, quantumParity, Matrix.mul_diagonal, Matrix.diagonal_apply]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2601/2618] Replayed SixVertex.BetheRootBranch
+warning: SixVertex/BetheRootBranch.lean: imports `Mathlib.Analysis.Calculus.Deriv.Prod` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2604/2618] Replayed SixVertex.ScalarProductSource
+warning: SixVertex/ScalarProductSource.lean: imports `Mathlib.Analysis.Calculus.Deriv.Slope` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ScalarProductSource.lean: imports `Mathlib.Analysis.Complex.RealDeriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ScalarProductSource.lean: imports `Mathlib.LinearAlgebra.Matrix.Block` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ScalarProductSource.lean:79:10: `DifferentiableAt.fun_finset_prod` has been deprecated: Use `DifferentiableAt.fun_finsetProd` instead
+
+Hint: Replace the deprecated name:
+  DifferentiableAt.fun_finset_̵p̵P̲rod
+warning: SixVertex/ScalarProductSource.lean:86:25: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:86:39: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:86:51: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:86:25: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSource.lean:86:39: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSource.lean:86:51: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSource.lean:123:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:123:6: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:123:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SixVertex/ScalarProductSource.lean:171:22: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: SixVertex/ScalarProductSource.lean:194:20: `if_false` has been deprecated: Use `ite_false` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵f̵a̵l̵s̵e̵i̲t̲e̲_̲f̲a̲l̲s̲e̲
+warning: SixVertex/ScalarProductSource.lean:159:23: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:159:37: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:159:49: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSource.lean:159:23: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSource.lean:159:37: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSource.lean:159:49: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2605/2618] Replayed SixVertex.ScalarProductSetup
+warning: SixVertex/ScalarProductSetup.lean:59:22: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSetup.lean:59:36: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSetup.lean:59:48: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductSetup.lean:59:22: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSetup.lean:59:36: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSetup.lean:59:48: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductSetup.lean:116:8: `tendsto_finset_sum` has been deprecated: Use `tendsto_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  tendsto_finset_̵s̵S̲um
+⚠ [2606/2618] Replayed SixVertex.ScalarProductDeterminants
+warning: SixVertex/ScalarProductDeterminants.lean: imports `Mathlib.LinearAlgebra.Matrix.Block` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ScalarProductDeterminants.lean:40:54: `if_true` has been deprecated: Use `ite_true` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵t̵r̵u̵e̵i̲t̲e̲_̲t̲r̲u̲e̲
+⚠ [2607/2618] Replayed SixVertex.ScalarProductLimits
+warning: SixVertex/ScalarProductLimits.lean:17:51: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ScalarProductLimits.lean:17:66: Variable name `hpi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ScalarProductLimits.lean:156:19: `tendsto_finset_prod` has been deprecated: Use `tendsto_finsetProd` instead
+
+Hint: Replace the deprecated name:
+  tendsto_finset_̵p̵P̲rod
+⚠ [2608/2618] Replayed SixVertex.ScalarProductConsequences
+warning: SixVertex/ScalarProductConsequences.lean:77:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductConsequences.lean:77:35: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductConsequences.lean:77:47: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductConsequences.lean:77:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductConsequences.lean:77:35: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductConsequences.lean:77:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/ScalarProductConsequences.lean:184:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductConsequences.lean:184:6: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ScalarProductConsequences.lean:184:6: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [2609/2618] Replayed SixVertex.SlavnovAssumption
+warning: SixVertex/SlavnovAssumption.lean:41:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/SlavnovAssumption.lean:41:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/SlavnovAssumption.lean:41:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SixVertex/SlavnovAssumption.lean:87:17: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlavnovAssumption.lean:98:17: This simp argument is unused:
+  Function.comp_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [zero_sub, sub_zero, one_mul, mul_neg, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlavnovAssumption.lean:98:46: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_def, zero_sub, one_mul, mul_neg, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlavnovAssumption.lean:98:56: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Function.comp_def, zero_sub, sub_zero, mul_neg, mul_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2614/2682] Replayed SixVertex.ExactScalarProducts
+warning: SixVertex/ExactScalarProducts.lean:94:44: Variable name `hdet` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hdet
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ExactScalarProducts.lean:107:47: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2615/2682] Replayed SixVertex.HilbertAdjoint
+warning: SixVertex/HilbertAdjoint.lean:19:64: This simp argument is unused:
+  map_add
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [map_div₀, ← Complex.sinh_conj, ← Complex.sin_conj, map_sub, map_mul, map_div₀, Complex.conj_ofReal,
+    Complex.conj_I, map_ofNat]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/HilbertAdjoint.lean:69:15: This simp argument is unused:
+  one_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hEven.neg_one_pow, zSpin, ite_true, show (1 : Fin 2) ≠ 0 by decide, ite_false, mul_neg, mul_one,
+    flipSpin_zero, flipSpin_one, neg_one_smul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2655/2682] Replayed SixVertex.BetheHilbertSpace
+warning: SixVertex/BetheHilbertSpace.lean: imports `Mathlib.Analysis.InnerProductSpace.PiL2` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BetheHilbertSpace.lean:62:10: This simp argument is unused:
+  mul_smul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [smul_neg]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2656/2682] Replayed SixVertex.HilbertDual
+warning: SixVertex/HilbertDual.lean:57:44: This simp argument is unused:
+  Complex.conj_conj
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [normalizeSpinVector, inner_smul_left, inner_smul_right, Complex.conj_ofReal, map_mul, map_inv₀,
+    inner_conj_symm, inner_self_eq_norm_sq_to_K, Complex.ofReal_inv]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/HilbertDual.lean:62:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/HilbertDual.lean:62:23: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/HilbertDual.lean:62:23: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+warning: SixVertex/HilbertDual.lean:62:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/HilbertDual.lean:114:25: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2658/2682] Replayed SixVertex.HilbertSectors
+warning: SixVertex/HilbertSectors.lean:24:37: This simp argument is unused:
+  Pi.mul_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Matrix.mulVec_diagonal, hv q hq, mul_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2659/2682] Replayed SixVertex.RootMonotonicity
+warning: SixVertex/RootMonotonicity.lean: imports `Mathlib.Analysis.Calculus.Deriv.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2663/2682] Replayed SixVertex.PhaseAsymptotics
+warning: SixVertex/PhaseAsymptotics.lean:28:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PhaseAsymptotics.lean:28:8: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PhaseAsymptotics.lean:28:8: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [2664/2682] Replayed SixVertex.RootEscape
+warning: SixVertex/RootEscape.lean:123:68: This simp argument is unused:
+  Finset.subset_univ
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Finset.sum_const, Finset.card_range, Finset.card_sdiff, Finset.card_univ, Fintype.card_fin,
+    Finset.inter_univ, Nat.cast_sub hle, nsmul_eq_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2666/2682] Replayed SixVertex.RootCompactness
+warning: SixVertex/RootCompactness.lean: imports `Mathlib.Topology.Instances.EReal.Lemmas` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RootCompactness.lean: imports `Mathlib.Topology.Order.Compact` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RootCompactness.lean: imports `Mathlib.Topology.MetricSpace.ProperSpace.Real` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/RootCompactness.lean: imports `Mathlib.Topology.Sequences` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2667/2682] Replayed SixVertex.GlobalRootExistence
+warning: SixVertex/GlobalRootExistence.lean: imports `Mathlib.Topology.Connected.Clopen` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/GlobalRootExistence.lean:60:2: Try this: 
+  haveI̵
+
+The goal is a proposition, so `have` is preferred over `haveI`.
+The difference between `have` and `haveI` is that `haveI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [2668/2682] Replayed SixVertex.GlobalRootFamily
+warning: SixVertex/GlobalRootFamily.lean:18:6: `dif_pos` has been deprecated: Use `dite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  d̵i̵f̵_̵p̵o̵s̵d̲i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [2936/3040] Replayed SixVertex.KernelMass
+warning: SixVertex/KernelMass.lean: imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2938/3040] Replayed SixVertex.CountingSawtooth
+warning: SixVertex/CountingSawtooth.lean: imports `Mathlib.Order.Interval.Finset.Fin` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/CountingSawtooth.lean: imports `Mathlib.MeasureTheory.Measure.Sum` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/CountingSawtooth.lean:140:29: This simp argument is unused:
+  Measure.sum_apply_of_countable
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rootEmpiricalMeasure, tsum_fintype]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/CountingSawtooth.lean:140:60: This simp argument is unused:
+  tsum_fintype
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [rootEmpiricalMeasure, Measure.sum_apply_of_countable]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [2939/3040] Replayed SixVertex.BoundedConvolution
+warning: SixVertex/BoundedConvolution.lean: imports `Mathlib.Analysis.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BoundedConvolution.lean: imports `Mathlib.Topology.ContinuousMap.Bounded.Normed` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BoundedConvolution.lean: imports `Mathlib.Analysis.Normed.Ring.Units` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/BoundedConvolution.lean:15:23: Variable name `t` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _t
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [2940/3040] Replayed SixVertex.KernelDerivatives
+warning: SixVertex/KernelDerivatives.lean:23:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/KernelDerivatives.lean:23:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2942/3040] Replayed SixVertex.WeightedKernel
+warning: SixVertex/WeightedKernel.lean: imports `Mathlib.Analysis.SpecialFunctions.ImproperIntegrals` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/WeightedKernel.lean:25:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/WeightedKernel.lean:25:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2943/3040] Replayed SixVertex.ConvolutionDerivative
+warning: SixVertex/ConvolutionDerivative.lean: imports `Mathlib.Analysis.Calculus.ParametricIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2949/3040] Replayed SixVertex.DensityRegularity
+warning: SixVertex/DensityRegularity.lean: imports `Mathlib.Analysis.Calculus.MeanValue` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/DensityRegularity.lean:42:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+warning: SixVertex/DensityRegularity.lean:45:10: `continuous_finset_sum` has been deprecated: Use `continuous_finsetSum` instead
+
+Hint: Replace the deprecated name:
+  continuous_finset_̵s̵S̲um
+⚠ [2953/3040] Replayed SixVertex.WindowParameterContinuity
+warning: SixVertex/WindowParameterContinuity.lean:50:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/WindowParameterContinuity.lean:50:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [2959/3040] Replayed SixVertex.PositiveNeumann
+warning: SixVertex/PositiveNeumann.lean: imports `Mathlib.Topology.Algebra.InfiniteSum.ContinuousEval` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [2966/3040] Replayed SixVertex.MassParameterContinuity
+warning: SixVertex/MassParameterContinuity.lean:35:47: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/MassParameterContinuity.lean:35:47: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3321/3458] Replayed SixVertex.PaperFourier
+warning: SixVertex/PaperFourier.lean: imports `Mathlib.Analysis.Fourier.Convolution` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3322/3458] Replayed SixVertex.MobiusIntegralSubstitution
+warning: SixVertex/MobiusIntegralSubstitution.lean: imports `Mathlib.MeasureTheory.Integral.IntegralEqImproper` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/MobiusIntegralSubstitution.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Complex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3323/3458] Replayed SixVertex.MellinJacobian
+warning: SixVertex/MellinJacobian.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Complex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3332/3458] Replayed SixVertex.MellinBeta
+warning: SixVertex/MellinBeta.lean: imports `Mathlib.Analysis.SpecialFunctions.Gamma.Beta` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3333/3458] Replayed SixVertex.SlitMellinBounds
+warning: SixVertex/SlitMellinBounds.lean:22:19: This simp argument is unused:
+  Complex.add_re
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlitMellinBounds.lean:22:85: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, sub_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlitMellinBounds.lean:22:94: This simp argument is unused:
+  sub_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.add_re, Complex.mul_re, Complex.ofReal_re, Complex.ofReal_im, mul_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/SlitMellinBounds.lean:27:19: This simp argument is unused:
+  Complex.add_im
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.mul_im, Complex.ofReal_re, Complex.ofReal_im, zero_mul, add_zero] at h
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3334/3458] Replayed SixVertex.ShiftedMellinIntegrability
+warning: SixVertex/ShiftedMellinIntegrability.lean: imports `Mathlib.Analysis.Calculus.ParametricIntegral` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3335/3458] Replayed SixVertex.ShiftedMellinHolomorphy
+warning: SixVertex/ShiftedMellinHolomorphy.lean: imports `Mathlib.Analysis.Complex.Convex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ShiftedMellinHolomorphy.lean: imports `Mathlib.Analysis.Convex.PathConnected` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ShiftedMellinHolomorphy.lean: imports `Mathlib.Analysis.Analytic.IsolatedZeros` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3336/3458] Replayed SixVertex.ShiftedMellinEvaluation
+warning: SixVertex/ShiftedMellinEvaluation.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Deriv` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/ShiftedMellinEvaluation.lean:21:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ShiftedMellinEvaluation.lean:21:25: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ShiftedMellinEvaluation.lean:21:25: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3340/3458] Replayed SixVertex.KernelDampedMellin
+warning: SixVertex/KernelDampedMellin.lean:51:36: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [hd, mul_zero, div_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/KernelDampedMellin.lean:52:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/KernelDampedMellin.lean:52:70: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/KernelDampedMellin.lean:52:70: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3341/3458] Replayed SixVertex.PhysicalKernelFourier
+warning: SixVertex/PhysicalKernelFourier.lean: imports `Mathlib.Analysis.SpecialFunctions.Trigonometric.DerivHyp` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/PhysicalKernelFourier.lean:58:15: This simp argument is unused:
+  Complex.ofReal_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [neg_zero, zero_sub, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/PhysicalKernelFourier.lean:76:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalKernelFourier.lean:73:53: This simp argument is unused:
+  neg_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.ofReal_zero, mul_zero, zero_mul, Complex.exp_zero, one_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3342/3458] Replayed SixVertex.DensityFourierAlgebra
+warning: SixVertex/DensityFourierAlgebra.lean:17:46: Variable name `h0` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _h0
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/DensityFourierAlgebra.lean:17:61: Variable name `hpi` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hpi
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3343/3458] Replayed SixVertex.FullLineDensityFourier
+warning: SixVertex/FullLineDensityFourier.lean:61:15: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/FullLineDensityFourier.lean:53:6: This simp argument is unused:
+  Real.cosh_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.ofReal_zero, mul_zero, zero_mul, Complex.exp_zero, one_mul, Complex.ofReal_one]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/FullLineDensityFourier.lean:53:21: This simp argument is unused:
+  Complex.ofReal_one
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.ofReal_zero, mul_zero, zero_mul, Complex.exp_zero, one_mul, Real.cosh_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3344/3458] Replayed SixVertex.SechMellinAlgebra
+warning: SixVertex/SechMellinAlgebra.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Complex` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/SechMellinAlgebra.lean: imports `Mathlib.Analysis.Complex.Trigonometric` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3347/3458] Replayed SixVertex.ExplicitDensityIdentification
+warning: SixVertex/ExplicitDensityIdentification.lean: imports `Mathlib.Analysis.Fourier.Inversion` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3352/3458] Replayed SixVertex.PositiveWindowEquation
+warning: SixVertex/PositiveWindowEquation.lean:54:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveWindowEquation.lean:54:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3353/3458] Replayed SixVertex.PositiveDressingKernel
+warning: SixVertex/PositiveDressingKernel.lean:90:2: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveDressingKernel.lean:90:2: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/PositiveDressingKernel.lean:111:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveDressingKernel.lean:111:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3354/3458] Replayed SixVertex.PositiveDressingMultiplier
+warning: SixVertex/PositiveDressingMultiplier.lean:29:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveDressingMultiplier.lean:29:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3355/3458] Replayed SixVertex.PaperFourierInverse
+warning: SixVertex/PaperFourierInverse.lean: imports `Mathlib.Analysis.Fourier.Inversion` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3356/3458] Replayed SixVertex.PositiveResolventFactorization
+warning: SixVertex/PositiveResolventFactorization.lean:135:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveResolventFactorization.lean:135:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3361/3458] Replayed SixVertex.PositiveWindowComparison
+warning: SixVertex/PositiveWindowComparison.lean:137:6: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveWindowComparison.lean:137:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+warning: SixVertex/PositiveWindowComparison.lean:171:6: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PositiveWindowComparison.lean:171:6: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3370/3458] Replayed SixVertex.ReferenceQuantileGeometry
+warning: SixVertex/ReferenceQuantileGeometry.lean:16:13: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3376/3458] Replayed SixVertex.PhysicalReferenceQuadrature
+warning: SixVertex/PhysicalReferenceQuadrature.lean:10:13: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3378/3458] Replayed SixVertex.WeightedReferenceQuadrature
+warning: SixVertex/WeightedReferenceQuadrature.lean:46:69: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3379/3458] Replayed SixVertex.PhysicalWeightedReferenceQuadrature
+warning: SixVertex/PhysicalWeightedReferenceQuadrature.lean:35:43: Variable name `hL` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hL
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3380/3458] Replayed SixVertex.ReferenceKernelRows
+warning: SixVertex/ReferenceKernelRows.lean:94:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3382/3458] Replayed SixVertex.ReferenceResidual
+warning: SixVertex/ReferenceResidual.lean:90:77: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ReferenceResidual.lean:90:81: Unused tactic linter: `ring` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/ReferenceResidual.lean:90:81: this tactic is never executed
+
+Note: This linter can be disabled with `set_option linter.unreachableTactic false`
+⚠ [3385/3458] Replayed SixVertex.ReferenceGaudin
+warning: SixVertex/ReferenceGaudin.lean:71:13: `ContinuousLinearMap.add_apply` has been deprecated: Use `add_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.add_apply` to `add_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵a̵d̵d̵_̵a̵p̵p̵l̵y̵a̲d̲d̲_̲a̲p̲p̲l̲y̲
+warning: SixVertex/ReferenceGaudin.lean:71:43: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵o̲n̲e̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲s̲e̲l̲f̲
+info: SixVertex/ReferenceGaudin.lean:74:2: Try this:
+  [apply] ring_nf
+  
+  The `ring` tactic failed to close the goal. Use `ring_nf` to obtain a normal form.
+    
+  Note that `ring` works primarily in *commutative* rings. If you have a noncommutative ring, abelian group or module, consider using `noncomm_ring`, `abel` or `module` instead.
+warning: SixVertex/ReferenceGaudin.lean:70:48: This simp argument is unused:
+  Finset.sum_ite_eq'
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [ite_mul, zero_mul, Finset.sum_ite_eq, Finset.mem_univ, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/ReferenceGaudin.lean:109:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3387/3458] Replayed SixVertex.FiniteCountingOrder
+warning: SixVertex/FiniteCountingOrder.lean:29:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3388/3458] Replayed SixVertex.ReferenceShiftDrift
+warning: SixVertex/ReferenceShiftDrift.lean:39:5: Variable name `hhalf` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _hhalf
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ReferenceShiftDrift.lean:56:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3391/3458] Replayed SixVertex.KernelTailComparison
+warning: SixVertex/KernelTailComparison.lean:10:20: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/KernelTailComparison.lean:10:20: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3393/3458] Replayed SixVertex.ReferenceRootStability
+warning: SixVertex/ReferenceRootStability.lean:57:27: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ReferenceRootStability.lean:99:27: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/ReferenceRootStability.lean:122:25: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3394/3458] Replayed SixVertex.CorrectedRootDensity
+warning: SixVertex/CorrectedRootDensity.lean:55:27: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3395/3458] Replayed SixVertex.WeightedRootCorrection
+warning: SixVertex/WeightedRootCorrection.lean:13:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/WeightedRootCorrection.lean:83:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3397/3458] Replayed SixVertex.WeightedCorrectedDensity
+warning: SixVertex/WeightedCorrectedDensity.lean:59:51: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3400/3458] Replayed SixVertex.HomogeneousRootConstruction
+warning: SixVertex/HomogeneousRootConstruction.lean:12:51: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3401/3458] Replayed SixVertex.WeightedCountingPhase
+warning: SixVertex/WeightedCountingPhase.lean:74:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3402/3458] Replayed SixVertex.RootIntervalCount
+warning: SixVertex/RootIntervalCount.lean: imports `Mathlib.Data.Finset.Max` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3405/3458] Replayed SixVertex.QuadratureMeasure
+warning: SixVertex/QuadratureMeasure.lean: imports `Mathlib.Basic.ENNReal.BigOperators` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/QuadratureMeasure.lean:28:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/QuadratureMeasure.lean:31:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3406/3458] Replayed SixVertex.SmoothQuadrature
+warning: SixVertex/SmoothQuadrature.lean: imports `Mathlib.MeasureTheory.Integral.Bochner.SumMeasure` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/SmoothQuadrature.lean:55:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/SmoothQuadrature.lean:55:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3422/3491] Replayed SixVertex.PhysicalJacobianVariation
+warning: SixVertex/PhysicalJacobianVariation.lean:151:15: `ContinuousLinearMap.sub_apply` has been deprecated: Use `sub_apply` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.sub_apply` to `sub_apply x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵s̵u̵b̵_̵a̵p̵p̵l̵y̵s̲u̲b̲_̲a̲p̲p̲l̲y̲
+⚠ [3423/3491] Replayed SixVertex.PhysicalReferenceGaudin
+warning: SixVertex/PhysicalReferenceGaudin.lean:54:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3424/3491] Replayed SixVertex.FiniteQuantitativeNewton
+warning: SixVertex/FiniteQuantitativeNewton.lean: imports `Mathlib.Analysis.Calculus.InverseFunctionTheorem.ApproximatesLinearOn` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/FiniteQuantitativeNewton.lean:40:18: `ContinuousLinearMap.mul_apply` has been deprecated: Use `mul_apply_eq_comp` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.mul_apply` to `mul_apply_eq_comp x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵m̵u̵l̵_̵a̵p̵p̵l̵y̵m̲u̲l̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲c̲o̲m̲p̲
+warning: SixVertex/FiniteQuantitativeNewton.lean:40:48: `ContinuousLinearMap.one_apply` has been deprecated: Use `one_apply_eq_self` instead
+
+Note: The updated constant is in a different namespace. Dot notation may need to be changed (e.g., from `x.one_apply` to `one_apply_eq_self x`).
+
+Hint: Replace the deprecated name:
+  C̵o̵n̵t̵i̵n̵u̵o̵u̵s̵L̵i̵n̵e̵a̵r̵M̵a̵p̵.̵o̵n̵e̵_̵a̵p̵p̵l̵y̵o̲n̲e̲_̲a̲p̲p̲l̲y̲_̲e̲q̲_̲s̲e̲l̲f̲
+warning: SixVertex/FiniteQuantitativeNewton.lean:45:4: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/FiniteQuantitativeNewton.lean:45:4: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3425/3491] Replayed SixVertex.PhysicalNewtonRoots
+warning: SixVertex/PhysicalNewtonRoots.lean:15:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalNewtonRoots.lean:52:76: This simp argument is unused:
+  z
+
+Hint: Omit it from the simp argument list.
+  [apply] simp
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/PhysicalNewtonRoots.lean:52:66: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/PhysicalNewtonRoots.lean:52:66: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3427/3491] Replayed SixVertex.PhysicalReferenceThreshold
+warning: SixVertex/PhysicalReferenceThreshold.lean:42:25: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalReferenceThreshold.lean:87:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3428/3491] Replayed SixVertex.PhysicalOrderedNewtonRoots
+warning: SixVertex/PhysicalOrderedNewtonRoots.lean:47:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalOrderedNewtonRoots.lean:78:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalOrderedNewtonRoots.lean:110:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3429/3491] Replayed SixVertex.PhysicalPerturbedGaudin
+warning: SixVertex/PhysicalPerturbedGaudin.lean:47:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3430/3491] Replayed SixVertex.PhysicalRegularRoots
+warning: SixVertex/PhysicalRegularRoots.lean:14:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalRegularRoots.lean:36:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalRegularRoots.lean:66:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3432/3491] Replayed SixVertex.PhysicalRootCountingData
+warning: SixVertex/PhysicalRootCountingData.lean:14:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3434/3491] Replayed SixVertex.PhysicalAtomWeights
+warning: SixVertex/PhysicalAtomWeights.lean:93:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3435/3491] Replayed SixVertex.PhysicalQuadratureMass
+warning: SixVertex/PhysicalQuadratureMass.lean:21:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalQuadratureMass.lean:23:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalQuadratureMass.lean:45:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3436/3491] Replayed SixVertex.PhysicalQuadratureTransport
+warning: SixVertex/PhysicalQuadratureTransport.lean:84:10: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalQuadratureTransport.lean:90:10: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalQuadratureTransport.lean:14:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3444/3491] Replayed SixVertex.LipschitzIntegration
+warning: SixVertex/LipschitzIntegration.lean: imports `Mathlib.MeasureTheory.Integral.IntervalIntegral.AbsolutelyContinuousFun` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/LipschitzIntegration.lean: imports `Mathlib.Analysis.Calculus.Deriv.Support` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/LipschitzIntegration.lean:21:42: Variable name `haz` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _haz
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3445/3491] Replayed SixVertex.LipschitzCountingError
+warning: SixVertex/LipschitzCountingError.lean:75:21: Unused tactic linter: `<;>` should be replaced with `;` or be removed.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+warning: SixVertex/LipschitzCountingError.lean:75:21: Used `tac1 <;> tac2` where `(tac1; tac2)` would suffice
+
+Note: This linter can be disabled with `set_option linter.unnecessarySeqFocus false`
+⚠ [3447/3491] Replayed SixVertex.PhysicalActualQuadrature
+warning: SixVertex/PhysicalActualQuadrature.lean:16:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalActualQuadrature.lean:61:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3448/3491] Replayed SixVertex.PhysicalIntervalQuadratureMass
+warning: SixVertex/PhysicalIntervalQuadratureMass.lean:12:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3449/3491] Replayed SixVertex.PhysicalUniformQuadrature
+warning: SixVertex/PhysicalUniformQuadrature.lean:38:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3450/3491] Replayed SixVertex.PhysicalFillingConstruction
+warning: SixVertex/PhysicalFillingConstruction.lean: imports `Mathlib.Analysis.SpecialFunctions.Pow.Asymptotics` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3451/3491] Replayed SixVertex.PhysicalRootMeasures
+warning: SixVertex/PhysicalRootMeasures.lean:37:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+warning: SixVertex/PhysicalRootMeasures.lean:71:8: Variable name `R` is not explicitly referenced.
+
+Hint: The binding can be removed (if unused) or named `_` (if used implicitly). Alternatively, prefix the name with `_` to silence this warning:
+  [apply] _R
+
+Note: This linter can be disabled with `set_option linter.unusedVariables false`
+⚠ [3452/3491] Replayed SixVertex.PhysicalLinkOperator
+warning: SixVertex/PhysicalLinkOperator.lean:28:57: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:28:68: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:29:57: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:29:68: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:31:57: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:31:68: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:33:57: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:33:68: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalLinkOperator.lean:47:6: This simp argument is unused:
+  Fintype.sum_prod_type
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [physicalLinkOperator, physicalRPrimeZero, swapTile, sixMatrix, Matrix.mul_apply, Fin.sum_univ_two]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/PhysicalLinkOperator.lean:47:28: This simp argument is unused:
+  Fin.sum_univ_two
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [physicalLinkOperator, physicalRPrimeZero, swapTile, sixMatrix, Matrix.mul_apply, Fintype.sum_prod_type]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/PhysicalLinkOperator.lean:70:47: This simp argument is unused:
+  Complex.star_def
+
+Hint: Omit it from the simp argument list.
+  [apply] simp [sixMatrix, Matrix.conjTranspose_apply, ← Complex.ofReal_cos, ← Complex.ofReal_sin]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3455/3491] Replayed SixVertex.RowCyclicContraction
+warning: SixVertex/RowCyclicContraction.lean:58:30: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [3456/3491] Replayed SixVertex.PhysicalBoundaryLink
+warning: SixVertex/PhysicalBoundaryLink.lean:49:15: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+⚠ [3457/3491] Replayed SixVertex.RowTranslatedLinks
+warning: SixVertex/RowTranslatedLinks.lean:69:17: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/RowTranslatedLinks.lean:74:17: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3459/3491] Replayed SixVertex.PhysicalChainHamiltonian
+warning: SixVertex/PhysicalChainHamiltonian.lean:57:8: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalChainHamiltonian.lean:57:23: `if_pos` has been deprecated: Use `ite_eq_left` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵p̵o̵s̵i̲t̲e̲_̲e̲q̲_̲l̲e̲f̲t̲
+warning: SixVertex/PhysicalChainHamiltonian.lean:62:8: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalChainHamiltonian.lean:62:19: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+⚠ [3460/3491] Replayed SixVertex.PhysicalHoppingSign
+warning: SixVertex/PhysicalHoppingSign.lean:20:23: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalHoppingSign.lean:68:39: Unused tactic linter: `congr 1` does nothing.
+
+Note: This linter can be disabled with `set_option linter.unusedTactic false`
+⚠ [3462/3491] Replayed SixVertex.SpinSwapConnectivity
+warning: SixVertex/SpinSwapConnectivity.lean: imports `Mathlib.Logic.Relation` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3463/3491] Replayed SixVertex.PhysicalHamiltonianSector
+warning: SixVertex/PhysicalHamiltonianSector.lean:115:25: `if_neg` has been deprecated: Use `ite_eq_right` instead
+
+Hint: Replace the deprecated name:
+  i̵f̵_̵n̵e̵g̵i̲t̲e̲_̲e̲q̲_̲r̲i̲g̲h̲t̲
+warning: SixVertex/PhysicalHamiltonianSector.lean:115:35: This simp argument is unused:
+  eq_self_iff_true
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [sixMatrix, if_neg hp, and_self, ite_true]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3483/3491] Replayed SixVertex.PositiveGroundState
+warning: SixVertex/PositiveGroundState.lean: imports `Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3484/3491] Replayed SixVertex.MatrixAbsoluteEnergy
+warning: SixVertex/MatrixAbsoluteEnergy.lean: imports `Mathlib.Analysis.Matrix.Hermitian` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/MatrixAbsoluteEnergy.lean: imports `Mathlib.Analysis.InnerProductSpace.Rayleigh` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+warning: SixVertex/MatrixAbsoluteEnergy.lean:39:58: This simp argument is unused:
+  PiLp.toLp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [EuclideanSpace.real_norm_sq_eq, realAbsVector, sq_abs]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+warning: SixVertex/MatrixAbsoluteEnergy.lean:47:25: This simp argument is unused:
+  PiLp.toLp_apply
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [realMatrixEnergy, PiLp.inner_apply, Real.inner_apply, Matrix.toEuclideanLin, Matrix.toLpLin_apply,
+    Matrix.mulVec, dotProduct, Finset.sum_mul]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+⚠ [3486/3491] Replayed SixVertex.PhysicalHoppingConnectivity
+warning: SixVertex/PhysicalHoppingConnectivity.lean: imports `Mathlib.Combinatorics.SimpleGraph.Connectivity.Connected` from package `mathlib`, which is designed for use with the module system; consider adding `module` to the start of this file
+⚠ [3487/3491] Replayed SixVertex.PhysicalSectorMinimum
+warning: SixVertex/PhysicalSectorMinimum.lean:56:2: Try this: 
+  letI̵
+
+The goal is a proposition, so `let` is preferred over `letI`.
+The difference between `let` and `letI` is that `letI` inlines the value.
+But this is not relevant for proofs because of proof irrelevance.
+
+Note: This linter can be disabled with `set_option linter.style.haveILetI false`
+⚠ [3488/3491] Replayed SixVertex.ComplexSectorMinimum
+warning: SixVertex/ComplexSectorMinimum.lean:56:81: This simp argument is unused:
+  zero_mul
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [complexMatrixRealEnergy, realMatrixEnergy, Matrix.map_apply, Complex.re_sum,
+    ← Finset.sum_add_distrib, Complex.mul_re, Complex.mul_im, Complex.star_def, Complex.conj_re, Complex.conj_im,
+    Complex.ofReal_re, Complex.ofReal_im, mul_zero, sub_zero]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`
+✔ [3491/3491] Built SixVertex.PhysicalBetheColumn (23s)
+Build completed successfully (3491 jobs).

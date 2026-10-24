@@ -1,0 +1,27 @@
+{
+  "assumptions": [
+    {
+      "id": "A01",
+      "name": "Twisted Slavnov scalar-product identity",
+      "paper_label": "eq:Slavnov-exact",
+      "status": "user_authorized_assumption",
+      "authorized_by": "User: We can assume Slavnov\u2019s identity, add it to the assumed list.",
+      "scope": "Finite twisted on-shell/off-shell scalar-product determinant, with the normalization of Section 2. No Gaudin norm, deleted-column identity, inverse bound or thermodynamic assertion is added to this assumption.",
+      "implementation": "Explicit proposition argument to conditional theorems; no global Lean axiom.",
+      "lean_proposition": "SixVertex.SlavnovIdentity",
+      "proof_obligation": "Prove the finite twisted Slavnov derivative-over-Cauchy identity from the ABA relations. The exact source normalization, complex root limits, Gaudin norm, deleted columns and weights have been proved in Lean conditional on this one hypothesis.",
+      "lean_file": "lean/SixVertex/SlavnovAssumption.lean",
+      "used_by_named_statements": [
+        "lem:scalar-product",
+        "lem:hilbert-dual",
+        "cor:finite-word-expansion"
+      ],
+      "consequences_verified": true,
+      "does_not_affect": [
+        "lem:row-algebra",
+        "lem:bethe-data",
+        "lem:finite-actions"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,752 @@
+{
+  "title": "Six vertex formalization",
+  "updated_on": "24 October 2026",
+  "paper_pages": 93,
+  "main_result": "GFF convergence for the balanced plane law, 0 < c <= 2",
+  "main_result_status": "Not proved in Lean",
+  "paper_named_statements_formalized": 5,
+  "paper_named_statements": 51,
+  "audit_status": "First pass complete; independent verification and scope review open",
+  "open_audit_items": 9,
+  "confirmed_mathematical_errors": 0,
+  "phases": [
+    {
+      "id": "sources",
+      "title": "Original OAI sources",
+      "status": "complete",
+      "depends_on": [],
+      "detail": "93-page original PDF and every manuscript source file, pinned to the OAI dump revision and checked against Git blob hashes.",
+      "evidence": "19 source and catalogue files hash-matched. One six-vertex manuscript directory found in the complete preprints directory tree.",
+      "next": "Preserve the snapshot; record any future upstream revision separately.",
+      "findings": []
+    },
+    {
+      "id": "finite",
+      "title": "Finite model and local heights",
+      "status": "in_progress",
+      "depends_on": [
+        "sources"
+      ],
+      "detail": "Ice-rule combinatorics, arrow reversal, periodic-column conservation and local height consistency.",
+      "evidence": "Finite.lean and Height.lean compile. Local four-face height existence and uniqueness are proved with the physical sign convention.",
+      "next": "Extend local integration to global simply connected domains. Keep torus winding periods separate.",
+      "findings": [
+        "V01"
+      ]
+    },
+    {
+      "id": "rowalgebra",
+      "title": "Finite row algebra \u00b7 Lemma 2.1",
+      "status": "complete",
+      "depends_on": [
+        "finite"
+      ],
+      "detail": "Every clause of the named Section 2 lemma is proved: monodromy gauge, marked adjoint, common diagonal-twist commutation, full RTT, conjugation of joint marks and both endpoint translations.",
+      "evidence": "FiniteRowAlgebra.lean assembles the exact complex-valued finite-matrix statement. All 1233 Lean theorems pass the build and axiom audit. Assumptions: 0 < lambda < pi, real inhomogeneities and even L >= 4, as in the manuscript.",
+      "next": "Lemma 2.4 is now verified conditional on the assumed Slavnov identity. Next: Lemma 3.1, Construction and density of the roots.",
+      "findings": [
+        "V02"
+      ]
+    },
+    {
+      "id": "actions",
+      "title": "Single-entry actions \u00b7 Lemma 2.3",
+      "status": "complete",
+      "depends_on": [
+        "rowalgebra"
+      ],
+      "detail": "All four off-shell B, A, L and C action formulas; explicit weighted word paths; at most m changed roots; complete-expression coincident limits.",
+      "evidence": "SingleEntryActions.lean assembles the named statement. All 1233 library theorems pass the full build and axiom audit. The C proof uses an explicit extra spin site and includes vanishing vacuum factors.",
+      "next": "Lemma 2.4 is now verified conditional on the assumed Slavnov identity. Next: Lemma 3.1, Construction and density of the roots.",
+      "findings": [
+        "V03"
+      ],
+      "steps": [
+        "Scalar identities and RTT",
+        "Commuting B entries and vacuum",
+        "A and L formulas",
+        "C via an extra spin site",
+        "Finite words and changed roots",
+        "Coincident complete sums"
+      ]
+    },
+    {
+      "id": "bethedata",
+      "title": "Finite Bethe data \u00b7 Lemma 2.2",
+      "status": "complete",
+      "depends_on": [
+        "actions"
+      ],
+      "detail": "Counting equations imply on-shell roots; standard and physical eigenvectors; exact Gaudin Jacobian; analytic root branch; positivity and Gaudin column weights.",
+      "evidence": "FiniteBetheData.lean assembles every clause. The full library has 1233 audited theorem declarations. The eigenvalue extends to an entire function; the root branch is real analytic and preserves ordering.",
+      "next": "Lemma 2.4 is now verified conditional on the assumed Slavnov identity. Next: Lemma 3.1, Construction and density of the roots.",
+      "findings": [
+        "V04"
+      ],
+      "steps": [
+        "Odd primitives and counting phase",
+        "On-shell cancellation",
+        "Physical parity and gauge",
+        "Gaudin Jacobian",
+        "Real analytic root branch",
+        "Positive definite Gaudin matrix",
+        "Gaudin column weights"
+      ]
+    },
+    {
+      "id": "scalarproducts",
+      "title": "Scalar products \u00b7 Lemma 2.4",
+      "status": "conditional",
+      "depends_on": [
+        "actions",
+        "bethedata"
+      ],
+      "detail": "Exact norm, nonvanishing, deleted-column formulas, weighted minors and complex coincident limits. Slavnov\u2019s identity is the single assumed input.",
+      "evidence": "ExactScalarProducts.lean assembles the conditional theorem. All 1233 declarations pass the build and axiom audit. No global mathematical axiom or unfinished proof is used.",
+      "next": "The Hilbert dual is now conditionally verified. Continue with Corollary 2.6, the exact finite-word expectation.",
+      "findings": [
+        "V05"
+      ],
+      "assumptions": [
+        "A01 \u00b7 Slavnov identity (assumed by user instruction)"
+      ],
+      "steps": [
+        "Independent root derivatives",
+        "Exact source normalization",
+        "Complex Gaudin column limits",
+        "Vacuum residues",
+        "Gaudin norm and nonvanishing",
+        "Deleted-column determinants",
+        "Weighted minors and collision limits"
+      ]
+    },
+    {
+      "id": "hilbertdual",
+      "title": "The Hilbert dual \u00b7 Lemma 2.5",
+      "status": "conditional",
+      "depends_on": [
+        "rowalgebra",
+        "scalarproducts"
+      ],
+      "detail": "Exact B-adjoint, physical Hilbert norm, positive unit state and the two-orientation overlap; arbitrary real staggered sites are included.",
+      "evidence": "HilbertDual.lean compiles. The library has 1233 audited theorem declarations. Adjoint and norm identities do not use Slavnov; positive nonvanishing retains A01.",
+      "next": "Continue with the normalized finite-word determinant formula.",
+      "findings": [
+        "V06"
+      ],
+      "assumptions": [
+        "A01 \u00b7 Slavnov identity (nonvanishing only)"
+      ],
+      "steps": [
+        "Exact operator adjoint",
+        "Creation-list Hilbert dual",
+        "Physical gauge isometry",
+        "Algebraic and Hilbert products",
+        "Positive norm and unit vector",
+        "Two-orientation overlap"
+      ]
+    },
+    {
+      "id": "finitewords",
+      "title": "Finite-word expectations \u00b7 Corollary 2.6",
+      "status": "conditional",
+      "depends_on": [
+        "actions",
+        "scalarproducts",
+        "hilbertdual"
+      ],
+      "detail": "Normalize each marked word, track its spin sector and parity, and cancel vacuum bases to obtain determinants bounded by word length.",
+      "evidence": "ExactFiniteWords.lean assembles every clause of Corollary 2.6. All 1233 declarations pass the full build and axiom audit. The sole external identity is A01; the generic finite nonzero-denominator domain is explicit.",
+      "next": "Construct and control finite real roots in Lemma 3.1.",
+      "findings": [
+        "V07"
+      ],
+      "steps": [
+        "Exact spin-sector conservation and orthogonality",
+        "All four gamma coefficients, including ordered C",
+        "Vacuum-potential telescoping for finite words",
+        "Physical input-sector signs and row normalization",
+        "Actual unit-vector expectation expansion",
+        "Replacement slots and determinant-size bound",
+        "Exact vacuum cancellation and weighted determinant",
+        "Diagonal words have trivial relative parity",
+        "Arbitrary auxiliary marks and complete determinant sum",
+        "Ordered histories: one reciprocal per pair, one beta per original"
+      ],
+      "assumptions": [
+        "A01: Slavnov identity, for scalar products and nonzero normalization"
+      ]
+    },
+    {
+      "id": "transfer",
+      "title": "Finite probability and transfer",
+      "status": "in_progress",
+      "depends_on": [
+        "finite"
+      ],
+      "detail": "Duplicate-free finite columns, exact symbolic transfer support and degree bounds, plus a normalized positive-rational single-column probability law.",
+      "evidence": "Enumeration.lean proves no repeated configurations; erasing the seam spin remains injective at positive height. Weights.lean proves exact rational transfer evaluation, positivity and normalization. Build and all-theorem axiom audit pass.",
+      "next": "Construct the multi-column real-valued torus probability law and its transfer trace identity. The named finite row algebra is now proved separately.",
+      "findings": [
+        "R03"
+      ]
+    },
+    {
+      "id": "roots",
+      "title": "Roots and thermodynamic bounds",
+      "status": "in_progress",
+      "depends_on": [
+        "rowalgebra",
+        "transfer",
+        "actions",
+        "bethedata",
+        "scalarproducts",
+        "finitewords"
+      ],
+      "detail": "The positive free Slater state is now proved to be the actual simple spin-Hamiltonian ground line,with a full complex energy lower bound. Identifying the ABA Bethe state with this line and continuing in lambda remain open.",
+      "evidence": "1457 declarations pass the full build and all-theorem axiom audit.32 supporting results complete sorted boundary amplitudes,blocked zeros,the actual spin-coordinate Hamiltonian identity,the actual Slater ground-state certificate,and the actual transfer logarithmic-eigenline derivative. No new external assumption. See V119-V125.",
+      "next": "Whole Lemma3.1 remains partial. The positive consecutive-momentum Slater state is now proved to be the ACTUAL free spin-sector Hamiltonian eigenvector and its simple ground-state line,with the lower energy bound for every complex sector vector. The full spin-coordinate action,all sorted boundary maps and blocked collision cases are complete. Still identify the actual ABA Bethe vector with that ground line by its coordinate formula or exact Hamiltonian energy,then justify continuation in lambda. The actual transfer-eigenline logarithmic derivative has now been proved for this purpose. The canonical actual Hamiltonian-ground/transfer-Perron certificate remains proved. U09 keeps the occupied compact-test qualification. No Bethe Perron conclusion is claimed.",
+      "findings": [
+        "V08",
+        "V09",
+        "U01",
+        "U02",
+        "V12",
+        "V13",
+        "V14",
+        "V15",
+        "V16",
+        "V17",
+        "V18",
+        "V19",
+        "V20",
+        "V21",
+        "V22",
+        "V23",
+        "V24",
+        "V25",
+        "V26",
+        "V27",
+        "V28",
+        "V29",
+        "V30",
+        "V31",
+        "V32",
+        "V33",
+        "V34",
+        "V35",
+        "V36",
+        "V37",
+        "V38",
+        "V39",
+        "V40",
+        "V41",
+        "V42",
+        "V43",
+        "V44",
+        "V45",
+        "V46",
+        "V47",
+        "V48",
+        "V49",
+        "V50",
+        "V51",
+        "V52",
+        "V53",
+        "V54",
+        "V55",
+        "V56",
+        "V57",
+        "V58",
+        "V59",
+        "V60",
+        "V61",
+        "V62",
+        "V63",
+        "V64",
+        "V65",
+        "V66",
+        "V67",
+        "V68",
+        "V69",
+        "V70",
+        "V71",
+        "V72",
+        "V73",
+        "V74",
+        "V75",
+        "V76",
+        "V77",
+        "V78",
+        "V79",
+        "V80",
+        "V81",
+        "U09",
+        "V82",
+        "V83",
+        "V84",
+        "V85",
+        "V86",
+        "V87",
+        "V88",
+        "V89",
+        "V90",
+        "V91",
+        "V92",
+        "V93",
+        "V94",
+        "V95",
+        "V96",
+        "V97",
+        "V98",
+        "V99",
+        "V100",
+        "V101",
+        "V102",
+        "V103",
+        "V104",
+        "V105",
+        "V106",
+        "V107",
+        "V108",
+        "V109",
+        "V110",
+        "V111",
+        "V112",
+        "V113",
+        "V114",
+        "V115",
+        "V116",
+        "V117",
+        "V118",
+        "V119",
+        "V120",
+        "V121",
+        "V122",
+        "V123",
+        "V124",
+        "V125"
+      ],
+      "steps": [
+        "Finite-root existence and uniqueness at lambda = pi/2",
+        "Global uniqueness for lambda >= pi/2",
+        "Joint analytic continuation in lambda",
+        "Nonsingular Gaudin matrices and twist branches",
+        "Collision exclusion from distinct counting levels",
+        "Joint parameter and spatial end limits",
+        "No upper or lower escaping clusters",
+        "Real subsequential compactness without assumed root bounds",
+        "Global finite real-root existence for lambda >= pi/2",
+        "Finite-chain bounds and gaps on compact parameter intervals",
+        "Explicit exponential kernel decay",
+        "Exact kernel L1 mass and strict contraction constant",
+        "Half-filled total density mass and exact cumulative integrals",
+        "Uniform counting sawtooth bound, primitive identity and both end limits",
+        "Actual kernel derivatives and first-derivative integrability",
+        "Uniform logarithmic density derivative and exponential density comparison",
+        "Uniform root atom-weight bound in the strict negative-kernel regime",
+        "Positive exponential weight with kernel mass below one",
+        "Actual bounded-continuous convolution and uniform signed-weight Neumann inverses",
+        "Constructed exponentially decaying resolvent kernel with integrable first derivative",
+        "Full-line integration by parts and exact counting jump identity",
+        "Uniform half-filled density discrepancy with the exact translated-density comparison",
+        "Fubini associativity and the exact inverse representation I-R0*",
+        "Actual cumulative dressed density and its ordinary-integral identification",
+        "Uniform integrated half-filled density discrepancy",
+        "First item of Lemma 3.1 with constants fixed before all finite arrays",
+        "Exact dressed density mass L/2",
+        "Kernel lower exponential envelope and relative tail decay bounds",
+        "Positive physical kernel tail and value/tail comparisons",
+        "Exact inward/outward tail partition and own-root mass deficit",
+        "Edge-index density and reciprocal-weight bounds",
+        "Adjacent-root lower spacing and upper sparse-edge gaps",
+        "Local root-count bound at every filling",
+        "Uniform unit-interval mass of the actual negative-kernel quadrature measure",
+        "Local occupied-window sawtooth and arbitrary-filling integration by parts",
+        "Quantitative compact C1 quadrature for the actual atomic measure",
+        "Quantitative bounded-Lipschitz quadrature by absolute continuity",
+        "Uniform half-filled C/L local quadrature and Lebesgue-integral convergence",
+        "Actual finite-window operator and uniform Neumann inverse for every physical lambda",
+        "Actual r_Q and H_Q equations and bounded-solution uniqueness",
+        "Negative-kernel positivity and uniform H_Q bounds",
+        "Monotone r_Q and comparison with the inverse-defined full-line density",
+        "Ordinary finite-interval masses, deficit comparison, half-mass limit and endpoint exhaustion",
+        "Operator-norm continuity of the moving interval endpoint",
+        "Uniform endpoint Lipschitz bound for the actual inverse-defined r_Q",
+        "Lipschitz continuity of the actual finite-interval filling mass",
+        "Actual positive reference cutoff for every negative-kernel sub-half filling",
+        "Actual cumulative integral, unique interior quantiles and ordered reference configurations",
+        "Finite counting integration by parts with exact endpoint cancellation",
+        "Local C1 and uniform derivative-L1 reference quadrature",
+        "Even finite-interval density and exact meanfield primitive normalization",
+        "Uniform actual Bethe residual and reference counting-density error",
+        "Exact on-shell reference quantiles at the free-fermion point",
+        "Actual finite-interval density derivative and uniform relative regularity",
+        "Weighted reference quadrature and absolute kernel row contraction",
+        "Actual scaled reference Gaudin decomposition and uniform two-sided inverse",
+        "Maximum principle and actual bounded-cutoff reference root correction",
+        "Actual corrected-root whole-line density estimate for bounded cutoffs",
+        "Multiplicative kernel variation and perturbed weighted rows",
+        "Cutoff-independent weighted shifts, positive drift and exact root correction",
+        "Cutoff-independent corrected-root density error under the actual scaled-density threshold",
+        "Radial decrease of the actual full-line density via integrable convolution and Neumann series",
+        "Actual exit-kernel supersolution and the lower r_Q comparison",
+        "Exact quantiles and roots under the manuscript boundary-density criterion",
+        "Strict filling mass, unique cutoffs and bounded sub-half-filled cutoff families",
+        "Regular-filling exact root construction and whole-line density approximation",
+        "Actual corrected counting-function error from the finite-interval primitive",
+        "Uniform cumulative mass margins and proved occupied counting windows",
+        "Uniform C/L quadrature and regular-filling bounded-Lipschitz convergence",
+        "Actual equally spaced bare-site counts and bulk c/d counting density",
+        "Uniform translated array quadrature with error C*d",
+        "Array quadrature in the width-first then spacing-second convention",
+        "Compact Lipschitz approximation and positive unit-test rescaling",
+        "Actual compact integral-error transfer",
+        "Homogeneous and bounded-array convergence for compact continuous tests",
+        "Moving-center array double limit for compact continuous tests",
+        "Actual half-line convolution Fubini and boundary-tail comparison",
+        "Relative spatial comparison and two-sided tail bounds for actual r",
+        "Actual finite-window mass deficit comparable to r(Q)",
+        "Uniform root construction from a diverging number of missing half-filled roots",
+        "Actual Mobius Jacobian and Mellin integrability transport",
+        "Euler Mellin integral from proved beta/gamma reflection",
+        "Actual hyperbolic secant Fourier integral and absolute convergence",
+        "Displayed density candidate Fourier transform in manuscript normalization",
+        "Actual undamped Fourier limit from a proved integrable majorant",
+        "Uniform shifted-Mellin denominator and integrability bounds",
+        "Genuine complex differentiation under the shifted Mellin integral",
+        "Exact shifted Mellin formula on the slit plane by analytic uniqueness",
+        "Actual physical quadratic Mellin formula with principal unit-circle poles",
+        "Actual physical source/kernel Fourier transforms at all real frequencies",
+        "Fourier inversion identifies the actual inverse-defined full-line density",
+        "Exact exponential filling-deficit rate for the negative-kernel regime",
+        "Actual positive auxiliary kernel, mass and Fourier transform",
+        "Fourier inversion identifies the actual positive dressed resolvent",
+        "Actual exterior-indicator convolution and resolvent identities",
+        "Positive-kernel finite-window density and H_Q comparison",
+        "Uniform finite-window comparison for every physical lambda",
+        "Positive-K strict filling monotonicity from ordinary exterior integrals",
+        "Unique actual filling cutoffs for every physical lambda",
+        "Exact ordinary exterior-density exponential rate",
+        "Exact filling-deficit exponential rate for every physical lambda",
+        "Full-line spatial comparison at exact inverse length pi/lambda",
+        "Actual positive-K and all-physical relative density derivatives",
+        "Actual reference quantiles for every physical lambda",
+        "All-physical reference sawtooth,unweighted quadrature and residual",
+        "Actual weighted reference quadrature for both kernel signs",
+        "Uniform inverse of the actual all-physical reference Gaudin operator",
+        "Reference Gaudin thresholds and actual reference-matrix nonsingularity",
+        "Actual configuration-density and kernel/profile translation bounds",
+        "Actual all-physical weighted Jacobian perturbation and vanishing error",
+        "Quantitative Newton applied to the actual finite Bethe equations",
+        "Expanded-window positivity and ordered actual roots for both kernel signs",
+        "All-physical weighted root stability and uniform counting-density error",
+        "Actual on-shell root construction under the boundary-density criterion",
+        "Actual nonlinear Gaudin right inverse and unscaled nonsingularity",
+        "Actual all-physical ordered roots and analytic twist branches",
+        "All-physical weighted counting-phase displacement and primitive error",
+        "Bounded actual counting extensions at both continuum endpoints",
+        "Actual regular-filling,bounded-cutoff and positive-power root families",
+        "Uniform actual-root density and counting-primitive data assembler",
+        "Actual reference inverse-density interval mass for moving windows",
+        "Uniform additive root-density error and positive actual atom weights",
+        "Actual atomic-measure identities and uniform unit-interval mass",
+        "Genuine bounded-Lipschitz reference quadrature by absolute continuity",
+        "Transport to the actual measure at the local density scale",
+        "Actual counting-density quadrature and dense-window local convergence",
+        "Actual mass on arbitrary fixed-length moving intervals",
+        "Finite-scale compact-test error from the actual interval mass",
+        "Actual counting-density quadrature for every positive local scale",
+        "One actual root list with all measure and analytic conclusions",
+        "Root families chosen before every compact test window",
+        "Local convergence of the same certified actual root families",
+        "Actual local R derivative at the swap",
+        "Actual local link operator with negative hopping and Hermiticity",
+        "Genuine derivative of the existing ordered and marked rows",
+        "Actual inverse-shift logarithmic Hamiltonian",
+        "Actual Hamiltonian commutation with every homogeneous row",
+        "Exact finite sum of single-site derivative insertions",
+        "Periodic seam insertion equals the last-first physical link",
+        "Actual cyclic auxiliary-trace rotation identity",
+        "Every physical insertion is a translation conjugate",
+        "Full actual Hamiltonian equals the cyclic sum of local links",
+        "Hermiticity of the full actual Hamiltonian",
+        "Particle-count conservation for adjacent spin exchanges",
+        "Constructive connectivity of all configurations in each particle sector",
+        "Real local and seam entries with nonpositive off-diagonals",
+        "Real full Hamiltonian with nonpositive off-diagonals",
+        "Particle-number preservation by actual translations",
+        "Actual Hamiltonian preserves every Bethe particle sector",
+        "Strictly negative actual full-Hamiltonian entry for first-pair hopping",
+        "Cyclic invariance of actual Hamiltonian entries",
+        "Strictly negative actual hopping for every adjacent particle-hole swap",
+        "Actual Hamiltonian hopping graph preconnected in every particle sector",
+        "Zeros of nonnegative eigenvectors propagate across actual negative hops",
+        "A positive eigenvector spans its real eigenspace",
+        "Absolute values preserve the norm and cannot increase matrix energy",
+        "Finite connected Hermitian matrix has a positive simple energy minimum",
+        "Every allowed particle sector is nonempty and its actual real restriction is Hermitian",
+        "Positive simple minimum of every actual real Hamiltonian sector",
+        "Full complex energy minimum and simple complex eigenspace of the actual sector Hamiltonian",
+        "Actual positive ground vector is chosen before all complex transfer parameters",
+        "Physical midpoint transfer entries are real and nonnegative",
+        "Actual transfer diagonal is exactly 2*d^L and strictly positive",
+        "Full actual transfer row preserves every particle sector",
+        "Every actual adjacent transfer hop is positive and its sector graph is connected",
+        "Finite walks and positive diagonals construct a common positive matrix power",
+        "Actual complex particle-sector transfer is primitive",
+        "Positive transfer eigenvalue and bound for every complex eigenvalue",
+        "Constructed actual Hamiltonian ground-state and transfer Perron certificate",
+        "Exact physical shift phase fixes the sign of the root momentum",
+        "Actual consecutive free-point roots give centered momenta and the fermionic circle sign",
+        "Exact one-root free-point energy equals minus cosine of physical momentum",
+        "Finite Slater determinants vanish on collisions and sum one-particle energies",
+        "Physical exponential plane waves obey the exact hopping dispersion",
+        "Actual consecutive plane-wave determinant solves the free coordinate Hamiltonian",
+        "Vandermonde representation proves nonzero amplitudes at distinct sites",
+        "One configuration-independent phase makes every ordered free Slater amplitude positive",
+        "Actual spin words are explicitly equivalent to finite site-bit functions",
+        "Ordered occupied-site coordinates have the exact physical particle count",
+        "Constructed positive nonzero free Slater vector on the actual spin sector",
+        "Actual site permutations preserve physical particle sectors",
+        "Missing adjacent targets preserve strict order of occupied coordinates",
+        "Actual allowed right and left spin exchanges update one coordinate by plus or minus one",
+        "Actual first-bond operator is an exact translate of the physical seam",
+        "Actual free local link and first-bond vector action are precisely particle-hole hopping",
+        "Full actual free Hamiltonian is the sum of periodic allowed spin exchanges",
+        "Actual finite site tuple rotates under physical cyclic translation and every power",
+        "A one-period coordinate shift has the exact fermionic sign",
+        "Cyclic coordinate wrap cancels the determinant permutation sign",
+        "Actual complex particle-sector Hamiltonian has the exact periodic exchange action",
+        "Literal bond k of the actual Hamiltonian exchanges sites k-1 and k modulo L",
+        "Exact sorted coordinates of both actual periodic boundary exchanges",
+        "Signless physical Slater amplitudes for both boundary hops",
+        "Uniform actual left and right Slater hop amplitudes",
+        "Actual sector Hamiltonian reindexed into two moves per occupied particle",
+        "All blocked collision determinants vanish including across the periodic seam",
+        "Actual spin-sector Hamiltonian equals coordinate hopping on the Slater state",
+        "Actual free Slater eigenvalue equation with exact physical energy",
+        "Positive symmetric eigenvectors have the same eigenvalue",
+        "Constructed Slater state is the actual simple complex ground-state line",
+        "Actual transfer eigenline differentiates into the actual logarithmic Hamiltonian eigenline"
+      ]
+    },
+    {
+      "id": "angular",
+      "title": "Plane law and angular spectrum",
+      "status": "queued",
+      "depends_on": [
+        "roots"
+      ],
+      "detail": "Hilbert-space construction, common-radius boundary continuation, physical-law identification and current measure.",
+      "evidence": "Proofs located in Section 4. External plane-law/strict-convexity statements were checked against the cited papers.",
+      "next": "Verify the finite folded-block identities and both quotient bounds before constructing the infinite representation.",
+      "findings": [
+        "U03",
+        "R01"
+      ]
+    },
+    {
+      "id": "representatives",
+      "title": "Representative limits \u00b7 Lemma 6.2",
+      "status": "complete",
+      "depends_on": [
+        "sources"
+      ],
+      "detail": "The standalone Hilbert-space lemma: bounded extension, convergence on arbitrary strong families, ordered composition, and the pairings-plus-norm criterion.",
+      "evidence": "All 1233 theorem declarations pass the build and axiom audit. The theorem works for arbitrary dense cores with Gram convergence. The six-vertex construction of that core and its Gram limit is not asserted proved.",
+      "next": "Apply this lemma once the two-scale tensor representatives and their Gram convergence are constructed.",
+      "findings": [
+        "V10"
+      ],
+      "steps": [
+        "Norm convergence of core representatives",
+        "Strong-limit uniqueness and linear operations",
+        "Pairings plus norms imply strong convergence",
+        "Linearity of core operator limits",
+        "Bounded extension to the completion",
+        "Action on arbitrary strongly converging families",
+        "Ordered composition without commutation"
+      ]
+    },
+    {
+      "id": "gaussian",
+      "title": "Chiral currents and Wick rule",
+      "status": "queued",
+      "depends_on": [
+        "angular",
+        "representatives"
+      ],
+      "detail": "Two-scale spectral convergence, control of all zeros, damped current limits and nonvacuum collision estimates.",
+      "evidence": "The manuscript includes dedicated all-zero and collision arguments. Their full implications remain independently unverified.",
+      "next": "Prove spectral truncation and the collision limit. Covariance calculations alone do not establish this milestone.",
+      "findings": [
+        "U05",
+        "U06"
+      ]
+    },
+    {
+      "id": "normalization",
+      "title": "Exact variance multiplier",
+      "status": "queued",
+      "depends_on": [
+        "angular"
+      ],
+      "detail": "For c<1: stiffness and twist-overlap comparison. For 1<=c<2: conditional normalization after a GFF subsequential limit is proved.",
+      "evidence": "Section 5 has a deferred overlap proof. DKLM Theorems 4.3\u20134.4 support the stated conditional use in their parameter range.",
+      "next": "Check finite twist jets and determinant asymptotics, preserving every order of limits. Retain Gaussian convergence as an assumption in the conditional branch.",
+      "findings": [
+        "U04",
+        "R02"
+      ]
+    },
+    {
+      "id": "logenergy",
+      "title": "Logarithmic energy \u00b7 Lemma 7.6",
+      "status": "complete",
+      "depends_on": [
+        "sources"
+      ],
+      "detail": "Ordinary finite Green energy implies atomlessness and finite self and mixed absolute logarithmic energy. The diagonal singularity is retained explicitly.",
+      "evidence": "All 1233 theorem declarations pass the build and axiom audit. The signed-measure theorem and its measurable dyadic-square proof use no external mathematical assumption. The ordinary-integral convention is checked against a null diagonal plus Bochner integrability.",
+      "next": "Use the measure lemma after the smooth-test limit and energy-mollification estimates are proved. Height-field and topology convergence remain open.",
+      "findings": [
+        "V11",
+        "U07"
+      ],
+      "steps": [
+        "Measurable half-open dyadic squares",
+        "Distance bounds and nine neighboring squares",
+        "Product masses and shifted mixed sums",
+        "Dyadic scale counts versus logarithmic singularity",
+        "Finite self energy implies finite mixed energy",
+        "Infinite diagonal excludes atoms",
+        "Exact Green normalization and ordinary-integral equivalence"
+      ]
+    },
+    {
+      "id": "field",
+      "title": "Height-field convergence",
+      "status": "queued",
+      "depends_on": [
+        "finite",
+        "gaussian",
+        "normalization",
+        "logenergy"
+      ],
+      "detail": "Smooth tests, desmoothing, finite-energy measures and tightness in explicitly defined negative-regularity spaces.",
+      "evidence": "Section 7 provides separate arguments for restriction spaces, the outward completion and intrinsic duals. None is yet formalized.",
+      "next": "Start with joint convergence on smooth neutral tests; fix the topology before extending the statement.",
+      "findings": [
+        "U07"
+      ]
+    },
+    {
+      "id": "endpoint",
+      "title": "Separate endpoint c = 2",
+      "status": "queued",
+      "depends_on": [
+        "sources",
+        "finite"
+      ],
+      "detail": "Independent fair-signed FK loop route, homotopy coupling and external endpoint GFF argument, plus the additional topology implication.",
+      "evidence": "The loop-bijection and infinite-volume correspondence cited by the appendix were located in the external sources. The full extraction remains open.",
+      "next": "Prove the exact coupling statement with multiplicities and homogeneous marginals, followed by sign-averaged uniform integrability.",
+      "findings": [
+        "U08"
+      ]
+    },
+    {
+      "id": "main",
+      "title": "Full balanced six-vertex theorem",
+      "status": "queued",
+      "depends_on": [
+        "field",
+        "endpoint"
+      ],
+      "detail": "Assemble the prescribed balanced-torus plane law, all parameter branches, variance normalization and each promised mode of convergence.",
+      "evidence": "Three named lemmas are unconditional; Lemmas 2.4\u20132.5 and Corollary 2.6 are conditional on A01. The GFF theorem and uniform thermodynamic estimates remain open.",
+      "next": "Close the analytic dependencies and check that the final Lean statement matches the pinned manuscript exactly.",
+      "findings": []
+    }
+  ],
+  "formalized_named_statements": [
+    {
+      "label": "lem:row-algebra",
+      "title": "Finite row algebra",
+      "number": "Lemma 2.1",
+      "lean_theorem": "SixVertex.finite_row_algebra",
+      "lean_file": "lean/SixVertex/FiniteRowAlgebra.lean"
+    },
+    {
+      "label": "lem:finite-actions",
+      "title": "Single-entry actions",
+      "number": "Lemma 2.3",
+      "lean_theorem": "SixVertex.single_entry_actions",
+      "lean_file": "lean/SixVertex/SingleEntryActions.lean"
+    },
+    {
+      "label": "lem:bethe-data",
+      "title": "Finite Bethe data",
+      "number": "Lemma 2.2",
+      "lean_theorem": "SixVertex.finite_bethe_data",
+      "lean_file": "lean/SixVertex/FiniteBetheData.lean"
+    },
+    {
+      "label": "lem:chiral-representatives",
+      "title": "Convergence of representatives",
+      "number": "Lemma 6.2",
+      "lean_theorem": "SixVertex.chiral_representatives",
+      "lean_file": "lean/SixVertex/ChiralRepresentatives.lean"
+    },
+    {
+      "label": "lem:log-integrability",
+      "title": "Logarithmic integrability",
+      "number": "Lemma 7.6",
+      "lean_theorem": "SixVertex.log_integrability",
+      "lean_file": "lean/SixVertex/LogIntegrability.lean"
+    }
+  ],
+  "paper_named_statements_conditional": 3,
+  "active_assumptions": 1,
+  "paper_named_statements_remaining_unformalized": 43,
+  "conditional_named_statements": [
+    {
+      "label": "lem:scalar-product",
+      "title": "Exact scalar products and deleted columns",
+      "number": "Lemma 2.4",
+      "lean_theorem": "SixVertex.exact_scalar_products_and_deleted_columns",
+      "lean_file": "lean/SixVertex/ExactScalarProducts.lean",
+      "assumptions": [
+        "A01"
+      ]
+    },
+    {
+      "label": "lem:hilbert-dual",
+      "title": "The Hilbert dual",
+      "number": "Lemma 2.5",
+      "lean_theorem": "SixVertex.hilbert_dual",
+      "lean_file": "lean/SixVertex/HilbertDual.lean",
+      "assumptions": [
+        "A01"
+      ]
+    },
+    {
+      "label": "cor:finite-word-expansion",
+      "title": "Exact finite-word expansion",
+      "number": "Corollary 2.6",
+      "lean_theorem": "SixVertex.exact_finite_word_expansion",
+      "lean_file": "lean/SixVertex/ExactFiniteWords.lean",
+      "assumptions": [
+        "A01"
+      ]
+    }
+  ],
+  "active_run": {
+    "additional_named_statement_target": 15,
+    "additional_named_statements_completed": 0,
+    "weekly_usage_percent": 33,
+    "weekly_usage_stop_percent": 50,
+    "status": "working"
+  }
+}

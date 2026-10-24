@@ -1,0 +1,23 @@
+{
+  "completed_at_utc": "2026-10-23T23:43:54.968607+00:00",
+  "user_request": "Keep formalizing, keep going till a few more named statements are proved",
+  "completed_named_statements": [
+    "lem:chiral-representatives",
+    "lem:log-integrability"
+  ],
+  "baseline_theorem_count": 528,
+  "final_theorem_count": 581,
+  "added_theorem_declarations": 53,
+  "new_external_assumptions": [],
+  "staging_audit_passed": true,
+  "saved_project_audit_passed": true,
+  "saved_project_checked_at_utc": "2026-10-23T23:43:01.249533+00:00",
+  "source_files_hash_matched": 19,
+  "lean_source_modules_byte_matched": 86,
+  "named_statements_unconditional": 5,
+  "named_statements_conditional_on_A01": 3,
+  "other_named_statements_unformalized": 43,
+  "full_GFF_theorem_proved": false,
+  "lemma_3_1_complete": false,
+  "crosswalk": "progress/named-statements.json"
+}

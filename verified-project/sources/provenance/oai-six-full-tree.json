@@ -1,0 +1,148 @@
+{
+  "sha": "1df9db6ee35f4d2a09da6ec67e3e5fd13c9c6a27",
+  "url": "https://api.github.com/repos/openai/math/git/trees/1df9db6ee35f4d2a09da6ec67e3e5fd13c9c6a27",
+  "tree": [
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bb3002bc12a7c1e51e5d402fe68cafc3128b720",
+      "size": 1141,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/9bb3002bc12a7c1e51e5d402fe68cafc3128b720"
+    },
+    {
+      "path": "The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52a0f91506dd497f5b3334420f6dc3d6b9cdb95d",
+      "size": 870977,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/52a0f91506dd497f5b3334420f6dc3d6b9cdb95d"
+    },
+    {
+      "path": "build",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fab273c62281991cbaa9027e36d1d8931a6c2888",
+      "url": "https://api.github.com/repos/openai/math/git/trees/fab273c62281991cbaa9027e36d1d8931a6c2888"
+    },
+    {
+      "path": "build/figures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7f5dac4bfde816a15b1eddf3cae45148f017e483",
+      "url": "https://api.github.com/repos/openai/math/git/trees/7f5dac4bfde816a15b1eddf3cae45148f017e483"
+    },
+    {
+      "path": "build/figures/chiral-windows.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "988736ca8db13dec8670a77f19265454c0336bb5",
+      "size": 1092,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/988736ca8db13dec8670a77f19265454c0336bb5"
+    },
+    {
+      "path": "build/main.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbb296154df6bc4426fc9457796eef6404ef7f0f",
+      "size": 1010,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/dbb296154df6bc4426fc9457796eef6404ef7f0f"
+    },
+    {
+      "path": "build/preamble.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "967ec0e48c234d80a6590dd84ec146e964432ab9",
+      "size": 1819,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/967ec0e48c234d80a6590dd84ec146e964432ab9"
+    },
+    {
+      "path": "build/references.bib",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf342d245f7d37f71329264f061c98107078ddcb",
+      "size": 12287,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/cf342d245f7d37f71329264f061c98107078ddcb"
+    },
+    {
+      "path": "build/sections",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6afd27eebcdff83dd99d0bf20076ee00ea570107",
+      "url": "https://api.github.com/repos/openai/math/git/trees/6afd27eebcdff83dd99d0bf20076ee00ea570107"
+    },
+    {
+      "path": "build/sections/01-introduction.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e09004eca55aedd1fea979ef91de722e2f2ab5fa",
+      "size": 13675,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/e09004eca55aedd1fea979ef91de722e2f2ab5fa"
+    },
+    {
+      "path": "build/sections/02-finite-rows.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ee4066e4268b93683d13f93dc956754e20f051e",
+      "size": 32247,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/3ee4066e4268b93683d13f93dc956754e20f051e"
+    },
+    {
+      "path": "build/sections/03-thermodynamic-kernels.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "381299ecf64cb8c2053e9e3107e964894eecae18",
+      "size": 61166,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/381299ecf64cb8c2053e9e3107e964894eecae18"
+    },
+    {
+      "path": "build/sections/04-angular-plane.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "922fa715cd3b47358da362ab4883fc5318982e08",
+      "size": 51876,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/922fa715cd3b47358da362ab4883fc5318982e08"
+    },
+    {
+      "path": "build/sections/05-normalization.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4611fc2a7d9f0f916212012df7f07aaeee104b8",
+      "size": 36569,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/f4611fc2a7d9f0f916212012df7f07aaeee104b8"
+    },
+    {
+      "path": "build/sections/06-chiral-gaussianity.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1736213a6c639710ac640da5ce6137d0537f3575",
+      "size": 43046,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/1736213a6c639710ac640da5ce6137d0537f3575"
+    },
+    {
+      "path": "build/sections/07-probabilistic-endgame.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a18e4e999025e674e69672570de7b90e21b544a",
+      "size": 58533,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/8a18e4e999025e674e69672570de7b90e21b544a"
+    },
+    {
+      "path": "build/sections/08-main-proof.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edbd7ec62780e5ea8b30df7577ff1d9233c17db8",
+      "size": 2813,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/edbd7ec62780e5ea8b30df7577ff1d9233c17db8"
+    },
+    {
+      "path": "build/sections/09-endpoint-rotation.tex",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "068710dc745f876f6fb2ad5f5eea28a1b94a932f",
+      "size": 26169,
+      "url": "https://api.github.com/repos/openai/math/git/blobs/068710dc745f876f6fb2ad5f5eea28a1b94a932f"
+    }
+  ],
+  "truncated": false
+}

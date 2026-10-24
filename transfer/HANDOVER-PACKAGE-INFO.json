@@ -1,0 +1,17 @@
+{
+  "created_at_utc": "2026-10-24T13:10:03.413307+00:00",
+  "goal_status": "paused",
+  "audited_theorem_count": 1457,
+  "audited_public_modules": 303,
+  "new_individually_checked_supporting_theorems": 18,
+  "new_full_combined_audit": false,
+  "source_hashes_verified": 19,
+  "handover_txt_bytes": 19806,
+  "zip_bytes": 2414458,
+  "zip_sha256": "7643798afffe63791886f39fe0d3136f1546567253da61727c8b96d48ec96bc5",
+  "zip_files": 492,
+  "uncompressed_bytes": 6328816,
+  "bundle_integrity": "Bundle files checked: 491\nPASS: all bundled file hashes match. Run the Lean audit separately.",
+  "zip_crc_and_byte_comparison": "PASS",
+  "all_proof_processes_terminal": true
+}

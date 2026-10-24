@@ -1,0 +1,84 @@
+../drafts/ActualFreeBetheEnergy.lean:72:91: error: unexpected token ':='; expected ')', ',' or ':'
+../drafts/ActualFreeBetheEnergy.lean:59:6: error: Type mismatch: After simplification, term
+  heigen x
+ has type
+  twistedStandardRow (Complex.I * ↑(Real.pi / 2)) (fun x => 0) (n + 2) 0 x *
+      betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y) =
+    rho x • betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y)
+but is expected to have type
+  twistedStandardRow (Complex.I * ↑(Real.pi / 2)) (fun x => 0) (2 * k) 0 x *
+      betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (2 * k) (rootSet Y) =
+    rho x • betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (2 * k) (rootSet Y)
+../drafts/ActualFreeBetheEnergy.lean:61:4: error: Type mismatch: After simplification, term
+  hh
+ has type
+  physicalTwistedRow (Real.pi / 2) (fun x => 0) (2 * k) 0 x *
+      (quantumGauge (2 * k) * betheState (Complex.I * ↑(Real.pi / 2)) ht (fun j => ↑0) (2 * k) (rootSet Y)) =
+    ((-1) ^ particles * rho x) •
+      (quantumGauge (2 * k) * betheState (Complex.I * ↑(Real.pi / 2)) ht (fun j => ↑0) (2 * k) (rootSet Y))
+but is expected to have type
+  physicalTwistedRow (Real.pi / 2) (fun x => 0) (n + 2) 0 x *
+      (quantumGauge (n + 2) * betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y)) =
+    ((-1) ^ particles * rho x) •
+      (quantumGauge (n + 2) * betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y))
+../drafts/ActualFreeBetheEnergy.lean:69:7: error: Missing cases:
+../drafts/ActualFreeBetheEnergy.lean:42:43: error: unsolved goals
+particles n : ℕ
+Y : Fin particles → ℝ
+hY : Function.Injective Y
+hShell : OnShell (Real.pi / 2) (fun x => 0) (n + 2) Y 0
+hM : betheState (Complex.I * ↑(Real.pi / 2)) ⋯ (fun x => 0) (n + 2) (rootSet Y) ≠ 0
+h0 : 0 < Real.pi / 2
+hpi : Real.pi / 2 < Real.pi
+ht : Complex.sinh (Complex.I * ↑(Real.pi / 2)) ≠ 0 := physical_deformation_ne_zero (Real.pi / 2) h0 hpi
+M : Matrix (RowSpins (n + 2)) (RowSpins (n + 2)) ℂ :=
+  betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y)
+u : ℝ
+hu : ↑u ∉ rootSet Y
+rho : ℂ → ℂ
+hrho : ∀ (z : ℂ), AnalyticAt ℂ rho z
+heigen :
+  ∀ (x : ℂ),
+    twistedStandardRow (Complex.I * ↑(Real.pi / 2)) (fun x => 0) (n + 2) 0 x *
+        betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y) =
+      rho x • betheState (Complex.I * ↑(Real.pi / 2)) ht (fun x => 0) (n + 2) (rootSet Y)
+hgen :
+  ∀ x ∉ rootSet Y,
+    BetheRegular (Complex.I * ↑(Real.pi / 2)) (insert x (rootSet Y)) →
+      rho x = abaEigenvalue (Complex.I * ↑(Real.pi / 2)) (fun x => 0) (n + 2) 0 (rootSet Y) x
+k : ℕ
+hk : n + 2 = k + k
+hlen : n + 2 = 2 * k
+hp :
+  ∀ (x : ℂ),
+    physicalTwistedRow (Real.pi / 2) (fun x => 0) (n + 2) 0 x * (quantumGauge (n + 2) * M) =
+      ((-1) ^ particles * rho x) • (quantumGauge (n + 2) * M)
+hd :
+  HasDerivAt (fun y => (-1) ^ particles * rho (betheSwapCoordinate (Real.pi / 2) y))
+    ((-1) ^ particles *
+      ((2 * ∑ j, ↑(Real.cos (physicalRootMomentum (Real.pi / 2) (Y j)))) * rho (betheSwapCoordinate (Real.pi / 2) 0)))
+    0
+he :
+  ∀ (z : ℂ),
+    homogeneousPhysicalRow (Real.pi / 2) (n + 2) z * (quantumGauge (n + 2) * M) =
+      ((-1) ^ particles * rho (betheSwapCoordinate (Real.pi / 2) z)) • (quantumGauge (n + 2) * M)
+hn : (-1) ^ particles * rho (betheSwapCoordinate (Real.pi / 2) 0) ≠ 0
+hH :
+  homogeneousLinkHamiltonian (Real.pi / 2) (1 / 2) (n + 1) * (quantumGauge (n + 2) * M) =
+    (-↑(1 / 2) *
+          ((-1) ^ particles *
+            ((2 * ∑ j, ↑(Real.cos (physicalRootMomentum (Real.pi / 2) (Y j)))) *
+              rho (betheSwapCoordinate (Real.pi / 2) 0))) /
+        ((-1) ^ particles * rho (betheSwapCoordinate (Real.pi / 2) 0))) •
+      (quantumGauge (n + 2) * M)
+hscalar :
+  -(1 / 2) *
+        ((-1) ^ particles *
+          ((2 * ∑ j, ↑(Real.cos (physicalRootMomentum (Real.pi / 2) (Y j)))) *
+            rho (betheSwapCoordinate (Real.pi / 2) 0))) /
+      ((-1) ^ particles * rho (betheSwapCoordinate (Real.pi / 2) 0)) =
+    ↑(freeSlaterEnergy Y)
+⊢ homogeneousLinkHamiltonian (Real.pi / 2) (1 / 2) (n + 1) *
+      (quantumGauge (n + 2) * betheState (Complex.I * ↑(Real.pi / 2)) ⋯ (fun x => 0) (n + 2) (rootSet Y)) =
+    ↑(freeSlaterEnergy Y) •
+      (quantumGauge (n + 2) * betheState (Complex.I * ↑(Real.pi / 2)) ⋯ (fun x => 0) (n + 2) (rootSet Y))

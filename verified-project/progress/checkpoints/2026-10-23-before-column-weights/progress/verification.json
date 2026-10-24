@@ -1,0 +1,78 @@
+{
+  "checked_at_utc": "2026-10-23T13:59:31.759408+00:00",
+  "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "source_files_checked": 19,
+  "source_errors": [],
+  "lean_version": "Lean (version 4.35.0, x86_64-apple-darwin24.6.0, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+  "theorem_count": 41,
+  "theorems": [
+    "SixVertex.bit_false",
+    "SixVertex.bit_true",
+    "SixVertex.bit_complement",
+    "SixVertex.ice_iff_twoIncoming",
+    "SixVertex.allowed_length",
+    "SixVertex.allowed_nodup",
+    "SixVertex.ice_iff_mem_allowed",
+    "SixVertex.exactly_two_c_vertices",
+    "SixVertex.exactly_four_unit_vertices",
+    "SixVertex.reverse_reverse",
+    "SixVertex.ice_reverse",
+    "SixVertex.isC_reverse",
+    "SixVertex.cCount_reverse",
+    "SixVertex.column_ice",
+    "SixVertex.column_flux",
+    "SixVertex.periodic_sector_conservation",
+    "SixVertex.balanced_sector_preserved",
+    "SixVertex.balanced_length_even",
+    "SixVertex.westCount_reverse",
+    "SixVertex.balanced_reverse",
+    "SixVertex.column_reverse",
+    "SixVertex.spin_false",
+    "SixVertex.spin_true",
+    "SixVertex.spin_reverse",
+    "SixVertex.ice_iff_height_routes",
+    "SixVertex.ice_iff_zero_heightCurl",
+    "SixVertex.localHeight_realizes",
+    "SixVertex.realizes_implies_ice",
+    "SixVertex.localHeight_unique",
+    "SixVertex.columns_sound",
+    "SixVertex.columns_complete",
+    "SixVertex.transferExponents_sound",
+    "SixVertex.transferExponents_complete",
+    "SixVertex.transfer_sector_support",
+    "SixVertex.transfer_balanced_support",
+    "SixVertex.balancedWitness_column",
+    "SixVertex.balancedWitness_length",
+    "SixVertex.balancedWitness_westCount",
+    "SixVertex.balancedWitness_cCount",
+    "SixVertex.balancedWitness_balanced",
+    "SixVertex.balancedWitness_zero_monomial"
+  ],
+  "allowed_axioms": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "axiom_errors": [],
+  "forbidden_source_files": [],
+  "build": {
+    "command": [
+      "lake",
+      "build"
+    ],
+    "exit_code": 0,
+    "output": "\u2139 [2/6] Built SixVertex.Finite (9.0s)\ninfo: SixVertex/Finite.lean:191:0: 'SixVertex.ice_iff_mem_allowed' depends on axioms: [propext]\ninfo: SixVertex/Finite.lean:192:0: 'SixVertex.column_flux' depends on axioms: [propext, Quot.sound]\ninfo: SixVertex/Finite.lean:193:0: 'SixVertex.balanced_sector_preserved' depends on axioms: [propext, Quot.sound]\ninfo: SixVertex/Finite.lean:194:0: 'SixVertex.cCount_reverse' depends on axioms: [propext]\ninfo: SixVertex/Finite.lean:195:0: 'SixVertex.column_reverse' does not depend on any axioms\n\u2714 [3/6] Built SixVertex.Transfer (2.0s)\n\u2714 [4/6] Built SixVertex.Height (2.2s)\n\u2714 [5/6] Built SixVertex (1.3s)\nBuild completed successfully (6 jobs).\n"
+  },
+  "axiom_audit": {
+    "command": [
+      "lake",
+      "env",
+      "lean",
+      "Audit.lean"
+    ],
+    "exit_code": 0,
+    "output": "'SixVertex.bit_false' does not depend on any axioms\n'SixVertex.bit_true' does not depend on any axioms\n'SixVertex.bit_complement' does not depend on any axioms\n'SixVertex.ice_iff_twoIncoming' does not depend on any axioms\n'SixVertex.allowed_length' does not depend on any axioms\n'SixVertex.allowed_nodup' does not depend on any axioms\n'SixVertex.ice_iff_mem_allowed' depends on axioms: [propext]\n'SixVertex.exactly_two_c_vertices' does not depend on any axioms\n'SixVertex.exactly_four_unit_vertices' does not depend on any axioms\n'SixVertex.reverse_reverse' does not depend on any axioms\n'SixVertex.ice_reverse' does not depend on any axioms\n'SixVertex.isC_reverse' does not depend on any axioms\n'SixVertex.cCount_reverse' depends on axioms: [propext]\n'SixVertex.column_ice' depends on axioms: [propext, Quot.sound]\n'SixVertex.column_flux' depends on axioms: [propext, Quot.sound]\n'SixVertex.periodic_sector_conservation' depends on axioms: [propext, Quot.sound]\n'SixVertex.balanced_sector_preserved' depends on axioms: [propext, Quot.sound]\n'SixVertex.balanced_length_even' depends on axioms: [propext, Quot.sound]\n'SixVertex.westCount_reverse' depends on axioms: [propext, Quot.sound]\n'SixVertex.balanced_reverse' depends on axioms: [propext, Quot.sound]\n'SixVertex.column_reverse' does not depend on any axioms\n'SixVertex.spin_false' does not depend on any axioms\n'SixVertex.spin_true' does not depend on any axioms\n'SixVertex.spin_reverse' does not depend on any axioms\n'SixVertex.ice_iff_height_routes' does not depend on any axioms\n'SixVertex.ice_iff_zero_heightCurl' does not depend on any axioms\n'SixVertex.localHeight_realizes' depends on axioms: [propext, Classical.choice, Quot.sound]\n'SixVertex.realizes_implies_ice' depends on axioms: [propext, Quot.sound]\n'SixVertex.localHeight_unique' depends on axioms: [propext, Quot.sound]\n'SixVertex.columns_sound' depends on axioms: [propext, Quot.sound]\n'SixVertex.columns_complete' depends on axioms: [propext, Quot.sound]\n'SixVertex.transferExponents_sound' depends on axioms: [propext, Quot.sound]\n'SixVertex.transferExponents_complete' depends on axioms: [propext, Quot.sound]\n'SixVertex.transfer_sector_support' depends on axioms: [propext, Quot.sound]\n'SixVertex.transfer_balanced_support' depends on axioms: [propext, Quot.sound]\n'SixVertex.balancedWitness_column' does not depend on any axioms\n'SixVertex.balancedWitness_length' depends on axioms: [propext, Quot.sound]\n'SixVertex.balancedWitness_westCount' depends on axioms: [propext, Quot.sound]\n'SixVertex.balancedWitness_cCount' depends on axioms: [propext, Quot.sound]\n'SixVertex.balancedWitness_balanced' depends on axioms: [propext, Quot.sound]\n'SixVertex.balancedWitness_zero_monomial' depends on axioms: [propext, Quot.sound]\n"
+  },
+  "passed": true,
+  "scope": "Finite foundations only. No named main-paper analytic theorem or GFF limit is formalized."
+}

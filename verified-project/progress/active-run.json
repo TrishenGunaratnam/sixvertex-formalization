@@ -1,0 +1,47 @@
+{
+  "status": "paused",
+  "user_request": "Keep formalizing until 50% usage; try to formalize at least 15 statements.",
+  "started_utc": "2026-10-24T02:19:43.722362+00:00",
+  "time_zone": "Europe/London",
+  "current_target": "lem:root-limits",
+  "next_target": "lem:root-limits",
+  "assumptions_allowed": [
+    "A01: Slavnov identity only"
+  ],
+  "instructions": "Continue until the user stops work or account usage reaches 50%. Aim for 15 additional named paper statements, keep supporting theorem declarations separate, and save independently verified checkpoints. Only A01 is an authorized external assumption.",
+  "completed_this_run": [],
+  "last_verified_theorem_count": 1457,
+  "last_verified_at_utc": "2026-10-24T12:51:10.002731+00:00",
+  "current_work": "PAUSED by user. Audited baseline1457. Four newer modules (18 supporting theorems) passed individual checks/builds only; ActualFreeBetheEnergy failed; ActualFreeBetheGround unchecked. All processes terminal. See handover; no auto-resume.",
+  "main_project_verified_theorem_count": 1457,
+  "next_proof_obligations": [
+    "Compute the actual Bethe Hamiltonian energy at the free point by differentiating its entire physical transfer eigenvalue at the swap,and identify the actual nonzero Bethe state with the constructed simple Slater ground line. Carry A01 explicitly if used for the nonzero norm.",
+    "Justify continuation in lambda of the actual root/eigenvector branch and preserve its ground-state identity.",
+    "Retain U09:occupied compact test windows are proved;nonzero endpoint tests need separate boundary terms if intended."
+  ],
+  "main_project_verified_at_utc": "2026-10-24T12:54:47.574247+00:00",
+  "completed_supporting_blocks": [
+    "Half-filled total density mass and exact cumulative integrals",
+    "Uniform counting sawtooth bound, primitive identity and both end limits",
+    "Actual kernel derivatives and first-derivative integrability",
+    "Uniform logarithmic density derivative and exponential density comparison",
+    "Uniform root atom-weight bound in the strict negative-kernel regime",
+    "Positive exponential weight with kernel mass below one",
+    "Actual bounded-continuous convolution and uniform signed-weight Neumann inverses",
+    "Constructed exponentially decaying resolvent kernel with integrable first derivative"
+  ],
+  "source_modules_byte_matched": 303,
+  "usage_limit_target_percent": 50,
+  "usage_at_start_percent": 8,
+  "usage_window_minutes": 10080,
+  "minimum_additional_named_statement_target": 15,
+  "baseline_theorem_count": 679,
+  "current_usage_percent": 33,
+  "additional_named_statements_completed_this_run": 0,
+  "additional_supporting_theorem_declarations_verified": 778,
+  "individually_checked_draft_declarations_not_in_audit": 0,
+  "paused_at_utc": "2026-10-24T13:10:03.413307+00:00",
+  "pause_reason": "User explicitly stopped formalization to transfer to a different GPT account and laptop.",
+  "handover_file": "HANDOVER.txt",
+  "handover_authoritative_checkpoint": 1457
+}

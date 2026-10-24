@@ -1,0 +1,392 @@
+Six vertex Lean formalization handover
+Prepared 24 October 2026
+
+STOPPED AT THE USER'S REQUEST
+
+The user stopped formalization to transfer the project to a different GPT
+account on another laptop. The persistent goal on the original account has
+been set to PAUSED. No proof work should resume without the new user's
+instruction. All checks that were running at the stop have finished.
+This handover does not create a task or automation on the other account.
+
+The last fully audited project has 1,457 Lean theorem declarations across
+303 public modules. It is the verified-project directory in the accompanying
+ZIP. Newer work is preserved separately under work-in-progress. Do not
+describe the newer drafts as a fully audited checkpoint.
+
+WHAT TO TRANSFER
+
+Send the complete SixVertex-handover-2026-10-24.zip to the other laptop.
+This text file supplies context; the ZIP supplies the actual Lean project,
+original OAI manuscript, proof audits, progress records and unfinished work.
+No access to the old chat, account, computer or its absolute paths is needed
+to inspect the files. Building on a fresh laptop needs network access to
+install Lean and obtain the pinned dependencies.
+
+ZIP contents:
+  HANDOVER.txt                  This handover
+  verified-project/             Complete saved 1,457-declaration checkpoint
+  work-in-progress/             Six newer Lean modules, kept out of baseline
+  work-in-progress/STATUS.json  Exact verification status of each new module
+  logs/                        Relevant checks from the interrupted work
+  SHA256SUMS                   Integrity hashes for every other bundled file
+  verify_bundle.py              Standard-library integrity checker
+
+Dependency/build caches, .git directories, machine-specific symlinks,
+Python bytecode and Finder metadata are omitted. These caches account for
+most of the original saved project's approximately 4.8 GB disk usage.
+The source files, lockfile and toolchain pin are included. This is a portable
+source handover, not an offline copy of the compiler or compiled mathlib.
+
+AUTHORITATIVE AUDITED CHECKPOINT
+
+Saved project on the old laptop:
+  /Users/trishengunaratnam/Documents/Formalization Math/SixVertex
+Working copy on the old laptop:
+  /Users/trishengunaratnam/Documents/ChatGPT/Formalization 6V/sixvertex-bootstrap
+
+Saved-project audit completed:
+  2026-10-24T12:54:47.574247+00:00
+Working-copy audit completed:
+  2026-10-24T12:51:10.002731+00:00
+
+Both independently passed the full build, every-public-theorem axiom audit,
+and all 19 pinned OAI source hashes. The 303 public module files and root
+import file matched byte for byte at the saved checkpoint. Audit reports
+were generated independently, not copied between the two projects.
+
+Audited source has no sorry, admit, unsafe, or global mathematical axiom.
+Permitted foundational Lean axioms are only propext, Classical.choice and
+Quot.sound. Conditional results carry their assumptions as explicit arguments.
+
+COUNTS AND MATHEMATICAL SCOPE
+
+Eight whole named paper statements are complete:
+  Without external mathematical assumptions:
+    Lemma 2.1  finite row algebra
+    Lemma 2.2  finite Bethe data
+    Lemma 2.3  single-entry actions
+    Lemma 6.2  chiral representatives
+    Lemma 7.6  logarithmic integrability
+  Conditional on A01 Slavnov:
+    Lemma 2.4  exact scalar products and deleted columns
+    Lemma 2.5  Hilbert duality
+    Corollary 2.6  finite-word expansion
+
+The inventory tracks 51 named statements; 43 are incomplete. Lemma 3.1 is
+partial. The main Gaussian free field limit is NOT formalized. Neither
+module counts nor supporting theorem declarations measure the percentage
+of the paper proved.
+
+During the long latest run the fully audited declaration count increased
+from 679 to 1,457: 778 supporting declarations, ZERO additional whole named
+paper statements. The user's aspiration was at least 15 additional named
+statements; that aspiration has not been achieved. The last observed weekly
+used-usage percentage was 33%, below the former stopping threshold of 50%.
+These are historical values for the old account. Do not apply its quota or
+automatically resume its usage-based goal on a different account.
+
+ONLY AUTHORIZED EXTERNAL MATHEMATICAL ASSUMPTION
+
+A01: the finite twisted Slavnov scalar-product identity, in the exact source
+normalization. See verified-project/progress/assumptions.json and
+verified-project/lean/SixVertex/SlavnovAssumption.lean.
+It is an explicit proposition argument, not a global Lean axiom. The user
+has NOT authorized assuming the Bethe ground-state identification, a Gaudin
+norm formula independently of Slavnov, parameter continuation, uniform
+inverse bounds, thermodynamic limits, or Gaussianity. Keep all such proof
+obligations explicit. No additional external assumption was introduced in
+the newer work.
+
+The previously deferred standard representative lemma, originally tagged
+"reasonable to look at later", is now actually proved and audited as
+Lemma 6.2. See progress/deferred-statements.json for that history.
+
+ORIGINAL OAI SOURCE
+
+One 93-page six-vertex manuscript from the OAI mathematics dump:
+  The Gaussian free field limit of the balanced six vertex model
+  with variance multiplier 1 over arcsin c over 2
+The pinned directory name ends September-23-2026.
+Source revision:
+  1581d4cbdd69a0faf34b2089614fe2a814316a6a
+
+The PDF, TeX sources, provenance and SOURCE_MANIFEST.json are included under
+verified-project/sources. The checker verifies 19 tracked source/catalogue
+files by Git blob SHA-1 and SHA-256. Preserve this pin; do not silently
+substitute an arXiv revision or a different six-vertex paper.
+
+Within the manuscript directory, section files live in build/sections/, not
+directly in sections/. The current target is lem:root-limits in
+build/sections/03-thermodynamic-kernels.tex. The free ground-state argument
+is near lines 449 to 458 of that pinned source.
+
+LATEST FULLY PROVED MATHEMATICS
+
+Much of the root construction, density and quadrature infrastructure is
+already proved: finite root existence/uniqueness in the nonpositive-kernel
+regime, analytic root families, source and resolvent estimates, sparse-edge
+estimates, counting-function identities, compact-test quadrature, and actual
+finite spin-Hamiltonian and transfer Perron certificates. Exact scope is in
+progress/root-limits-crosswalk.json; do not replace it by a broad completion
+claim about Lemma 3.1.
+
+The latest saved block proves the actual free Slater ground-state line:
+  SpinBoundaryCoordinates.lean
+  SpinPeriodicAmplitudes.lean
+  SpinSlaterHops.lean
+  SpinHoppingParticleSum.lean
+  SlaterBlockedHops.lean
+  ActualFreeSlaterEigen.lean
+  ActualFreeSlaterGround.lean
+  TransferEigenlineDerivative.lean
+
+These 32 supporting theorems prove both sorted periodic boundary maps,
+actual left/right particle-hole amplitudes, blocked collision zeros even
+across the seam, and equality of the actual spin Hamiltonian action with
+coordinate hopping on the Slater state. They then prove its actual
+Hamiltonian eigenvalue, a ground-energy lower bound for every complex sector
+vector, and that the entire complex ground eigenspace is its span.
+
+Key declaration:
+  SixVertex.actual_free_slater_ground_state
+It is in verified-project/lean/SixVertex/ActualFreeSlaterGround.lean.
+The Slater state is constructed; its ground-state property is not assumed.
+The saved checkpoint has NOT yet identified the ABA Bethe vector with this
+line, nor proved its continuation in lambda.
+
+TransferEigenlineDerivative.lean proves that an actual nonzero physical
+transfer eigenmatrix T(z)M=rho(z)M gives the actual Hamiltonian eigenmatrix
+with eigenvalue -eta*rho'(0)/rho(0). It proves rho(0) is nonzero using the
+actual inverse translation. The exact matrix and operator are used.
+
+NEWER WORK PRESERVED SEPARATELY
+
+Four modules passed individual Lean checks and their module builds. They
+contain 18 supporting theorem declarations altogether. They were NOT added
+to the root import/audit checkpoint, and no full combined axiom audit was
+run for them before the user stopped. All four are supplied only as WIP in
+the portable package, although the old working copy also has public copies.
+
+1. FreeBetheScalarDerivative.lean -- 5 checked theorems
+   Defines betheSwapCoordinate(lam,z)=I*lam/2-I*z.
+   Proves at lambda=pi/2 that the physical-coordinate vacuum factors are
+   cos(z)^L and (-sin(z))^L. Proves a general complex sinh shift product,
+   an exact Bethe-factor derivative, and the free derivative coefficient
+   twice cos(physicalRootMomentum(pi/2,y)).
+   Final individual check: free-bethe-scalar-v5.log, exit 0.
+   Cleaned module build: free-bethe-scalar-build.log, exit 0.
+
+2. FreeBetheEigenvalueDerivative.lean -- 4 checked theorems
+   Proves finite product logarithmic differentiation without division,
+   regular-factor differentiability, and the derivative of the actual ABA
+   eigenvalue in the physical coordinate for L=n+2. Both the lower vacuum
+   term and its derivative vanish, including n=0 and empty particle sets.
+   Final check: free-bethe-eigenvalue-v2.log, exit 0.
+   Cleaned module build: free-bethe-eigenvalue-build.log, exit 0.
+
+3. FreeBetheSwapRegular.lean -- 4 checked theorems
+   Proves the free swap is fresh from the real root set and fully
+   BetheRegular, including shifted sinh factors at pi/4 and 3*pi/4.
+   Transfers the ABA derivative to any entire eigenvalue agreeing on the
+   generic regular domain, using eventual equality and continuity.
+   Final check: free-bethe-regular-v2.log, exit 0.
+   Module build: free-bethe-regular-build.log, exit 0.
+
+4. PhysicalBetheColumn.lean -- 5 checked theorems
+   Proves exact equality between the actual ordered-list Hilbert Bethe
+   vector and the physical vacuum column of the finite-set eigenmatrix.
+   Gives the finite eigenmatrix's nonvanishing from vector nonvanishing,
+   exact particle-sector support, recovery by restriction/zero extension,
+   and nonvanishing of that restriction.
+   Final check: physical-bethe-column-v2.log, exit 0.
+   Module build: physical-bethe-column-build.log, exit 0.
+
+Two additional drafts are UNVERIFIED and must not be imported as proofs:
+
+5. ActualFreeBetheEnergy.lean -- failed latest check
+   Attempts the actual spectral-coordinate conversion and actual free
+   Bethe Hamiltonian eigenmatrix energy. Last check exit 1, complete log
+   actual-free-bethe-energy-v1.log is included.
+   It has a missing closing parenthesis near lines 69 to 72 and length
+   coercion/rewrite mismatches around lines 59 to 61 between n+2 and 2*k.
+   The mathematical plan is recorded below; do not treat the displayed
+   unfinished theorem statement as a proved result.
+
+6. ActualFreeBetheGround.lean -- never checked
+   Depends on the failed energy draft. Attempts A01-only nonvanishing from
+   Gaudin positivity, the full and restricted vector energy equations,
+   and nonzero scalar proportionality to the proved Slater ground line.
+   No claims in this draft have been accepted into the audited checkpoint.
+
+No proof edit or repair was attempted after the user's stop instruction.
+Both checks running at the stop ended: PhysicalBetheColumn build PASS;
+ActualFreeBetheEnergy draft FAIL. There are no remaining live check handles.
+
+NATURAL NEXT MATHEMATICAL STEP IF THE USER RESUMES
+
+Finish the actual Bethe free Hamiltonian energy and ground-line identity,
+then parameter continuation. This continues Lemma 3.1 rather than adding
+unrelated easy helpers merely to increase counts.
+
+The physical tile uses physicalR(lam,lam/2+I*(x-b)). At homogeneous b=0,
+the actual physical variable z therefore corresponds to x=I*lam/2-I*z.
+The physical transfer eigenvalue is (-1)^particles*rho(x); this parity
+cancels in the logarithmic derivative.
+
+At the free point, the new checked scalar derivative gives
+  d/dz rho(I*pi/4-I*z)|z=0
+    = 2*(sum_j cos(p_j))*rho(I*pi/4).
+With eta=1/2, the actual Hamiltonian energy must be
+  freeSlaterEnergy(Y) = -sum_j cos(p_j).
+This agrees with the fully proved actual Slater energy.
+
+Use balancedRoots_entire_eigenvalue plus onShell_balancedRoots to obtain
+rho with direct agreement with abaEigenvalue; this avoids the extra
+vacuumA-nonzero condition in BetheEigenvectorConclusion's tau agreement.
+Use physical_eigenvector_of_standard and the even chain length for the
+physical gauge/parity. Then apply
+  homogeneous_physical_eigenline_logarithmic.
+
+For the actual Hilbert vector, PhysicalBetheColumn supplies the exact vacuum
+column and sector restriction. A01 plus the already proved positive Gaudin
+determinant supply nonvanishing via physical_bethe_ne_zero. Equality of its
+actual energy with freeSlaterEnergy then permits applying
+actual_free_slater_ground_state to prove nonzero scalar proportionality.
+This route avoids needing a full ABA coordinate Slater determinant formula.
+
+Even after free-point identification succeeds, the parameter-continuation
+argument remains a real obligation. GlobalRootFamily.lean already gives
+constructed analytic/continuous root families on [pi/2,pi), including
+one-sided endpoint regularity. It does not by itself prove that their
+Bethe vectors remain the actual ground state. Preserve the dependence of
+finite-chain bounds on L; do not claim uniform thermodynamic bounds from
+finite-dimensional compactness alone.
+
+Two useful cautions for later calculations:
+  * Away from the free point the actual energy has the vacuum scalar term
+    eta*L*cot(lam) - 2*pi*eta*sum_j kernelS(lam,Y_j).
+    The manuscript says "up to an additive scalar"; do not drop this term
+    in an exact identity for the present operator.
+  * An older paragraph in CONTINUATION.md overstates generic regularity at
+    x=I*lam/2 for every 0<lam<pi. Shifted factors can involve 3*lam/2;
+    for example at lam=2*pi/3 a zero real root needs special treatment.
+    The newer checked regularity theorem is explicitly at lam=pi/2.
+    Do not silently generalize it. This is a caution about the proof plan,
+    not a confirmed error in the paper.
+
+PAPER AUDIT AND OPEN ITEMS
+
+Nine audit questions remain open; no mathematical error is confirmed:
+  U01 uniform Gaudin and mixed-measure bounds
+  U02 determinant tails and exchange of infinite-volume limits
+  U03 common analytic radius at boundary rows
+  U04 covariance normalization below c=1
+  U05 control of all zeros in two-scale spectral convergence
+  U06 the nonvacuum collision input for Gaussianity
+  U07 nonsmooth tests and negative function-space conventions
+  U08 loop bijection required for endpoint rotation
+  U09 quadrature windows must be occupied
+
+U09 is an explicit scope qualification: occupied compact-test windows have
+been proved. Nonzero endpoint tests may require separate boundary terms.
+Do not erase this qualification or claim an unconditional paper error.
+See audit/findings.json and audit/statement-inventory.json for evidence.
+
+RESTORING AND CHECKING ON THE NEW LAPTOP
+
+Extract the ZIP into any directory. Keep its relative structure. The Lake
+project root is verified-project/lean, not verified-project itself.
+
+Required tools: Git, Python 3, elan/Lean, and network access for dependencies.
+Pinned Lean toolchain:
+  leanprover/lean4:v4.35.0
+Pinned mathlib commit:
+  56a005855ea17e0b0958f73ec801ae140b0a1679
+The complete transitive dependency revisions are in lean/lake-manifest.json.
+Preserve this lockfile; do not run an unsolicited dependency upgrade.
+
+First check the transferred files (no Lean installation needed):
+  cd SixVertex-handover-2026-10-24
+  python3 verify_bundle.py
+
+After installing elan and making its bin directory available in PATH:
+  elan toolchain install leanprover/lean4:v4.35.0
+  cd verified-project/lean
+  lake exe cache get
+  python3 ../scripts/check.py
+
+The last command runs the full build, checks every public theorem's axioms,
+checks forbidden proof placeholders, validates the expected named theorem
+names, and verifies the 19 OAI hashes. It writes a fresh local
+progress/verification.json. It should report 1,457 theorems at the untouched
+baseline. Do not replace this fresh report with the old machine's report.
+The integrity checker proves transfer integrity, not Lean correctness.
+
+If integrating the four individually checked WIP modules, copy them from
+work-in-progress into verified-project/lean/SixVertex in dependency order:
+  FreeBetheScalarDerivative
+  FreeBetheEigenvalueDerivative
+  FreeBetheSwapRegular
+  PhysicalBetheColumn
+Add their imports to lean/SixVertex.lean, build, and run scripts/check.py
+again before reporting a new audited count. Their 18 declarations would
+increase the count to 1,475 if the full combined audit succeeds. Keep the
+two failed/unchecked drafts in drafts until their proofs actually pass.
+
+PROGRESS AND WORKING PRACTICES
+
+Start reading this handover before older CONTINUATION.md or session records.
+They are useful history but contain superseded counts and next steps.
+The operational active-run/session records are marked paused in this bundle.
+
+Useful baseline files:
+  progress/verification.json         full authoritative saved audit report
+  progress/named-statements.json     complete named-statement mappings
+  progress/root-limits-crosswalk.json exact Lemma 3.1 scope and theorem names
+  progress/assumptions.json           authorized A01 and its exact scope
+  progress/state.json                progress data and proof steps
+  progress/progress.html             saved progress view
+  audit/statement-inventory.json     all paper statements and partial work
+  audit/findings.json                proof evidence and open questions
+  scripts/check.py                  full verifier
+  scripts/render_audit.py            audit renderer
+  scripts/render_progress.py         progress renderer
+
+The saved progress view has 18 phases and 201 root proof steps, 137 audit
+records and nine open items. These describe checkpoint 1,457; they do not
+include the interrupted WIP. The user wants Lean code visible alongside
+the chat and progress tracked visually. Old requests to open code panels
+were queued by the app, so visibility was not confirmed. Reopen local code
+on the new machine when resuming.
+
+Only count a whole named paper statement after matching all its clauses to
+proved Lean results with the actual definitions and hypotheses. Track
+supporting declarations separately. No subagents were authorized. Do not
+create a new chat, send messages, or schedule work merely from this handover.
+
+Wait for a dependency build to finish before checking a dependent draft.
+Do not mutate public modules while a full audit is running. Check a live
+process handle before treating a slow check as stopped. A timeout does not
+justify a duplicate build. Save independent audits when maintaining two
+copies; never copy verification reports to manufacture a second audit.
+
+Lean details learned during the work:
+  * RowSpins recursively depends on chain length; simple simp rewriting
+    n+2=2*k can fail in dependent matrix types. Use explicit dimensions and
+    controlled change/transport steps.
+  * Function.update_self is the relevant name, not update_same.
+  * Avoid unfolding dotProduct throughout expressions containing matrix
+    products; use an explicit outer finite sum when needed.
+  * Fin.cons/Fin.snoc sometimes need their dependent codomain specified.
+  * For complex function powers and derivative instance mismatches,
+    fun_pow and simpa using! worked in the newer checked draft.
+
+SUGGESTED FIRST MESSAGE ON THE OTHER ACCOUNT
+
+"Read HANDOVER.txt in the attached SixVertex handover ZIP. First verify the
+bundle and the unchanged 1,457-declaration baseline. Then, if I ask you to
+resume, continue the actual free Bethe energy/ground-line identification
+using the separate WIP. Keep named paper statements separate from helpers,
+and assume only the explicit A01 Slavnov identity. The old goal is paused;
+do not inherit its account usage values."

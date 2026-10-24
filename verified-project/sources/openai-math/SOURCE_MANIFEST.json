@@ -1,0 +1,148 @@
+{
+  "repository": "https://github.com/openai/math",
+  "commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+  "commit_date": "2026-10-12T21:55:24Z",
+  "retrieved_on": "2026-10-23",
+  "matched_six_vertex_directories": [
+    "The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026"
+  ],
+  "all_downloaded_blobs_match_git_tree": true,
+  "files": [
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/README.md",
+      "bytes": 1141,
+      "git_blob_sha1": "9bb3002bc12a7c1e51e5d402fe68cafc3128b720",
+      "sha256": "2c63ba862443c76aea3d4b283b00ebc856a86fc00500082283901ed46ea90412",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/README.md"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026.pdf",
+      "bytes": 870977,
+      "git_blob_sha1": "52a0f91506dd497f5b3334420f6dc3d6b9cdb95d",
+      "sha256": "26deb84be9ead6846c9144bab5260a03659cc94d615866a5b3717e632444170f",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026.pdf"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/figures/chiral-windows.tex",
+      "bytes": 1092,
+      "git_blob_sha1": "988736ca8db13dec8670a77f19265454c0336bb5",
+      "sha256": "81caf97c4766a6220b4eecfe95c5edad1fa58431c1516c8089f5d2a3bf5479a0",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/figures/chiral-windows.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/main.tex",
+      "bytes": 1010,
+      "git_blob_sha1": "dbb296154df6bc4426fc9457796eef6404ef7f0f",
+      "sha256": "d91624db6d4fcb39b611176da19136dba85b9ea5fd7f84410941301291dd3a7d",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/main.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/preamble.tex",
+      "bytes": 1819,
+      "git_blob_sha1": "967ec0e48c234d80a6590dd84ec146e964432ab9",
+      "sha256": "e489ffbda28681830b70dbb19b2c1eabd475a96c23f9d360ab2f48cde4acbf0a",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/preamble.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/references.bib",
+      "bytes": 12287,
+      "git_blob_sha1": "cf342d245f7d37f71329264f061c98107078ddcb",
+      "sha256": "db5db18745bf9ffba578e2eb6679c3bf4830d16803020064f9e6bcc74d0064f2",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/references.bib"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/01-introduction.tex",
+      "bytes": 13675,
+      "git_blob_sha1": "e09004eca55aedd1fea979ef91de722e2f2ab5fa",
+      "sha256": "141242b050b8526ad85a065dfdf9007286c3bf75ef710d8dfce7063421f2ad7d",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/01-introduction.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/02-finite-rows.tex",
+      "bytes": 32247,
+      "git_blob_sha1": "3ee4066e4268b93683d13f93dc956754e20f051e",
+      "sha256": "2718665664280d1acbfd3af5c377213f0cabef9ca2006552fbf6edf9657bcff3",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/02-finite-rows.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/03-thermodynamic-kernels.tex",
+      "bytes": 61166,
+      "git_blob_sha1": "381299ecf64cb8c2053e9e3107e964894eecae18",
+      "sha256": "a65aa54217a120b8b9f1118af12439a3bae08ebf97a57778af07362486063308",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/03-thermodynamic-kernels.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/04-angular-plane.tex",
+      "bytes": 51876,
+      "git_blob_sha1": "922fa715cd3b47358da362ab4883fc5318982e08",
+      "sha256": "b9e282bb53cca996c9af4bd330d9aef7d184bc074bd4457e682682ebb6454a3e",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/04-angular-plane.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/05-normalization.tex",
+      "bytes": 36569,
+      "git_blob_sha1": "f4611fc2a7d9f0f916212012df7f07aaeee104b8",
+      "sha256": "d0f015c457060c8af89f623e30b433a145a27f0ed93df01f2d32a9994da3adbd",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/05-normalization.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/06-chiral-gaussianity.tex",
+      "bytes": 43046,
+      "git_blob_sha1": "1736213a6c639710ac640da5ce6137d0537f3575",
+      "sha256": "6d47430dcfd48ae015f3d863a22ac47f608b3f36b3094a52fae46a3b5e94b840",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/06-chiral-gaussianity.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex",
+      "bytes": 58533,
+      "git_blob_sha1": "8a18e4e999025e674e69672570de7b90e21b544a",
+      "sha256": "eda26425308f33af6dac3e5d08e885d34872c5efefebd35e47c6dbaa828fbc3b",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/07-probabilistic-endgame.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/08-main-proof.tex",
+      "bytes": 2813,
+      "git_blob_sha1": "edbd7ec62780e5ea8b30df7577ff1d9233c17db8",
+      "sha256": "b4f2d36ed0d79804ec44242ec660e577f8917cc1622faa630b67edb0d9e72df9",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/08-main-proof.tex"
+    },
+    {
+      "path": "preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/09-endpoint-rotation.tex",
+      "bytes": 26169,
+      "git_blob_sha1": "068710dc745f876f6fb2ad5f5eea28a1b94a932f",
+      "sha256": "af9e5baddc9f3bec8e15372f62a9b4a557222334c647e33bf76e5609154ffbf3",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/preprints/The-Gaussian-free-field-limit-of-the-balanced-six-vertex-model-with-variance-multiplier-1-over-arcsin-c-over-2-September-23-2026/build/sections/09-endpoint-rotation.tex"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4190,
+      "git_blob_sha1": "50feb63d396138f30dc1ff1e0af121d0263bf5a3",
+      "sha256": "5e8878ee04866f52ec942852552b9c28db278f65691c7ab49a87c9e93a9199fd",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/README.md"
+    },
+    {
+      "path": "CONTENTS.md",
+      "bytes": 638727,
+      "git_blob_sha1": "2c68c086fff36a5806c936ad1659cf1a8d0b6dd9",
+      "sha256": "cc7c0b8a1cdedd845a777e77cf682657308503daf8346c1349e06e9259d063c2",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/CONTENTS.md"
+    },
+    {
+      "path": "overview.tex",
+      "bytes": 321928,
+      "git_blob_sha1": "8f3b8cb6d5c4f5f7f0ac216b2c6db52b4b34b2fd",
+      "sha256": "aa54c8e14b7647226264045ae846df7ce6803d2ded48aa3183195e45f9f91962",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/overview.tex"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 11357,
+      "git_blob_sha1": "261eeb9e9f8b2b4b0d119366dda99c6fd7d35c64",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "url": "https://raw.githubusercontent.com/openai/math/1581d4cbdd69a0faf34b2089614fe2a814316a6a/LICENSE"
+    }
+  ],
+  "pdf_page_count": 93,
+  "page_count_method": "Poppler pdfinfo on the hash-verified downloaded PDF",
+  "complete_preprints_tree_sha": "df0564b2deaab87e07854b6344d8c2f037682e77"
+}

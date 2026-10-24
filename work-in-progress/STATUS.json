@@ -1,0 +1,58 @@
+{
+  "formalization_status": "paused_by_user",
+  "last_full_audit": 1457,
+  "new_individually_checked_supporting_declarations": 18,
+  "new_whole_named_paper_statements": 0,
+  "combined_new_module_axiom_audit_run": false,
+  "imports_added_to_baseline": false,
+  "modules": [
+    {
+      "file": "FreeBetheScalarDerivative.lean",
+      "status": "individually_checked_and_module_built",
+      "individually_checked_theorem_count": 5,
+      "check_log": "free-bethe-scalar-v5.log",
+      "module_build_log": "free-bethe-scalar-build.log",
+      "part_of_audited_baseline": false
+    },
+    {
+      "file": "FreeBetheEigenvalueDerivative.lean",
+      "status": "individually_checked_and_module_built",
+      "individually_checked_theorem_count": 4,
+      "check_log": "free-bethe-eigenvalue-v2.log",
+      "module_build_log": "free-bethe-eigenvalue-build.log",
+      "part_of_audited_baseline": false
+    },
+    {
+      "file": "FreeBetheSwapRegular.lean",
+      "status": "individually_checked_and_module_built",
+      "individually_checked_theorem_count": 4,
+      "check_log": "free-bethe-regular-v2.log",
+      "module_build_log": "free-bethe-regular-build.log",
+      "part_of_audited_baseline": false
+    },
+    {
+      "file": "PhysicalBetheColumn.lean",
+      "status": "individually_checked_and_module_built",
+      "individually_checked_theorem_count": 5,
+      "check_log": "physical-bethe-column-v2.log",
+      "module_build_log": "physical-bethe-column-build.log",
+      "part_of_audited_baseline": false
+    },
+    {
+      "file": "ActualFreeBetheEnergy.lean",
+      "status": "failed_draft_check",
+      "individually_checked_theorem_count": null,
+      "check_log": "actual-free-bethe-energy-v1.log",
+      "module_build_log": null,
+      "part_of_audited_baseline": false
+    },
+    {
+      "file": "ActualFreeBetheGround.lean",
+      "status": "unchecked_dependency_unfinished",
+      "individually_checked_theorem_count": null,
+      "check_log": null,
+      "module_build_log": null,
+      "part_of_audited_baseline": false
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+../drafts/FreeBetheEigenvalueDerivative.lean:75:13: warning: This simp argument is unused:
+  mul_zero
+
+Hint: Omit it from the simp argument list.
+  [apply] simp only [Complex.sin_zero, Complex.cos_zero, neg_zero, one_pow, zero_pow (by omega : n + 2 ≠ 0), zero_mul,
+    zero_add, add_zero, one_mul, ← Finset.mul_sum]
+
+Note: This linter can be disabled with `set_option linter.unusedSimpArgs false`

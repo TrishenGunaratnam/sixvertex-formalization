@@ -1,0 +1,107 @@
+<div id="sixvertex-progress">
+  <style>
+    #sixvertex-progress .viz-heading { padding-right:100px; min-height:50px; }
+    #sixvertex-progress .proof-steps[hidden] { display:none; }
+    #sixvertex-progress .summary { display:flex; flex-wrap:wrap; gap:8px 22px; margin:12px 0 20px; }
+    #sixvertex-progress .flow { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 24px; }
+    #sixvertex-progress .flow li { min-width:0; display:flex; align-items:flex-start; gap:10px; }
+    #sixvertex-progress .flow .mark { flex:none; width:10px; height:10px; border-radius:50%; margin-top:14px; background:var(--muted-foreground); opacity:.4; }
+    #sixvertex-progress .flow .complete .mark { background:var(--viz-series-1); opacity:1; }
+    #sixvertex-progress .flow .conditional .mark { background:var(--viz-series-3); opacity:1; }
+    #sixvertex-progress .flow .in_progress .mark { background:var(--viz-series-2); opacity:1; }
+    #sixvertex-progress .node { min-width:0; display:flex; flex-direction:column; align-items:flex-start; gap:5px; }
+    #sixvertex-progress .needs { color:var(--muted-foreground); overflow-wrap:anywhere; }
+    #sixvertex-progress .selected { margin-top:20px; }
+    #sixvertex-progress .selected p { margin:8px 0; }
+    #sixvertex-progress .proof-steps { display:flex; flex-wrap:wrap; gap:10px 20px; margin:14px 0; padding-left:22px; }
+    #sixvertex-progress .proof-steps li { color:var(--foreground); }
+    #sixvertex-progress .legend { display:flex; flex-wrap:wrap; gap:14px; margin:14px 0; color:var(--muted-foreground); }
+    #sixvertex-progress .legend i { display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:5px; background:var(--muted-foreground); opacity:.4; }
+    #sixvertex-progress .legend .done { background:var(--viz-series-1); opacity:1; }
+    #sixvertex-progress .legend .conditional { background:var(--viz-series-3); opacity:1; }
+    #sixvertex-progress .legend .active { background:var(--viz-series-2); opacity:1; }
+    @media (max-width:560px) { #sixvertex-progress .flow { grid-template-columns:1fr; gap:12px; } }
+  </style>
+  <div class="viz-heading">
+    <h3>Six-vertex proof progress</h3>
+    <div class="text-small text-muted" data-date></div>
+  </div>
+  <div class="summary tabular-nums" aria-label="Verified project totals">
+    <span data-sources></span><span data-lean></span><span>GFF theorem: unproved</span>
+  </div>
+  <ol class="flow" aria-label="Proof milestones and prerequisites"></ol>
+  <div class="legend text-small" aria-label="Status legend">
+    <span><i class="done"></i>Complete</span><span><i class="conditional"></i>Conditional</span><span><i class="active"></i>In progress</span><span><i></i>Queued</span>
+  </div>
+  <div class="card selected" aria-live="polite">
+    <div class="viz-row"><span data-title></span><span class="viz-badge" data-status></span></div>
+    <p data-detail></p>
+    <p class="text-small" data-evidence></p>
+    <p class="text-small" data-next></p>
+    <p class="text-small" data-findings></p>
+    <p class="text-small" data-assumptions hidden></p>
+    <ol class="proof-steps text-small" aria-label="Completed proof steps" hidden></ol>
+  </div>
+  <p class="text-small text-muted" data-audit></p>
+  <p class="text-small text-muted" data-run></p>
+  <script>
+  (() => {
+    const root = document.getElementById('sixvertex-progress');
+    const state = __SIXVERTEX_STATE__;
+    const verification = __SIXVERTEX_VERIFICATION__;
+    const byId = new Map(state.phases.map(p => [p.id,p]));
+    const names = {complete:'Complete',conditional:'Conditional on Slavnov',in_progress:'In progress',queued:'Queued'};
+    const list = root.querySelector('.flow');
+    root.querySelector('[data-date]').textContent = state.updated_on + ' · saved snapshot';
+    root.querySelector('[data-sources]').textContent = verification.source_files_checked + ' files hash-checked';
+    root.querySelector('[data-lean]').textContent = verification.theorem_count + ' checked Lean theorems · ' + (verification.passed?'build passed':'check failed');
+    root.querySelector('[data-audit]').textContent = state.open_audit_items + ' open verification and scope items · ' + state.paper_named_statements_formalized + ' of ' + state.paper_named_statements + ' named statements unconditional · ' + (state.paper_named_statements_conditional || 0) + ' conditional · ' + state.paper_named_statements_remaining_unformalized + ' others unformalized';
+    const run = state.active_run;
+    root.querySelector('[data-run]').textContent = run ? 'Current run: ' + run.additional_named_statements_completed + ' of ' + run.additional_named_statement_target + ' additional named statements · weekly usage ' + run.weekly_usage_percent + '% · stop at ' + run.weekly_usage_stop_percent + '%' : '';
+    function select(id,save) {
+      const p = byId.get(id) || byId.get('roots');
+      root.querySelectorAll('[data-phase]').forEach(b => b.setAttribute('aria-pressed',String(b.dataset.phase===p.id)));
+      root.querySelector('[data-title]').textContent = p.title;
+      root.querySelector('[data-status]').textContent = names[p.status];
+      root.querySelector('[data-detail]').textContent = p.detail;
+      root.querySelector('[data-evidence]').textContent = 'Evidence: ' + p.evidence;
+      root.querySelector('[data-next]').textContent = 'Next: ' + p.next;
+      const issues = p.findings.length ? p.findings.join(', ') : 'None attached';
+      root.querySelector('[data-findings]').textContent = 'Audit records: ' + issues;
+      const assumptions = root.querySelector('[data-assumptions]');
+      assumptions.hidden = !(p.assumptions || []).length;
+      assumptions.textContent = (p.assumptions || []).join('; ');
+      const steps = root.querySelector('.proof-steps');
+      steps.replaceChildren();
+      steps.hidden = !p.steps;
+      (p.steps || []).forEach(label => {
+        const step = document.createElement('li');
+        step.textContent = label + ' · checked';
+        steps.append(step);
+      });
+      if(save && window.openai && window.openai.setWidgetState) {
+        window.openai.setWidgetState({modelContent:{selectedPhase:p.title,status:names[p.status],auditRecords:p.findings},privateContent:{selectedId:p.id}}).catch(()=>{});
+      }
+    }
+    state.phases.forEach((p,index) => {
+      const item = document.createElement('li');
+      item.className = p.status;
+      const mark = document.createElement('span'); mark.className='mark'; mark.setAttribute('aria-hidden','true');
+      const node = document.createElement('div'); node.className='node';
+      const button = document.createElement('button'); button.className='btn'; button.type='button'; button.dataset.phase=p.id;
+      button.textContent = (index+1) + ' · ' + p.title;
+      button.setAttribute('aria-pressed','false');
+      button.setAttribute('aria-label',p.title + ': ' + names[p.status]);
+      button.addEventListener('click',()=>select(p.id,true));
+      const dep = document.createElement('span'); dep.className='needs text-small';
+      dep.textContent = p.depends_on.length ? 'Requires: ' + p.depends_on.map(id=>byId.get(id).title).join(' + ') : 'Original OAI dump';
+      node.append(button,dep); item.append(mark,node); list.append(item);
+    });
+    select(window.openai?.widgetState?.privateContent?.selectedId || 'roots',false);
+    window.addEventListener('openai:set_globals',event=>{
+      const id=event.detail?.globals?.widgetState?.privateContent?.selectedId;
+      if(id) select(id,false);
+    });
+  })();
+  </script>
+</div>

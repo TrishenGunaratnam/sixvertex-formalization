@@ -1,0 +1,618 @@
+{
+  "updated_on": "24 October 2026",
+  "paper_named_statements": 51,
+  "fully_formalized": 5,
+  "remaining": 46,
+  "results": [
+    {
+      "paper_label": "lem:row-algebra",
+      "paper_number": "Lemma 2.1",
+      "title": "Finite row algebra",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        75,
+        143
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized",
+      "lean_file": "lean/SixVertex/FiniteRowAlgebra.lean",
+      "lean_theorem": "SixVertex.finite_row_algebra",
+      "assumptions": [
+        "lambda is real and 0 < lambda < pi",
+        "L is an even natural number with L >= 4 (Section 1 line 16)",
+        "All site inhomogeneities b_j are real",
+        "All spectral arguments and auxiliary marks are complex",
+        "The mark-exchange clause retains the paper's invertibility assumption",
+        "The endpoint clauses use homogeneous b_j = 0"
+      ],
+      "clauses": [
+        {
+          "structure_field": "gauge",
+          "paper_equation": "eq:monodromy-gauge",
+          "lean_theorem": "SixVertex.physical_monodromy_gauge",
+          "file": "lean/SixVertex/RowGauge.lean",
+          "scope": "Exact physical/standard monodromy identity for every even chain."
+        },
+        {
+          "structure_field": "adjoint",
+          "paper_equation": "eq:monodromy-gauge",
+          "lean_theorem": "SixVertex.physical_markedRow_adjoint",
+          "file": "lean/SixVertex/RowAlgebra.lean",
+          "scope": "Arbitrary complex auxiliary mark; conjugate spectral argument; the same real inhomogeneities in the same order."
+        },
+        {
+          "structure_field": "commute",
+          "paper_equation": "lem:row-algebra",
+          "lean_theorem": "SixVertex.physical_diagonal_rows_commute",
+          "file": "lean/SixVertex/RowCommutation.lean",
+          "scope": "Every common complex diagonal twist and all complex arguments, including singular intertwiner differences. Analytic continuation is proved, not assumed."
+        },
+        {
+          "structure_field": "rtt",
+          "paper_equation": "eq:physical-RTT",
+          "lean_theorem": "SixVertex.physical_finite_chain_RTT",
+          "file": "lean/SixVertex/FiniteRTT.lean",
+          "scope": "Full two-auxiliary operator equality for every quantum input/output basis pair, not just vacuum expectations."
+        },
+        {
+          "structure_field": "exchange",
+          "paper_equation": "lem:row-algebra",
+          "lean_theorem": "SixVertex.joint_mark_exchange",
+          "file": "lean/SixVertex/FiniteRTT.lean",
+          "scope": "For an invertible intertwiner, forward mark D becomes R D R^-1 on the reversed product."
+        },
+        {
+          "structure_field": "translation",
+          "paper_equation": "lem:row-algebra",
+          "lean_theorem": "SixVertex.physical_endpoint_translation",
+          "file": "lean/SixVertex/RowEndpoints.lean",
+          "scope": "The positive imaginary endpoint in the homogeneous chain is the explicitly constructed cyclic spin permutation."
+        },
+        {
+          "structure_field": "inverse_translation",
+          "paper_equation": "lem:row-algebra",
+          "lean_theorem": "SixVertex.physical_endpoint_inverse",
+          "file": "lean/SixVertex/RowEndpoints.lean",
+          "scope": "The negative imaginary endpoint is the inverse permutation; the permutation and its inverse multiply to the identity."
+        }
+      ],
+      "representation_notes": [
+        "The spin basis is Fin 2 with 0 = + and 1 = -. RowSpins L is the full 2^L-element tensor-product basis.",
+        "rowBlock explicitly contracts the auxiliary spin at every site of the ordered product. The real sequence b is read only at the first L sites.",
+        "The operator adjoint in this orthonormal basis is Matrix.conjTranspose.",
+        "parityP and parityQ are diagonal matrices whose entries are the products of the selected Z eigenvalues.",
+        "The RTT statement is an equality of auxiliary matrices for every quantum basis pair; forwardRows and reverseRows contain quantum matrix products in their prescribed order."
+      ],
+      "does_not_depend_on_deferred_paper_lemmas": true,
+      "uses_unproved_mathematical_axioms": false,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:finite-actions",
+      "paper_number": "Lemma 2.3",
+      "title": "Single-entry actions",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        299,
+        381
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized",
+      "lean_file": "lean/SixVertex/SingleEntryActions.lean",
+      "lean_theorem": "SixVertex.single_entry_actions",
+      "assumptions": [
+        "lambda is real with 0 < lambda < pi; t = I * lambda",
+        "The inhomogeneities b_j are real in the named physical specialization",
+        "The proof is stronger than the paper chain-length convention: every finite n is allowed",
+        "Generic U is a finite complex spectral set and v is not in U",
+        "BetheRegular t (insert v U) requires sinh(x-y) nonzero for distinct arguments and sinh(x-y+t) nonzero for every ordered pair",
+        "WordRegular keeps each new argument fresh relative to all original and previously added arguments",
+        "Coincident limits are taken along eventually generic labelled families; the limiting list retains repeated arguments"
+      ],
+      "clauses": [
+        {
+          "structure_field": "creation",
+          "paper_equation": "B action",
+          "lean_theorem": "SixVertex.bethe_B_action",
+          "file": "lean/SixVertex/BetheActions.lean",
+          "scope": "The exact insert-v action on arbitrary off-shell states."
+        },
+        {
+          "structure_field": "upper",
+          "paper_equation": "eq:A-action",
+          "lean_theorem": "SixVertex.bethe_A_action",
+          "file": "lean/SixVertex/BetheActions.lean",
+          "scope": "Every upper diagonal term, including unchanged p=v, with the exact beta and f coefficients."
+        },
+        {
+          "structure_field": "lower",
+          "paper_equation": "eq:L-action",
+          "lean_theorem": "SixVertex.bethe_L_action",
+          "file": "lean/SixVertex/BetheActions.lean",
+          "scope": "Every lower diagonal term, with all differences in the prescribed order."
+        },
+        {
+          "structure_field": "annihilation",
+          "paper_equation": "eq:C-action",
+          "lean_theorem": "SixVertex.bethe_C_action",
+          "file": "lean/SixVertex/BetheCAction.lean",
+          "scope": "The full ordered two-removal sum. cActionWeight is the exact displayed coefficient. p labels a(p), q labels l(q)."
+        },
+        {
+          "structure_field": "words",
+          "paper_equation": "Final paragraph of lem:finite-actions",
+          "lean_theorem": "SixVertex.word_expansion",
+          "file": "lean/SixVertex/BetheWords.lean",
+          "scope": "Explicit weighted paths for an arbitrary finite word, with repeated terminal sets retained as separate terms. Lists are in chronological application order."
+        },
+        {
+          "structure_field": "step_support",
+          "paper_equation": "Add one argument and remove zero, one or two",
+          "lean_theorem": "SixVertex.entryTerms_remove_bound",
+          "file": "lean/SixVertex/BetheWords.lean",
+          "scope": "entryTerms defines exactly zero removals for B, one for A/L and two distinct ordered removals for C; entryTerms_support and the remove bound verify the set operations."
+        },
+        {
+          "structure_field": "endpoint_cardinality",
+          "paper_equation": "Equal original cardinality; equal changes of size at most m",
+          "lean_theorem": "SixVertex.word_path_cardinality",
+          "file": "lean/SixVertex/BetheWords.lean",
+          "scope": "For every path endpoint V of the original cardinality, card(U\\V)=card(V\\U)<=length(word). wordTerms_support proves every new endpoint argument belongs to the supplied word."
+        },
+        {
+          "structure_field": "coincident",
+          "paper_equation": "Generic/meromorphic prefatory convention",
+          "lean_theorem": "SixVertex.single_entry_coincident_limit",
+          "file": "lean/SixVertex/BetheLimits.lean",
+          "scope": "The complete generic action sum converges to the actual action at arbitrary coincident limiting arguments, along every eventually regular labelled family. Individual summands need not converge. This is a limit theorem, not an invocation of a meromorphic-function axiom."
+        }
+      ],
+      "representation_notes": [
+        "betheBlock_eq_standard identifies the local hyperbolic normalization and ordered monodromy exactly with the pinned manuscript at t=I*lambda.",
+        "vacuumA_product and vacuumL_product identify the recursive vacuum values with the products in the paper.",
+        "Bethe vectors are embedded injectively as matrices with only the vacuum column nonzero. betheState_column proves this property; single_entry_vector proves the ordinary mulVec action identity.",
+        "For distinct arguments, betheListState_eq_finset identifies list and finite-set products. Repeated limiting arguments remain in the list, so multiplicities are never silently discarded.",
+        "The C proof adds one explicit quantum site and extracts a matrix block of the A action. It does not divide by vacuumA or vacuumL, so their zeros are included.",
+        "The proofs derive RTT entry relations from the explicit six-vertex matrices, prove creation-entry commutation for all complex arguments by analytic continuation, and prove finite-product normal ordering. No exchange relation or action formula is assumed."
+      ],
+      "does_not_depend_on_deferred_paper_lemmas": true,
+      "uses_unproved_mathematical_axioms": false,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:bethe-data",
+      "paper_number": "Lemma 2.2",
+      "title": "Finite Bethe data",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        180,
+        266
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized",
+      "lean_file": "lean/SixVertex/FiniteBetheData.lean",
+      "lean_theorem": "SixVertex.finite_bethe_data",
+      "assumptions": [
+        "lambda is real and 0 < lambda < pi; all site inhomogeneities are real",
+        "L is even and L >= 4, as globally specified in Section 1",
+        "The counting equations use a strictly increasing finite real root list and one-based counting numbers j.val+1",
+        "Eigenvector conclusions retain the paper requirement that the Bethe vector be nonzero",
+        "Local analytic continuation retains det G != 0; positive definiteness retains lambda >= pi/2",
+        "Positive Gaudin column weights retain xi prime at each root > 0",
+        "The factorized tau agrees with its entire extension where all displayed denominators are nonzero; no numerical value of division by zero is used to define a removable pole"
+      ],
+      "clauses": [
+        {
+          "structure_field": "counting_on_shell",
+          "paper_equation": "eq:consecutive-counting implies eq:bethe-equations",
+          "lean_theorem": "SixVertex.consecutiveRoots_onShell",
+          "file": "lean/SixVertex/BethePhaseData.lean",
+          "scope": "The exact phase q_Y(u)=(-1)^n exp(2 pi i xi_Y(u)) is proved using explicit odd arctan primitives and shifted-sinh ratios. The counting numbers give -exp(2 i twist), with every sign fixed."
+        },
+        {
+          "structure_field": "eigenvectors",
+          "paper_equation": "eq:bethe-eigenvalue and physical eigenvalue (-1)^n tau",
+          "lean_theorem": "SixVertex.onShell_entire_eigenvectors",
+          "file": "lean/SixVertex/FiniteBetheEigen.lean",
+          "scope": "For every nonzero on-shell Bethe state, constructs an entire eigenvalue agreeing with the displayed tau and proves both standard and physical vector equations at every complex spectral value. The physical vector is proved nonzero."
+        },
+        {
+          "structure_field": "counting_derivative",
+          "paper_equation": "eq:Gaudin-matrix: xi prime",
+          "lean_theorem": "SixVertex.hasDerivAt_countingXi",
+          "file": "lean/SixVertex/FiniteGaudin.lean",
+          "scope": "The derivative in the real spectral coordinate is exactly the sum of s minus the sum of K."
+        },
+        {
+          "structure_field": "jacobian",
+          "paper_equation": "eq:Gaudin-matrix",
+          "lean_theorem": "SixVertex.hasFDerivAt_countingSystem",
+          "file": "lean/SixVertex/FiniteGaudin.lean",
+          "scope": "The full Frechet derivative in all independent root coordinates equals the continuous linear map of the exact Gaudin matrix. The self-interaction cancellation is included."
+        },
+        {
+          "structure_field": "analytic_branch",
+          "paper_equation": "eq:twist-root-derivative",
+          "lean_theorem": "SixVertex.exists_analytic_root_branch",
+          "file": "lean/SixVertex/BetheRootBranch.lean",
+          "scope": "For det G != 0, a real analytic branch passes through the original roots, remains strictly ordered, satisfies the counting equations nearby, and obeys G dY/dtwist = 1/pi at every sufficiently nearby parameter."
+        },
+        {
+          "structure_field": "positive_definite",
+          "paper_equation": "Positive definiteness for lambda >= pi/2",
+          "lean_theorem": "SixVertex.gaudinMatrix_posDef",
+          "file": "lean/SixVertex/GaudinPositivity.lean",
+          "scope": "For every finite real root list and positive chain length, proves Matrix.PosDef using an exact quadratic-energy identity and K <= 0. No on-shell or root-separation assumption is needed for this stronger clause."
+        },
+        {
+          "structure_field": "weights",
+          "paper_equation": "eq:Gaudin-weights",
+          "lean_theorem": "SixVertex.gaudin_weight_identity",
+          "file": "lean/SixVertex/FiniteGaudin.lean",
+          "scope": "Proves G diag(ell)=I+K ell entry by entry, with ell at the column index exactly as in the paper."
+        }
+      ],
+      "representation_notes": [
+        "The odd primitives are explicit real functions barePhase(theta,u)=arctan(cot(theta)*sinh(u)/cosh(u))/pi, at theta=lambda/2 and theta=lambda. Their zero value, oddness, derivatives and real analyticity are proved.",
+        "Fin n indexes roots; j.val+1 matches the manuscript root numbering 1,...,n. rootSet_card and prod_rootSet identify the increasing list with its distinct complex spectral set.",
+        "The Bethe state is the injective vacuum-column matrix representation used in Lemma 2.3. The earlier betheState_column and single_entry_vector identify it with ordinary spin-space vectors.",
+        "The standard eigenvector proof cancels root replacements with the proved A/L actions. betheTau_eq_abaEigenvalue verifies the exact factorized normalization.",
+        "The eigenvalue is continued by a nonzero state component and the proved complex analytic identity theorem. The vector identities consequently hold at roots and at zeros of extracted vacuum factors as well.",
+        "quantumGauge is the paper P_L on the quantum space. A creation entry anticommutes with quantumParity, giving parity (-1)^n; the physical gauge produces exactly that eigenvalue factor.",
+        "The analytic root branch invokes the proved Mathlib analytic inverse-function theorem via ContDiff omega, and is not an assumed implicit-function axiom.",
+        "Several helper statements are stronger than the physical conventions: arbitrary finite root-list length, arbitrary real twist, and positivity without on-shell restrictions. The named theorem retains the global even L >= 4 convention.",
+        "No estimate uniform in L, thermodynamic root construction, completeness assertion, scalar-product determinant or GFF limit is proved by this finite lemma."
+      ],
+      "does_not_depend_on_deferred_paper_lemmas": true,
+      "uses_unproved_mathematical_axioms": false,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:scalar-product",
+      "paper_number": "Lemma 2.4",
+      "title": "Exact scalar products and deleted columns",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        388,
+        524
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized_conditional",
+      "lean_file": "lean/SixVertex/ExactScalarProducts.lean",
+      "lean_theorem": "SixVertex.exact_scalar_products_and_deleted_columns",
+      "external_assumptions": [
+        "A01: SixVertex.SlavnovIdentity"
+      ],
+      "assumptions": [
+        "lambda is real with 0 < lambda < pi; all site inhomogeneities are real",
+        "L is even and L >= 4, as in Section 1; the roots are a distinct finite real list",
+        "The roots satisfy OnShell at the real twist",
+        "A01 is precisely the finite twisted Slavnov derivative-over-Cauchy identity on its generic spectral domain, cross-multiplied. It does not include norm, source-limit, weight or deleted-column assertions.",
+        "Nonzero norm and inverse-Gaudin conclusions retain det G != 0",
+        "Generic new slots retain nonzero displayed sinh/vacuum denominators and nonzero selected Cauchy determinant; arbitrary collisions mean the proved complete-expression filter limits",
+        "The weighted statement retains positivity of every root counting slope"
+      ],
+      "clauses": [
+        {
+          "structure_field": "slavnov",
+          "paper_equation": "eq:Slavnov-exact",
+          "lean_theorem": "SixVertex.slavnov_exact",
+          "file": "lean/SixVertex/ExactScalarProducts.lean",
+          "scope": "The external derivative-over-Cauchy identity is an explicit user-authorized hypothesis A01. The displayed quotient follows where det C is nonzero."
+        },
+        {
+          "structure_field": "source_normalization",
+          "paper_equation": "eq:finite-source-column and derivative identity",
+          "lean_theorem": "SixVertex.independentRootDerivative_source",
+          "file": "lean/SixVertex/SlavnovAssumption.lean",
+          "scope": "The source normalization is proved by differentiating independent complex root coordinates before imposing the on-shell equations. The conversion from the assumed Slavnov formula is proved in slavnov_source_of_identity."
+        },
+        {
+          "structure_field": "source_gaudin",
+          "paper_equation": "eq:source-Gaudin-limit",
+          "lean_theorem": "SixVertex.scalarSource_gaudin_limit",
+          "file": "lean/SixVertex/ScalarProductSource.lean",
+          "scope": "Every entry has its stated complex punctured-neighborhood limit; the diagonal is a proved simple-pole cancellation using the exact counting derivative. This clause is unconditional on Slavnov."
+        },
+        {
+          "structure_field": "norm",
+          "paper_equation": "eq:Gaudin-norm-exact",
+          "lean_theorem": "SixVertex.gaudin_norm_exact",
+          "file": "lean/SixVertex/ScalarProductConsequences.lean",
+          "scope": "The full norm prefactor is proved, with (2 pi i sinh(i lambda))^n, both vacuum products and all ordered root-pair factors. Derived by simultaneous complex limits of generic Slavnov data."
+        },
+        {
+          "structure_field": "nonzero_norm",
+          "paper_equation": "Nonzero norm for det G != 0",
+          "lean_theorem": "SixVertex.gaudin_norm_ne_zero",
+          "file": "lean/SixVertex/ScalarProductConsequences.lean",
+          "scope": "Every external norm factor is proved nonzero for distinct real roots and real inhomogeneities."
+        },
+        {
+          "structure_field": "deleted",
+          "paper_equation": "eq:deleted-scalar-product",
+          "lean_theorem": "SixVertex.deleted_scalar_product",
+          "file": "lean/SixVertex/ScalarProductConsequences.lean",
+          "scope": "Arbitrary selected slots, the exact inverse (-s_lambda)^card(H) prefactor, extracted vacuum factors and inverse-Gaudin minor divided by the matching Cauchy minor. Generic displayed denominators remain explicit."
+        },
+        {
+          "structure_field": "weighted",
+          "paper_equation": "eq:W-determinant",
+          "lean_theorem": "SixVertex.weighted_source_minor",
+          "file": "lean/SixVertex/ScalarProductWeights.lean",
+          "scope": "The real column-weight convention is mapped to complex matrices and inverted. The selected determinant gains exactly the product of ell_p over the selected rows."
+        },
+        {
+          "structure_field": "coincident",
+          "paper_equation": "Full-formula analytic-limit convention",
+          "lean_theorem": "SixVertex.deleted_scalar_coincident_limit",
+          "file": "lean/SixVertex/ExactScalarProducts.lean",
+          "scope": "The complete normalized deleted-column expression converges to the actual scalar product along every eventually generic labelled family. Limiting multiplicities stay in their original slots; termwise limits are not assumed."
+        }
+      ],
+      "representation_notes": [
+        "algebraicScalarProduct is the plus/plus entry of the ordered C-product times the labelled B-state; it uses no Hermitian adjoint.",
+        "Finset H indexes the replaced slots. The same subtype order is used for minor rows and columns, so determinant signs agree; relabelling both orders preserves the determinant.",
+        "independentBetheTau uses independent complex root coordinates and the two-term ABA eigenvalue. independentRootDerivative is an actual Lean deriv of a coordinate update, not a derivative along the on-shell root branch.",
+        "No global mathematical axiom is declared. The final theorem takes hSlavnov : SlavnovIdentity as an explicit argument.",
+        "Empty products and determinants are included by the finite-index definitions. Repeated limiting new arguments are never deduplicated."
+      ],
+      "uses_unproved_mathematical_axioms": false,
+      "uses_explicit_unproved_mathematical_hypotheses": true,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:hilbert-dual",
+      "paper_number": "Lemma 2.5",
+      "title": "The Hilbert dual",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        528,
+        574
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized_conditional",
+      "lean_file": "lean/SixVertex/HilbertDual.lean",
+      "lean_theorem": "SixVertex.hilbert_dual",
+      "external_assumptions": [
+        "A01: SixVertex.SlavnovIdentity, used only for nonvanishing/positive normalization"
+      ],
+      "assumptions": [
+        "0 < lambda < pi; all inhomogeneities are real; even L >= 4",
+        "The norm identity itself permits arbitrary real labelled roots, including repeats and off-shell lists",
+        "Positive normalization requires distinct real on-shell roots, det G != 0, and Slavnov for that root list",
+        "Overlap roots have the same length; their real twists can differ; each retains its own on-shell, det G and Slavnov hypotheses"
+      ],
+      "clauses": [
+        {
+          "structure_field": "adjoint",
+          "paper_equation": "eq:B-Hilbert-adjoint",
+          "lean_theorem": "SixVertex.betheB_hilbert_adjoint",
+          "file": "lean/SixVertex/HilbertAdjoint.lean",
+          "scope": "Unconditional on Slavnov. Proved from explicit local standard matrices, including the (-1)^L auxiliary sign; even L gives -C(conj x)."
+        },
+        {
+          "structure_field": "norm_identity",
+          "paper_equation": "Physical norm square equals (-1)^n S(Y,Y)",
+          "lean_theorem": "SixVertex.physical_bethe_norm_sq",
+          "file": "lean/SixVertex/HilbertDual.lean",
+          "scope": "Unconditional on Slavnov. Actual EuclideanSpace L2 norm, not the sup norm on a raw function space. The physical gauge preserves the inner product."
+        },
+        {
+          "structure_field": "positive_unit",
+          "paper_equation": "eq:physical-Bethe-vector and strict positivity",
+          "lean_theorem": "SixVertex.physical_bethe_ne_zero / SixVertex.physical_bethe_norm_pos / SixVertex.normalizeSpinVector_norm",
+          "file": "lean/SixVertex/HilbertDual.lean",
+          "scope": "Nonzero norm follows from Lemma 2.4 conditional on A01. The normalized physical state has norm exactly one."
+        },
+        {
+          "structure_field": "overlap",
+          "paper_equation": "eq:two-orientation-overlap",
+          "lean_theorem": "SixVertex.physical_bethe_overlap",
+          "file": "lean/SixVertex/HilbertDual.lean",
+          "scope": "Exact complex equality with the real squared absolute overlap. Both scalar-product orientations and both norm signs are tracked; twists can differ."
+        }
+      ],
+      "representation_notes": [
+        "SpinHilbert L is EuclideanSpace complex over the finite quantum basis. physicalBetheVector is the plus column of the physical gauge applied to the ordered creation product.",
+        "physical_inner_algebraic_list proves the duality identity for arbitrary complex off-shell right lists, retaining repetitions and arbitrary list length.",
+        "The conditional hypotheses appear explicitly inside HilbertDual.positive_unit and HilbertDual.overlap. No global axiom was added.",
+        "The arbitrary real inhomogeneity function includes real staggered sites; no Perron-vector interpretation is assumed."
+      ],
+      "uses_unproved_mathematical_axioms": false,
+      "uses_explicit_unproved_mathematical_hypotheses": true,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "cor:finite-word-expansion",
+      "paper_number": "Corollary 2.6",
+      "title": "Exact finite-word expansion",
+      "source_file": "sections/02-finite-rows.tex",
+      "source_lines": [
+        620,
+        704
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized_conditional_on_assumption",
+      "lean_file": "lean/SixVertex/ExactFiniteWords.lean",
+      "lean_theorem": "SixVertex.exact_finite_word_expansion",
+      "external_assumptions": [
+        "A01: SixVertex.SlavnovIdentity"
+      ],
+      "assumptions": [
+        "Real 0 < lambda < pi; even chain L=2k; arbitrary real site inhomogeneities.",
+        "Distinct real zero-twist on-shell Y, nonzero Gaudin determinant, positive counting slopes.",
+        "FiniteWordDomain states every freshness, source regularity, vacuum nonvanishing and normalization condition explicitly.",
+        "EndpointGeneric.cauchy spells out the nonzero finite endpoint Cauchy minors within the paper generic spectral domain. No determinant identity or root-existence assertion is assumed."
+      ],
+      "clauses": [
+        {
+          "structure_field": "marked_sum",
+          "paper_equation": "eq:exact-path-determinant",
+          "lean_theorem": "SixVertex.exact_marked_word_determinant_sum",
+          "file": "lean/SixVertex/EndpointDeterminants.lean",
+          "scope": "Actual normalized physical marked-word expectation equals the complete complex determinant sum, including D_beta,alpha coefficients."
+        },
+        {
+          "structure_field": "selection",
+          "paper_equation": "cor:finite-word-expansion",
+          "lean_theorem": "SixVertex.unit_entry_word_selection",
+          "file": "lean/SixVertex/ExactFiniteWords.lean",
+          "scope": "All nonzero-net-charge entry words have zero expectation; exact L2 orthogonality is proved."
+        },
+        {
+          "structure_field": "replacement",
+          "paper_equation": "cor:finite-word-expansion",
+          "lean_theorem": "SixVertex.replacement_slots_exist",
+          "file": "lean/SixVertex/ReplacementSlots.lean",
+          "scope": "Every equal-cardinality endpoint has a bijection between deleted original slots and surviving added arguments, with retained roots fixed."
+        },
+        {
+          "structure_field": "bounded_minor",
+          "paper_equation": "cor:finite-word-expansion",
+          "lean_theorem": "SixVertex.finite_word_deleted_slots_bound",
+          "file": "lean/SixVertex/ExactFiniteWords.lean",
+          "scope": "The deleted-slot and surviving-argument counts agree, and are at most the word length."
+        },
+        {
+          "structure_field": "diagonal_parity",
+          "paper_equation": "eq:exact-path-determinant",
+          "lean_theorem": "SixVertex.diagonal_relative_corrections",
+          "file": "lean/SixVertex/DiagonalPaths.lean",
+          "scope": "Each diagonal path has constant magnon number and trivial relative parity."
+        },
+        {
+          "structure_field": "parity_exponent",
+          "paper_equation": "eq:exact-path-determinant",
+          "lean_theorem": "SixVertex.relativeParity_eq_zpow",
+          "file": "lean/SixVertex/NormalizedWords.lean",
+          "scope": "Per-step parity quotient equals (-1) to the integer difference of input and original magnon numbers."
+        },
+        {
+          "structure_field": "histories",
+          "paper_equation": "eq:path-correction",
+          "lean_theorem": "SixVertex.relativeCorrection_path_certificate",
+          "file": "lean/SixVertex/ExactFiniteWords.lean",
+          "scope": "Every actual path has a valid ordered removal history with its exact parity/gamma weight, distinct deleted originals, one beta per original, and reciprocal factors for exactly k choose 2 pairs."
+        },
+        {
+          "structure_field": "histories",
+          "paper_equation": "eq:path-correction",
+          "lean_theorem": "SixVertex.doublePathCorrection_sequential",
+          "file": "lean/SixVertex/RemovalHistories.lean",
+          "scope": "The ordered C correction equals an upper then lower removal; its extra f factor is accounted for exactly."
+        }
+      ],
+      "representation_notes": [
+        "normalizedMarkedWord is the reversed-order product of the original physical marked monodromies divided by (-1)^n tau_0.",
+        "The complete sum retains duplicate endpoints and both ordered C choices. chosenReplacementSlots keeps all retained originals in their original slots.",
+        "normalizedEndpointAmplitude is proved equal to the weighted W/Cauchy determinant expression; wrong-cardinality endpoints are proved zero.",
+        "PathHistoryCertificate gives an actual removal-history witness for every normalized path, not merely a count of possible terms. Its mixed factor has no interaction between two original roots.",
+        "The genericity conditions are explicit finite nonzero-denominator hypotheses. No generic-domain nonemptiness or continuation beyond it is claimed as part of this corollary."
+      ],
+      "uses_unproved_mathematical_axioms": false,
+      "uses_explicit_unproved_mathematical_hypotheses": true,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:chiral-representatives",
+      "paper_number": "Lemma 6.2",
+      "title": "Convergence of representatives",
+      "source_file": "sections/06-chiral-gaussianity.tex",
+      "source_lines": [
+        201,
+        229
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized",
+      "lean_file": "lean/SixVertex/ChiralRepresentatives.lean",
+      "lean_theorem": "SixVertex.chiral_representatives",
+      "external_assumptions": [],
+      "assumptions": [
+        "Arbitrary complex Hilbert spaces H and K, with K complete; an arbitrary nontrivial parameter filter.",
+        "A dense linear word core in K and linear representatives in H with Gram convergence, exactly the contextual setup preceding Lemma 6.2.",
+        "The approximating operators are uniformly bounded and converge strongly on the core, as stated in the lemma."
+      ],
+      "clauses": [
+        {
+          "structure_field": "extension",
+          "lean_theorem": "SixVertex.representative_operator_extension",
+          "scope": "Linearity is derived from the approximating operators. The unique bounded extension has the same norm bound and acts correctly on every strongly converging family."
+        },
+        {
+          "structure_field": "composition",
+          "lean_theorem": "SixVertex.representative_operator_composition",
+          "scope": "Ordered composition is proved with no commutation hypothesis."
+        },
+        {
+          "structure_field": "criterion",
+          "lean_theorem": "SixVertex.representative_strong_of_pairings_norm",
+          "scope": "Convergence of pairings with all core representatives and convergence of norms imply the actual approximation definition of strong convergence."
+        }
+      ],
+      "representation_notes": [
+        "RepresentativeStrong uses arbitrary epsilon approximations by the dense core and eventual representative error bounds, equivalent to the paper strict-limsup definition after shrinking epsilon.",
+        "No bounded map from the completed limit space to the prelimit Hilbert space is assumed.",
+        "This proves the abstract named lemma. The six-vertex-specific Gram limit and tensor construction preceding it are not claimed formalized."
+      ],
+      "uses_unproved_mathematical_axioms": false,
+      "uses_explicit_unproved_mathematical_hypotheses": false,
+      "main_GFF_theorem_formalized": false
+    },
+    {
+      "paper_label": "lem:log-integrability",
+      "paper_number": "Lemma 7.6",
+      "title": "Logarithmic integrability",
+      "source_file": "sections/07-probabilistic-endgame.tex",
+      "source_lines": [
+        558,
+        594
+      ],
+      "source_commit": "1581d4cbdd69a0faf34b2089614fe2a814316a6a",
+      "status": "formalized",
+      "lean_file": "lean/SixVertex/LogIntegrability.lean",
+      "lean_theorem": "SixVertex.log_integrability",
+      "external_assumptions": [],
+      "assumptions": [
+        "Finite real signed measures on the complex plane, identified with the Euclidean plane.",
+        "OrdinaryLogEnergy is the finite extended absolute Green integral against the product of the total variations; the diagonal kernel value is infinity.",
+        "The theorem does not require compact support: the forward conclusions hold whenever the stated ordinary absolute Green integrability holds. This includes the manuscript compact-support case."
+      ],
+      "clauses": [
+        {
+          "structure_field": "no_atoms",
+          "lean_theorem": "SixVertex.absoluteLogEnergy_no_atoms",
+          "scope": "Finite self logarithmic energy forces every singleton of the total variation to have zero mass; signed singleton masses are then zero as well."
+        },
+        {
+          "structure_field": "absolute_energy",
+          "paper_equation": "eq:prob-absolute-energy",
+          "lean_theorem": "SixVertex.ordinaryLogEnergy_absolute",
+          "scope": "The manuscript Green normalization is retained exactly, including the positive 2 pi conversion factor."
+        },
+        {
+          "structure_field": "mixed_energy",
+          "lean_theorem": "SixVertex.absoluteLogEnergy_mixed_finite",
+          "scope": "Finite self energies imply finite mixed absolute logarithmic energy. All dyadic geometry, measurable cells, product masses, neighbor sums, infinite scale sums and kernel comparisons are proved."
+        },
+        {
+          "structure_field": "ordinary_integral_convention",
+          "lean_theorem": "SixVertex.finite_extended_green_iff",
+          "scope": "Finite extended absolute Green integral is equivalent to a null diagonal and ordinary Bochner integrability of the real off-diagonal Green function. The assigned real value log(0)=0 cannot admit atoms."
+        }
+      ],
+      "representation_notes": [
+        "The absolute logarithmic kernel is max(-log(dist),0) away from the diagonal and infinity on the diagonal.",
+        "Dyadic cells are defined by floors of the scaled real and imaginary coordinates, with half-open boundaries handled explicitly.",
+        "Nearby pairs lie in nine neighboring squares. The bound ab <= a^2+b^2 suffices for finiteness, in place of the two Cauchy-Schwarz inequalities in the manuscript proof.",
+        "No random field, moment convergence or negative function-space topology is assumed proved by this measure-theoretic lemma."
+      ],
+      "uses_unproved_mathematical_axioms": false,
+      "uses_explicit_unproved_mathematical_hypotheses": false,
+      "main_GFF_theorem_formalized": false
+    }
+  ],
+  "conditionally_formalized": 3,
+  "remaining_unformalized": 43,
+  "counting_note": "5 named statements are proved in their stated setting. 3 more are conditional on A01. There are 43 other named statements without complete formalizations. The general representative and signed-measure lemmas do not establish the six-vertex limits to which they are applied."
+}

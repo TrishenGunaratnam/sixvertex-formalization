@@ -1,0 +1,165 @@
+{
+  "audit_date": "2026-10-23",
+  "scope": "First-pass dependency and proof-location audit, with targeted checks. This is not a line-by-line independent validation of all analytic estimates.",
+  "confirmed_mathematical_errors": 0,
+  "findings": [
+    {
+      "id": "V01",
+      "status": "checked_in_lean",
+      "priority": "foundation",
+      "title": "Arrow convention and local height consistency",
+      "file": "sections/01-introduction.tex",
+      "line": 22,
+      "label": "Height convention",
+      "question": "Does the two-in/two-out rule give the stated unit height increments, with consistent signs?",
+      "evidence": "The starter Lean code proves equivalence of the ice rule and two incoming arrows; equivalence with zero elementary height circulation; construction and uniqueness of four adjacent face heights with a chosen anchor; and periodic-column sector conservation.",
+      "remaining": "Global integration over a simply connected domain, the infinite planar law and torus winding periods remain outside these local proofs. No full paper theorem is certified by this check."
+    },
+    {
+      "id": "R01",
+      "status": "citation_checked",
+      "priority": "resolved citation question",
+      "title": "Balanced plane law and zero-slope identification for c at least one",
+      "file": "sections/04-angular-plane.tex",
+      "line": 290,
+      "label": "prop:physical-plane",
+      "question": "Is uniqueness being inferred merely from zero expected slope?",
+      "evidence": "No. The manuscript includes a variational-domain and ergodic-component argument. DKLM arXiv:2603.06268v1, Theorem 2.2 and the paragraph following equation (6), explicitly identify the balanced limit and describe it as a unique free-energy minimizer for the stated range. Lammers-Tassy arXiv:2004.15025v1, Theorem 13.16, states the six-vertex strict-convexity condition c+ c- >= max(a+ a-, b+ b-), matching c >= 1 when a=b=1.",
+      "external_urls": [
+        "https://arxiv.org/html/2603.06268v1",
+        "https://arxiv.org/html/2004.15025v1"
+      ],
+      "remaining": "Formalize the precise variational functional and the domain-reduction argument, or import fully proved versions. Checking the citation statement is not re-proving the external result."
+    },
+    {
+      "id": "R02",
+      "status": "citation_checked",
+      "priority": "resolved citation question",
+      "title": "Conditional normalization does not supply Gaussian convergence",
+      "file": "sections/08-main-proof.tex",
+      "line": 39,
+      "label": "Final use of DKLM Theorems 4.3 and 4.4",
+      "question": "Does the proof assume its desired GFF limit when identifying the variance?",
+      "evidence": "The final proof invokes normalization after the preceding sections establish a GFF limit with undetermined coefficient. DKLM Theorem 4.3 explicitly assumes a subsequential GFF limit; Theorem 4.4 computes the free-energy curvature. Both state c in [1,2]. The manuscript uses a separate stiffness/overlap argument for c<1.",
+      "external_urls": [
+        "https://arxiv.org/html/2603.06268v1"
+      ],
+      "remaining": "Preserve this dependency order in Lean. Theorem 4.3 cannot be used to establish Gaussianity, and its range cannot be extended below c=1 without another proof."
+    },
+    {
+      "id": "R03",
+      "status": "citation_checked",
+      "priority": "resolved citation question",
+      "title": "The cited twisted scalar-product identity exists",
+      "file": "sections/02-finite-rows.tex",
+      "line": 423,
+      "label": "lem:scalar-product",
+      "question": "Is the determinant formula actually supplied by the cited source?",
+      "evidence": "KMST arXiv:hep-th/0406190v1, Proposition 3.1 and equations (3.8)-(3.9), give the derivative-over-Cauchy determinant formula for a twisted on-shell vector and generic off-shell variables. The manuscript explains its monodromy rescaling and compensating twist factor, then treats coincident columns separately.",
+      "external_urls": [
+        "https://arxiv.org/html/hep-th/0406190v1"
+      ],
+      "remaining": "Independently verify every normalization, slot order, pole cancellation and analytic specialization. The original theorem's presence does not by itself verify those conversions or all root-of-unity specializations."
+    },
+    {
+      "id": "U01",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Uniform Gaudin and mixed-measure bounds",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 480,
+      "label": "lem:gaudin-inverse",
+      "question": "Why do inverses stay bounded when the terminal Bethe roots become sparse?",
+      "evidence": "A proof is present. It separates contracting dense rows from finitely many edge indices, extracts a one-sided limiting equation, and uses a decaying maximum-principle argument. The mixed operator is undressed into a positive-measure equation. Thus this is not justified merely by finite nonsingularity or diagonal dominance.",
+      "remaining": "Verify uniform edge-index bounds and local mass; passage to the extracted equation including tails; existence of a nonzero limiting coordinate; and the weighted perturbation bounds, in each declared order of limits. State a lower-bound theorem separately from an invertibility theorem on infinite-dimensional spaces."
+    },
+    {
+      "id": "U02",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Joint determinant tails and exchanges of infinite-volume limits",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 918,
+      "label": "lem:weighted-flags; lem:joint-determinant-tails; prop:word-kernel",
+      "question": "Are simultaneous root escapes controlled strongly enough to sum the finite-word expansion?",
+      "evidence": "The weighted-flags lemma is followed by a joint-minor estimate and a locally uniform word-kernel limit. The proof adapts separate flag bases for positive and negative minors, extracts quadrature weights, and claims an exponential majorant. The array limit is explicitly lim(d->0) limsup(B->infinity), rather than an asserted limit at every fixed d.",
+      "remaining": "Check residue codimensions, nested flag dimensions, uniform constants and all near-coincidence cancellations. Construct the majorizing measure and prove dominated convergence before using the resulting word kernels. Fixed-word estimates must not be used for unbounded word length."
+    },
+    {
+      "id": "U03",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "A common analytic radius at boundary rows",
+      "file": "sections/04-angular-plane.tex",
+      "line": 98,
+      "label": "lem:scalar-continuation",
+      "question": "Does finite invertibility near a swap point give a radius independent of lattice size?",
+      "evidence": "The manuscript provides a folded two-auxiliary block calculation, a geometric bound on its complementary block, quotient bounds, then a wordwise continuation and a countable fiber construction. The preceding harmonic-row-normalization lemma separately handles vacuum denominator zeros inside the strip.",
+      "remaining": "Prove the displayed finite folded-block identities, both left and right quotient bounds and their uniform constants. Verify passage from word-dependent norm bounds to one scalar continuation radius on a common full-measure set. Finite analyticity alone is insufficient."
+    },
+    {
+      "id": "U04",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Covariance normalization below c=1",
+      "file": "sections/05-normalization.tex",
+      "line": 77,
+      "label": "lem:stiffness; lem:infrared; lem:overlap-asymptotic; lem:detector-packing",
+      "question": "Are the twist derivatives and determinant asymptotics justified before the limits?",
+      "evidence": "There are separate lower and upper bounds for the orbit mass. The stiffness uses fixed-filling finite derivatives; the upper bound uses the finite twist-overlap Taylor coefficient, then a finite-trace analysis and a sampled symbol. The text explicitly takes Taylor coefficients before either array limit and supplies the deferred overlap proof later in the section.",
+      "remaining": "Re-derive the finite second-derivative identities, uniform root jets, inverse-row estimates, end corrections and Fourier/sampling calculation. Verify that no derivative of a limiting free energy is substituted for the required limit of finite derivatives. This is a central unverified analytic dependency."
+    },
+    {
+      "id": "U05",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Two-scale spectral convergence needs all zeros controlled",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 231,
+      "label": "prop:two-scale",
+      "question": "Could zeros between the two observed scales alter the rescaled energies?",
+      "evidence": "The manuscript addresses this explicitly with an exterior-dip bound, an all-zero exceptional-event bound, fixed annular windows and a zero-count truncation before sending the mesh to zero. It defines representative convergence rather than asserting a bounded embedding of the whole tensor completion.",
+      "remaining": "Verify the state-measure exceptional-event estimate, the zero-count truncation, discontinuity-free spectral cutoffs and strong convergence on representatives. Compact-open convergence of spectral functions alone does not imply the claimed energy limits."
+    },
+    {
+      "id": "U06",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Gaussianity requires the nonvacuum collision lemma",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 668,
+      "label": "lem:collision; prop:gaussian-currents",
+      "question": "What establishes Wick's rule beyond two-point covariance?",
+      "evidence": "The collision lemma claims weak convergence of a damped two-current operator to -kappa times the identity, including nonvacuum exterior states. It uses another scale separation, contour formulas and uniform dyadic cutoff removal. The subsequent proposition removes artificial poles, rules out a simple collision residue, and derives Wick recursion.",
+      "remaining": "Prove the collision operator limit, its uniform norm majorant and the interchange with strongly converging exterior vectors. Verify joint holomorphy and moving-pole removal. This is the central Gaussianity obligation; knowing the variance is insufficient."
+    },
+    {
+      "id": "U07",
+      "status": "proof_located_open",
+      "priority": "medium",
+      "title": "Nonsmooth tests and negative function-space conventions",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 558,
+      "label": "lem:log-integrability; prop:finite-energy; prop:negative-regularity; prop:intrinsic-dual",
+      "question": "Do the smooth-test limit and logarithmic bounds imply every advertised topology?",
+      "evidence": "Separate proofs are supplied for finite-energy measures, restriction Besov/H\u00f6lder/Sobolev norms, the source's outward-scaling completion, and intrinsic Sobolev duals on arbitrary bounded open sets. The finite-energy proof includes the case where distinct continuum points round to the same lattice face. The intrinsic proof treats small-area cells by a thick/thin decomposition.",
+      "remaining": "Fix exact definitions of each negative Sobolev realization before formalization. Independently check logarithmic domination, mollification in energy, separability, compactness, pinning and thin-cell estimates. The phrase 'usual ... realization' needs an explicit definition; these spaces must not be silently identified on irregular domains."
+    },
+    {
+      "id": "U08",
+      "status": "proof_located_open",
+      "priority": "high",
+      "title": "Endpoint rotation requires a loop bijection, not just close loop sets",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 276,
+      "label": "lem:rr-nails; thm:rr-rotation; prop:endpoint-completion",
+      "question": "Does the external FK rotation argument preserve multiplicity and endpoint separation information?",
+      "evidence": "The appendix deliberately uses the homotopy coupling before its metric conclusion. The cited rotation paper, arXiv:2012.11672v2, Definition 3.8 and Sections 3.5-3.6, does define homotopic similarity using a bijection of nontrivial loops and matching crossing words. Lis arXiv:2004.05337v2, Lemma 3.1, supplies the stated infinite-volume loop-law convergence at c=2. The OAI appendix includes fair-sign averaging, loop counts, point avoidance and a nail-window extraction.",
+      "external_urls": [
+        "https://arxiv.org/html/2012.11672v2",
+        "https://arxiv.org/html/2004.05337v2"
+      ],
+      "remaining": "Verify the full extracted coupling with its exact marginals, parameter scales, orientations and multiplicities; the inside/outside transfer; and uniform integrability of the sign-averaged polynomial. The external set-distance rotation theorem alone would not prove this step. The complete extraction is not independently verified here."
+    }
+  ]
+}

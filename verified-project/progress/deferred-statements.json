@@ -1,0 +1,42 @@
+{
+  "updated_on": "2026-10-24",
+  "items": [
+    {
+      "paper_label": "lem:chiral-representatives",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "lines": [
+        201,
+        228
+      ],
+      "status": "formalized",
+      "reason": "User considers this a standard functional-analytic result and requests a different candidate.",
+      "lean_status": "proved_and_axiom_audited",
+      "counts_as_completed_paper_statement": true,
+      "assumption_policy": "Proved as a general dense-core representative lemma. No axiom or proof placeholder was added; the six-vertex-specific tensor construction remains separate.",
+      "original_status": "reasonable_to_look_at_later",
+      "lean_theorem": "SixVertex.chiral_representatives",
+      "completed_on": "2026-10-24"
+    }
+  ],
+  "proposed_next": {
+    "paper_label": "lem:row-algebra",
+    "title": "Finite row algebra",
+    "file": "sections/02-finite-rows.tex",
+    "lines": [
+      75,
+      143
+    ],
+    "status": "formalized",
+    "reason": "Model-specific finite-dimensional identities with explicit local matrices; no infinite-volume or Gaussian limit required.",
+    "obligations": [
+      "Gauge identity for all even chain lengths",
+      "Adjoint identity for every auxiliary mark",
+      "Physical RTT exchange relation",
+      "Commutation for a common diagonal twist",
+      "Conjugation of joint auxiliary marks when the intertwiner is invertible",
+      "Homogeneous endpoint rows equal cyclic translation and its inverse"
+    ],
+    "lean_theorem": "SixVertex.finite_row_algebra",
+    "completed_on": "2026-10-23"
+  }
+}

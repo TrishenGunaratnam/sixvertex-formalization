@@ -1,0 +1,43 @@
+{
+  "user_request": "Keep going",
+  "baseline_theorem_count": 581,
+  "final_theorem_count": 679,
+  "added_theorem_declarations": 98,
+  "completed_named_statements": [],
+  "completed_supporting_blocks": [
+    "Half-filled total density mass and exact cumulative integrals",
+    "Uniform counting sawtooth bound, primitive identity and both end limits",
+    "Actual kernel derivatives and first-derivative integrability",
+    "Uniform logarithmic density derivative and exponential density comparison",
+    "Uniform root atom-weight bound in the strict negative-kernel regime",
+    "Positive exponential weight with kernel mass below one",
+    "Actual bounded-continuous convolution and uniform signed-weight Neumann inverses",
+    "Constructed exponentially decaying resolvent kernel with integrable first derivative"
+  ],
+  "new_source_modules": [
+    "CountingMass",
+    "CountingSawtooth",
+    "KernelDerivatives",
+    "DensityRegularity",
+    "WeightedKernel",
+    "BoundedConvolution",
+    "WeightedConvolution",
+    "WeightedResolvent",
+    "ConvolutionDerivative",
+    "ResolventKernel"
+  ],
+  "new_external_assumptions": [],
+  "staging_audit_passed": true,
+  "staging_checked_at_utc": "2026-10-24T00:23:13.058775+00:00",
+  "saved_project_audit_passed": true,
+  "source_files_hash_matched": 19,
+  "lemma_3_1_complete": false,
+  "full_GFF_theorem_proved": false,
+  "crosswalk": "progress/root-limits-crosswalk.json",
+  "completed_at_utc": "2026-10-24T00:26:16.477861+00:00",
+  "saved_project_checked_at_utc": "2026-10-24T00:25:54.806064+00:00",
+  "lean_source_modules_byte_matched": 96,
+  "named_statements_unconditional": 5,
+  "named_statements_conditional_on_A01": 3,
+  "other_named_statements_unformalized": 43
+}

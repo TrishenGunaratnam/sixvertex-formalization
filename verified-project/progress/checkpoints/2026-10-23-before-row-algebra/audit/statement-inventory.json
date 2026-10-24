@@ -1,0 +1,776 @@
+{
+  "scope": "Structural checks only. Presence of a proof environment is not mathematical verification.",
+  "named_statements": 51,
+  "labels": 286,
+  "duplicate_labels": [],
+  "unresolved_internal_refs": [],
+  "unresolved_citation_keys": [],
+  "statements": [
+    {
+      "label": "thm:main",
+      "kind": "theorem",
+      "title": "thm:main",
+      "file": "sections/01-introduction.tex",
+      "line": 57,
+      "statement_end_line": 105,
+      "following_proof_environment": false,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/08-main-proof.tex",
+        "line": 3,
+        "type": "deferred"
+      }
+    },
+    {
+      "label": "lem:row-algebra",
+      "kind": "lemma",
+      "title": "Finite row algebra",
+      "file": "sections/02-finite-rows.tex",
+      "line": 75,
+      "statement_end_line": 103,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 105,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:bethe-data",
+      "kind": "lemma",
+      "title": "Finite Bethe data",
+      "file": "sections/02-finite-rows.tex",
+      "line": 200,
+      "statement_end_line": 227,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 229,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:finite-actions",
+      "kind": "lemma",
+      "title": "Single-entry actions",
+      "file": "sections/02-finite-rows.tex",
+      "line": 309,
+      "statement_end_line": 333,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 335,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:scalar-product",
+      "kind": "lemma",
+      "title": "Exact scalar products and deleted columns",
+      "file": "sections/02-finite-rows.tex",
+      "line": 422,
+      "statement_end_line": 459,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 461,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:hilbert-dual",
+      "kind": "lemma",
+      "title": "The Hilbert dual",
+      "file": "sections/02-finite-rows.tex",
+      "line": 528,
+      "statement_end_line": 550,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 552,
+        "type": "following"
+      }
+    },
+    {
+      "label": "cor:finite-word-expansion",
+      "kind": "corollary",
+      "title": "Exact finite-word expansion",
+      "file": "sections/02-finite-rows.tex",
+      "line": 620,
+      "statement_end_line": 650,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/02-finite-rows.tex",
+        "line": 652,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:root-limits",
+      "kind": "lemma",
+      "title": "Construction and density of the roots",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 78,
+      "statement_end_line": 133,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 135,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:gaudin-inverse",
+      "kind": "lemma",
+      "title": "Gaudin and mixed-measure inverse bounds",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 479,
+      "statement_end_line": 507,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 509,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:row-normalization",
+      "kind": "lemma",
+      "title": "Harmonic row normalization",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 622,
+      "statement_end_line": 643,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 645,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:weighted-flags",
+      "kind": "lemma",
+      "title": "Finite-chain weighted flags",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 918,
+      "statement_end_line": 934,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 936,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:joint-determinant-tails",
+      "kind": "lemma",
+      "title": "Joint tail bound",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 1083,
+      "statement_end_line": 1098,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 1100,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:word-kernel",
+      "kind": "proposition",
+      "title": "Limits of fixed row words",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 1147,
+      "statement_end_line": 1174,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 1176,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:word-clustering",
+      "kind": "proposition",
+      "title": "Separated diagonal words",
+      "file": "sections/03-thermodynamic-kernels.tex",
+      "line": 1276,
+      "statement_end_line": 1285,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/03-thermodynamic-kernels.tex",
+        "line": 1287,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:angular-space",
+      "kind": "proposition",
+      "title": "The angular representation",
+      "file": "sections/04-angular-plane.tex",
+      "line": 33,
+      "statement_end_line": 54,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 56,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:scalar-continuation",
+      "kind": "lemma",
+      "title": "Boundary division and scalar continuation",
+      "file": "sections/04-angular-plane.tex",
+      "line": 97,
+      "statement_end_line": 121,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 123,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:physical-plane",
+      "kind": "proposition",
+      "title": "Physical law, both axes, and reflection",
+      "file": "sections/04-angular-plane.tex",
+      "line": 289,
+      "statement_end_line": 300,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 302,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:inner-spectra",
+      "kind": "lemma",
+      "title": "Inner spectra and the current measure",
+      "file": "sections/04-angular-plane.tex",
+      "line": 486,
+      "statement_end_line": 523,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 525,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:low-band",
+      "kind": "lemma",
+      "title": "Low-band current estimates",
+      "file": "sections/04-angular-plane.tex",
+      "line": 627,
+      "statement_end_line": 658,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 660,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:endpoint-Hamiltonian",
+      "kind": "lemma",
+      "title": "The local endpoint generator",
+      "file": "sections/04-angular-plane.tex",
+      "line": 826,
+      "statement_end_line": 854,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 856,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:sum-rule",
+      "kind": "lemma",
+      "title": "Energy and winding sum rule",
+      "file": "sections/04-angular-plane.tex",
+      "line": 927,
+      "statement_end_line": 943,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 945,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:variogram",
+      "kind": "proposition",
+      "title": "Exact variogram and logarithmic growth",
+      "file": "sections/04-angular-plane.tex",
+      "line": 991,
+      "statement_end_line": 1005,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/04-angular-plane.tex",
+        "line": 1007,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:normalization",
+      "kind": "proposition",
+      "title": "The covariance constant below one",
+      "file": "sections/05-normalization.tex",
+      "line": 11,
+      "statement_end_line": 20,
+      "following_proof_environment": false,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/05-normalization.tex",
+        "line": 460,
+        "type": "deferred"
+      }
+    },
+    {
+      "label": "lem:stiffness",
+      "kind": "lemma",
+      "title": "Homogeneous stiffness",
+      "file": "sections/05-normalization.tex",
+      "line": 77,
+      "statement_end_line": 83,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/05-normalization.tex",
+        "line": 84,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:infrared",
+      "kind": "lemma",
+      "title": "Infrared comparison",
+      "file": "sections/05-normalization.tex",
+      "line": 185,
+      "statement_end_line": 190,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/05-normalization.tex",
+        "line": 191,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:overlap-asymptotic",
+      "kind": "lemma",
+      "title": "Staggered overlap asymptotic",
+      "file": "sections/05-normalization.tex",
+      "line": 325,
+      "statement_end_line": 332,
+      "following_proof_environment": false,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/05-normalization.tex",
+        "line": 772,
+        "type": "deferred"
+      }
+    },
+    {
+      "label": "lem:detector-packing",
+      "kind": "lemma",
+      "title": "Packing angular windows",
+      "file": "sections/05-normalization.tex",
+      "line": 388,
+      "statement_end_line": 393,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/05-normalization.tex",
+        "line": 394,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:chiral-forms",
+      "kind": "lemma",
+      "title": "lem:chiral-forms",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 80,
+      "statement_end_line": 97,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 99,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:chiral-representatives",
+      "kind": "lemma",
+      "title": "lem:chiral-representatives",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 201,
+      "statement_end_line": 212,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 214,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:two-scale",
+      "kind": "proposition",
+      "title": "Two-scale spectral limit",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 231,
+      "statement_end_line": 261,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 275,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:current-limit",
+      "kind": "lemma",
+      "title": "lem:current-limit",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 399,
+      "statement_end_line": 413,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 415,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:chiral-holomorphy",
+      "kind": "lemma",
+      "title": "lem:chiral-holomorphy",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 592,
+      "statement_end_line": 612,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 614,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:collision",
+      "kind": "lemma",
+      "title": "lem:collision",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 668,
+      "statement_end_line": 688,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 690,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:gaussian-currents",
+      "kind": "proposition",
+      "title": "prop:gaussian-currents",
+      "file": "sections/06-chiral-gaussianity.tex",
+      "line": 780,
+      "statement_end_line": 805,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/06-chiral-gaussianity.tex",
+        "line": 807,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:ordinary-moments",
+      "kind": "lemma",
+      "title": "Ordinary spatial moments",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 38,
+      "statement_end_line": 54,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 56,
+        "type": "following"
+      }
+    },
+    {
+      "label": "cor:neutral-blocks",
+      "kind": "corollary",
+      "title": "Neutral blocks",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 164,
+      "statement_end_line": 177,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 179,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:smooth-tests",
+      "kind": "proposition",
+      "title": "prop:smooth-tests",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 202,
+      "statement_end_line": 209,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 211,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:separated-block",
+      "kind": "lemma",
+      "title": "A separated endpoint factor",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 305,
+      "statement_end_line": 329,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 331,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:offdiagonal",
+      "kind": "proposition",
+      "title": "prop:offdiagonal",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 494,
+      "statement_end_line": 499,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 501,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:log-integrability",
+      "kind": "lemma",
+      "title": "lem:log-integrability",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 558,
+      "statement_end_line": 567,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 569,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:finite-energy",
+      "kind": "proposition",
+      "title": "prop:finite-energy",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 596,
+      "statement_end_line": 602,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 604,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:pinned-averages",
+      "kind": "lemma",
+      "title": "Pinned averages",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 704,
+      "statement_end_line": 714,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 716,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:negative-regularity",
+      "kind": "proposition",
+      "title": "prop:negative-regularity",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 729,
+      "statement_end_line": 745,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 747,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:cell-averages",
+      "kind": "lemma",
+      "title": "Averages on small-area cells",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 887,
+      "statement_end_line": 896,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 898,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:intrinsic-dual",
+      "kind": "proposition",
+      "title": "Intrinsic dual convergence",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 966,
+      "statement_end_line": 974,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 976,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:endpoint-topologies",
+      "kind": "proposition",
+      "title": "Endpoint topology implication",
+      "file": "sections/07-probabilistic-endgame.tex",
+      "line": 1138,
+      "statement_end_line": 1147,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/07-probabilistic-endgame.tex",
+        "line": 1149,
+        "type": "following"
+      }
+    },
+    {
+      "label": "thm:rr-rotation",
+      "kind": "theorem",
+      "title": "Isometry invariance of the endpoint correlations",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 37,
+      "statement_end_line": 47,
+      "following_proof_environment": false,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/09-endpoint-rotation.tex",
+        "line": 478,
+        "type": "deferred"
+      }
+    },
+    {
+      "label": "lem:rr-bkw",
+      "kind": "lemma",
+      "title": "The endpoint plane correspondence",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 53,
+      "statement_end_line": 59,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/09-endpoint-rotation.tex",
+        "line": 61,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:rr-estimates",
+      "kind": "lemma",
+      "title": "Counts, escape, and deterministic-point avoidance",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 155,
+      "statement_end_line": 178,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/09-endpoint-rotation.tex",
+        "line": 180,
+        "type": "following"
+      }
+    },
+    {
+      "label": "lem:rr-nails",
+      "kind": "lemma",
+      "title": "Homotopy coupling with dense marked clusters",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 275,
+      "statement_end_line": 292,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/09-endpoint-rotation.tex",
+        "line": 294,
+        "type": "following"
+      }
+    },
+    {
+      "label": "prop:endpoint-completion",
+      "kind": "proposition",
+      "title": "Completion at the endpoint",
+      "file": "sections/09-endpoint-rotation.tex",
+      "line": 519,
+      "statement_end_line": 523,
+      "following_proof_environment": true,
+      "verification_status": "proof_present_not_independently_verified",
+      "proof_location": {
+        "file": "sections/09-endpoint-rotation.tex",
+        "line": 525,
+        "type": "following"
+      }
+    }
+  ],
+  "all_statements_have_located_proofs": true
+}
