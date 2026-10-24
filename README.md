@@ -1,6 +1,12 @@
 # Six vertex Lean formalization
 
-Formalization of the pinned OAI six-vertex manuscript, with an audited checkpoint and a portable handover for continuing on another machine. Formalization is paused at the owner’s request.
+## Source update 24 October 2026
+
+The supplied [Lean source archive](transfer/sixvertex-lean-sources-2026-10-24.tar) has been applied at its original relative paths: **407 Lean files, 12 additions and 4 changes**. Their contents were copied byte for byte. See [the import record](SOURCE-UPDATE-2026-10-24.json) for filenames and the archive hash.
+
+**This upload did not run Lean, audit proofs, or continue the formalization.** The 1,457-declaration audit, old handover, progress counts, WIP status records and associated logs describe the earlier checkpoint; they are not a verification of these newer sources. The original checkpoint remains available in Git history and the original handover ZIP. `SHA256SUMS` now checks the current repository files; the original manifest is retained in `transfer/`.
+
+Formalization of the pinned OAI six-vertex manuscript, with a historical audited checkpoint, a later source upload and a portable handover. Formalization remains paused at the owner’s request.
 
 ## Start here
 
@@ -8,14 +14,14 @@ Read [HANDOVER.txt](HANDOVER.txt) for the full mathematical status, assumptions,
 
 | Directory | Contents |
 | --- | --- |
-| [verified-project](verified-project) | Saved checkpoint with **1,457 audited theorem declarations** in **303 public modules** |
-| [work-in-progress](work-in-progress) | Four individually checked modules, one failed energy draft and one unchecked ground-state draft; see [STATUS.json](work-in-progress/STATUS.json) |
+| [verified-project](verified-project) | Latest supplied sources; the included **1,457-declaration audit** belongs to the earlier checkpoint |
+| [work-in-progress](work-in-progress) | Supplied drafts and historical [STATUS.json](work-in-progress/STATUS.json); their current proof status was not assessed during upload |
 | [logs](logs) | Check and build output for the newer work |
 | [transfer](transfer) | Original portable ZIP and its size/checksum record |
 
-Eight whole named paper statements are complete: Lemmas 2.1, 2.2, 2.3, 6.2 and 7.6 without external mathematical assumptions; Lemmas 2.4 and 2.5 and Corollary 2.6 conditional on the explicitly authorized **A01 Slavnov identity**. Supporting theorem declarations are counted separately. **Lemma 3.1 and the main Gaussian free field limit remain incomplete.**
+At the earlier audited checkpoint, eight whole named paper statements were complete: Lemmas 2.1, 2.2, 2.3, 6.2 and 7.6 without external mathematical assumptions; Lemmas 2.4 and 2.5 and Corollary 2.6 conditional on the explicitly authorized **A01 Slavnov identity**. Supporting theorem declarations are counted separately. **Lemma 3.1 and the main Gaussian free field limit remain incomplete.**
 
-The audited checkpoint proves that the constructed free Slater state is the actual spin Hamiltonian’s simple ground-state line. Identifying the actual Bethe vector with that line and justifying continuation in lambda remain open. No additional external mathematical assumptions are authorized.
+The earlier audited checkpoint proves that the constructed free Slater state is the actual spin Hamiltonian’s simple ground-state line. Identifying the actual Bethe vector with that line and justifying continuation in lambda remain open. No additional external mathematical assumptions are authorized.
 
 ## Verify the transferred files
 
@@ -25,9 +31,9 @@ From this repository’s root:
 python3 verify_bundle.py
 ```
 
-This checks the original handover files against `SHA256SUMS`. It checks file integrity, not mathematical correctness. The added repository README, ignore rules and `transfer/` copies are outside that original manifest.
+This checks the current repository files against `SHA256SUMS`, including the supplied source update and transfer archives. It checks file integrity, not mathematical correctness. The original handover ZIP retains the earlier snapshot and its original manifest.
 
-## Rebuild the audited Lean project
+## Build and audit the uploaded Lean project
 
 Install Git, Python 3 and elan, then use the pinned toolchain:
 

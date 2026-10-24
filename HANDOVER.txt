@@ -1,3 +1,10 @@
+SOURCE UPDATE NOTICE 24 October 2026
+
+The newer Lean source archive was applied after this handover was written.
+Read SOURCE-UPDATE-2026-10-24.json and the README source update notice first.
+No Lean build, proof audit or formalization work was performed during upload.
+Counts and mathematical status below describe the historical 1,457 checkpoint.
+
 Six vertex Lean formalization handover
 Prepared 24 October 2026
 

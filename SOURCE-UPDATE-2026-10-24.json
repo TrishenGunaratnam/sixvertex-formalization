@@ -1,0 +1,37 @@
+{
+  "uploaded_on": "2026-10-24",
+  "prepared_at_utc": "2026-10-24T19:46:42.093588+00:00",
+  "source_archive": "transfer/sixvertex-lean-sources-2026-10-24.tar",
+  "archive_sha256": "64763580cd5145b0fa41dacad3cc481c46e6928b7fc2665523d2db22978e90f3",
+  "archive_bytes": 3112960,
+  "supplied_lean_files": 407,
+  "added_files": [
+    "verified-project/lean/SixVertex/ActualFreeBetheEnergy.lean",
+    "verified-project/lean/SixVertex/ActualFreeBetheGround.lean",
+    "verified-project/lean/SixVertex/BetheBranchContinuity.lean",
+    "verified-project/lean/SixVertex/BetheBranchEnergy.lean",
+    "verified-project/lean/SixVertex/BetheBranchGlobalGround.lean",
+    "verified-project/lean/SixVertex/BetheBranchGround.lean",
+    "verified-project/lean/SixVertex/BetheBranchHamiltonian.lean",
+    "verified-project/lean/SixVertex/FreeBetheEigenvalueDerivative.lean",
+    "verified-project/lean/SixVertex/FreeBetheScalarDerivative.lean",
+    "verified-project/lean/SixVertex/FreeBetheSwapRegular.lean",
+    "verified-project/lean/SixVertex/PhysicalBetheColumn.lean",
+    "work-in-progress/BetheBranchGlobalGround.lean"
+  ],
+  "changed_files": [
+    "verified-project/lean/Audit.lean",
+    "verified-project/lean/SixVertex.lean",
+    "verified-project/lean/SixVertex/NormalizedLipschitz.lean",
+    "verified-project/lean/SixVertex/PhysicalSectorPerron.lean"
+  ],
+  "unchanged_file_count": 391,
+  "content_preserved_byte_for_byte": true,
+  "lean_build_run": false,
+  "proof_audit_run": false,
+  "formalization_continued": false,
+  "previous_audit_theorem_count": 1457,
+  "previous_audit_is_historical_after_source_update": true,
+  "original_manifest": "transfer/SHA256SUMS-original-2026-10-24",
+  "new_manifest_purpose": "Integrity of files uploaded to this repository; not a Lean proof verification."
+}

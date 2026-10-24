@@ -279,3 +279,16 @@ import SixVertex.ActualFreeSlaterEigen
 
 import SixVertex.ActualFreeSlaterGround
 import SixVertex.TransferEigenlineDerivative
+import SixVertex.FreeBetheScalarDerivative
+import SixVertex.FreeBetheEigenvalueDerivative
+import SixVertex.FreeBetheSwapRegular
+import SixVertex.PhysicalBetheColumn
+import SixVertex.BetheBranchContinuity
+import SixVertex.ActualFreeBetheEnergy
+import SixVertex.ActualFreeBetheGround
+
+import SixVertex.BetheBranchEnergy
+
+import SixVertex.BetheBranchHamiltonian
+import SixVertex.BetheBranchGround
+import SixVertex.BetheBranchGlobalGround
