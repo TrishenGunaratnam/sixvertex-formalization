@@ -1,0 +1,39 @@
+{
+  "file_count": 10473,
+  "source_bytes": 439723501,
+  "archive_bytes": 54963983,
+  "archive_sha256": "9f24fd433dffba20b5c1ce6b54234ca851bf707bb3e249d01f1808973990e2b7",
+  "excluded": "Regenerable .lake build/dependency caches, .git metadata, Python caches, Finder metadata and .env files; complete original folder retained for iCloud move.",
+  "parts": [
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part000",
+      "bytes": 9437184,
+      "sha256": "bb7a4adac7850a6e2b04fe35d7ca38484e3d27d708871a0cc7765f5cf9928789"
+    },
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part001",
+      "bytes": 9437184,
+      "sha256": "b650cc1775b97d132f1a7d4ad5e6b6093c0464a363d36c78dbe07364e04e9491"
+    },
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part002",
+      "bytes": 9437184,
+      "sha256": "abf0ea21d1e0b1d278fc33172585b6a8fc26f385e80025e6cfc433367301d87d"
+    },
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part003",
+      "bytes": 9437184,
+      "sha256": "ed4fe18b529ac939d54531e5436ad658a723a7a446a35f3e24f96122bdfcdf7e"
+    },
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part004",
+      "bytes": 9437184,
+      "sha256": "9d397bcbe940f3abba2d87f4239a095f0eb7469276a7054a3f35d8b374c61ce1"
+    },
+    {
+      "name": "Formalization-6V-2026-11-05.tar.gz.part005",
+      "bytes": 7778063,
+      "sha256": "0371aeee64ad2c6ed1ee67606ea1769ff10f55587318e865a77e021c01589412"
+    }
+  ]
+}
