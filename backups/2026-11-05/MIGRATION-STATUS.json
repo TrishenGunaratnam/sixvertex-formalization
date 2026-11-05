@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-05",
+  "github_backup_commit": "91242ada0206cbfce14ee4822139031e5995cfe7",
+  "github_backup_url": "https://github.com/TrishenGunaratnam/sixvertex-formalization/tree/main/backups/2026-11-05",
+  "archive_files_verified": 10473,
+  "remote_segments_verified": 6,
+  "new_project_location": "/Users/trishengunaratnam/Library/Mobile Documents/com~apple~CloudDocs/Formalization 6V",
+  "old_folder_no_longer_present": true,
+  "finder_move_completed": true,
+  "finder_status_before_offload": "Downloaded (no longer Uploading), explicit iCloud Status column",
+  "remove_download_command": "Accepted after upload status changed; completion awaiting verification",
+  "direct_codex_icloud_access": "Blocked by macOS privacy protection; user must grant access before future Lean builds",
+  "whole_named_complete": 25,
+  "whole_named_total": 51,
+  "last_full_audit_pass": 377,
+  "last_full_verified_declarations": 10130,
+  "owned_build_378": "passed; full audit 378 not started",
+  "new_unpromoted_support": "FiniteConditionalEntropySubadditivity: two kernel-verified results preserved in drafts",
+  "note": "No mathematical proof work performed during storage migration. Original existing repository main source tree remains October version; latest complete work is the GitHub backup archive.",
+  "latest_finder_status": "Uploading again after offload request; cloud completion and reclaimed space are not yet confirmed",
+  "next_action": "Wait for completed iCloud upload/offload and grant Codex access to the iCloud project before resuming Lean."
+}
